@@ -1,6 +1,7 @@
 /* Override some defaults */
 html, body {
   background-color: #eee;
+  font-size:14px;
 }
 .navbar {
   margin-bottom: 0;
@@ -68,4 +69,6 @@ html, body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+
+.friends-links{overflow:hidden;*zoom:1;margin:0;padding:0;}
+.friends-links li{list-style:none;float:left;margin-right:10px;}
