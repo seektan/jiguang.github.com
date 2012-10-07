@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome!
+title: Hello cruel world!
 tagline: Front-end Development / HTML(5) / CSS(3) / JavaScript / NodeJs
 ---
 {% include JB/setup %}
@@ -30,6 +30,32 @@ tagline: Front-end Development / HTML(5) / CSS(3) / JavaScript / NodeJs
 ## Recomend Books
 
 <a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22785480">《精彩绝伦的CSS》</a>
+
+## Subscribe
+
+<div class="feed">
+<!-- Feedsky FEED发布代码开始 -->
+<!-- FEED自动发现标记开始 -->
+<link title="RSS 2.0" type="application/rss+xml" href="http://feed.44ux.com" rel="alternate" />
+<!-- FEED自动发现标记结束 -->
+<a href="http://www.zhuaxia.com/add_channel.php?url=http://feed.44ux.com" target="_blank"><img border="0" src="http://img.feedsky.com/images/icon_subshot02_zhuaxia.gif" alt="&#25235;&#34430;" vspace="2" style="margin-bottom:3px" ></a>
+<a href="http://fusion.google.com/add?feedurl=http://feed.44ux.com" target="_blank"><img border="0" src="http://img.feedsky.com/images/icon_subshot02_google.gif" alt="google reader" vspace="2" style="margin-bottom:3px" ></a>
+<a href="http://www.xianguo.com/subscribe.php?url=http://feed.44ux.com" target="_blank"><img border="0" src="http://img.feedsky.com/images/icon_subshot02_xianguo.gif" alt="&#40092;&#26524;" vspace="2" style="margin-bottom:3px" ></a>
+<a href="http://inezha.com/add?url=http://feed.44ux.com" target="_blank"><img border="0" src="http://img.feedsky.com/images/icon_subshot02_nazha.gif" alt="&#21738;&#21522;" vspace="2" style="margin-bottom:3px" ></a>
+<a href="http://reader.youdao.com/b.do?keyfrom=feedsky&url=http://feed.44ux.com" target="_blank"><img border="0" src="http://img.feedsky.com/images/icon_subshot02_youdao.gif" alt="&#26377;&#36947;" vspace="2" style="margin-bottom:3px" ></a>
+<a href="http://mail.qq.com/cgi-bin/feed?u=http://feed.44ux.com" target="_blank"><img border="0" src="http://img.feedsky.com/images/icon_subshot02_qq.gif" alt="QQ&#37038;&#31665;" vspace="2" style="margin-bottom:3px" ></a>
+<a href="http://9.douban.com/reader/subscribe?url=http://feed.44ux.com" target="_blank"><img border="0" src="http://img.feedsky.com/images/icon_subshot02_douban.gif" alt="&#20061;&#28857;" vspace="2" style="margin-bottom:3px" ></a>
+<!-- Feedsky FEED发布代码结束 -->
+</div>
+
+## Contact Me
+
+<div class="contact">
+You can find me at:
+<a href="http://weibo.com/jiguang1984" title="新浪微博">新浪微博</a> or
+<a href="http://t.qq.com/jiguang1984" title="腾讯微博">腾讯微博</a> or
+<a href="mailto:jiguang1984@gmail.com" title="腾讯微博">Email:jiguang1984#gmail.com</a>
+</div>
 
 ## Friend Links
 
