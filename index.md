@@ -7,12 +7,12 @@ tagline: Life is like a box of chocolates, you never know what you're gonna get.
 
 ## What's new?
 
-博客文章已全部迁移到 Github Pages，拥有更快的访问速度，更稳定的服务，版本控制，防止挂马等诸多优点，还不快来？
+博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，版本控制，防止挂马等诸多优点，还不快来？
 
 ## About
 
 <div class="contact">
-This blog: 这里有关于#前端开发技术#的一些粗浅文章 <br>
+This blog: 这里有关于#前端开发技术#的一些粗浅文章，我是小白，请多多指教：） <br>
 This guy: 姬光/男/80后/前端开发/小白 <br>
 Find me at:
 <a href="http://weibo.com/jiguang1984" title="新浪微博" target="_blank">新浪微博</a> or
