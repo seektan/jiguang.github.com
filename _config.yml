@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Hi,laser! @44ux.com
-tagline: Just another front-end blog
+tagline: 前端开发 JavaScript HTML5 CSS3
 author :
   name : Ji Guang
   email : jiguang@gmail.com
@@ -41,7 +41,7 @@ JB :
   #   DO NOT SET BASE_PATH 
   #   (urls will be prefixed with "/" and work relatively)
   #
-  GitHub Pages (http://jiguang.github.com)
+  # GitHub Pages (http://jiguang.github.com)
   #   DO NOT SET BASE_PATH 
   #   (urls will be prefixed with "/" and work relatively)
   #
