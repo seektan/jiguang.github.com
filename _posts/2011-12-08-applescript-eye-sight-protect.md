@@ -64,5 +64,5 @@ post_format: [ ]
 另外，也可以打开Mac的Date&Time Preferences，选择Announce the time即可开启整点报时的功能，每隔一个固定时间就会有一个声音提示你当前时间，声音还可以自定义，唯一的不足就是只能选择整点或半点等几个固定选项。
 
  [1]: http://jiguang.github.com "姬光"
- [2]: http://44ux.com/index.php/tag/mac/ "mac"
- [3]: http://blog.laserji.com/wp-content/uploads/2011/12/timeReminder.zip
+ [2]: http://jiguang.github.com/index.php/tag/mac/ "mac"
+ [3]: http://blog.laserji.com/content/uploads/2011/12/timeReminder.zip

@@ -33,4 +33,4 @@ post_format: [ ]
 
 作用：退出所有应用程序，并重新启动计算机
 
- [1]: http://44ux.com/index.php/tag/mac/ "mac"
+ [1]: http://jiguang.github.com/index.php/tag/mac/ "mac"

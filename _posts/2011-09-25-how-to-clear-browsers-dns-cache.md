@@ -79,5 +79,5 @@ Done, 你已经禁止了dns缓存
 这几种方法重在折腾，经过实验IE的修改注册表的方法最好用，切换Hosts后直接刷新即可。Firefox的插件比较好用。
 
  [1]: http://fiddler2.com/fiddler2/
- []: http://44ux.com/wp-content/uploads/2012/02/6cddab8b977758a240b3fa31151d1520.png
- []: http://44ux.com/wp-content/uploads/2012/02/d5196a59909937fdb4936b0d1991dbde.png
+ []: http://jiguang.github.com/content/uploads/2012/02/6cddab8b977758a240b3fa31151d1520.png
+ []: http://jiguang.github.com/content/uploads/2012/02/d5196a59909937fdb4936b0d1991dbde.png

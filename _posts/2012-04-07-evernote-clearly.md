@@ -50,9 +50,9 @@ PS：这个插件只能用在拥有大段文字的文章页，用在其他页的
 
  [1]: https://www.evernote.com/clearly/
  [2]: http://jiguang.github.com "笔者"
- []: http://44ux.com/wp-content/uploads/2012/04/evernote_clearly.png
- [4]: http://44ux.com/wp-content/uploads/2012/04/163-test-1.png "163-test-1.png"
- [5]: http://44ux.com/wp-content/uploads/2012/04/163-test-2.png "163-test-2.png"
- [6]: http://44ux.com/wp-content/uploads/2012/04/blog-test-1.png "blog-test-1.png"
- [7]: http://44ux.com/wp-content/uploads/2012/04/blog-test-2.png "blog-test-2.png"
+ []: http://jiguang.github.com/content/uploads/2012/04/evernote_clearly.png
+ [4]: http://jiguang.github.com/content/uploads/2012/04/163-test-1.png "163-test-1.png"
+ [5]: http://jiguang.github.com/content/uploads/2012/04/163-test-2.png "163-test-2.png"
+ [6]: http://jiguang.github.com/content/uploads/2012/04/blog-test-1.png "blog-test-1.png"
+ [7]: http://jiguang.github.com/content/uploads/2012/04/blog-test-2.png "blog-test-2.png"
  [8]: https://chrome.google.com/webstore/detail/iooicodkiihhpojmmeghjclgihfjdjhj

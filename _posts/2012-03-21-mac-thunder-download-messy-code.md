@@ -34,8 +34,8 @@ post_format: [ ]
 
 总之呢，如果你打算使用Mac迅雷的话，那么最好在下载的时候就留意一下，否则一旦下载的是乱码的文件，就够你折腾的了。
 
- [1]: http://44ux.com/index.php/tag/mac/ "mac"
+ [1]: http://jiguang.github.com/index.php/tag/mac/ "mac"
  [2]: http://mac.xunlei.com/
- [3]: http://44ux.com/wp-content/uploads/2012/03/macthunder1.png "macthunder1.png"
- [4]: http://44ux.com/wp-content/uploads/2012/03/macthunder2.png "macthunder2.png"
+ [3]: http://jiguang.github.com/content/uploads/2012/03/macthunder1.png "macthunder1.png"
+ [4]: http://jiguang.github.com/content/uploads/2012/03/macthunder2.png "macthunder2.png"
  [5]: http://jiguang.github.com "笔者"

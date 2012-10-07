@@ -388,7 +388,7 @@ post_format: [ ]
 这个版本并没有包含IE6/7等古老的浏览器，感兴趣的同学可以[下载1.0.1版][5]。
 
  [1]: http://necolas.github.com/normalize.css/
- [2]: http://44ux.com/index.php/tag/html5/ "html5"
+ [2]: http://jiguang.github.com/index.php/tag/html5/ "html5"
  [3]: http://jiguang.github.com "姬光"
- [4]: http://44ux.com/index.php/tag/git/ "git"
+ [4]: http://jiguang.github.com/index.php/tag/git/ "git"
  [5]: http://necolas.github.com/normalize.css/1.0.1/normalize.css

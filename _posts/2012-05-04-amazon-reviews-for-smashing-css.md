@@ -79,5 +79,5 @@ post_format: [ ]
 这不是一本适合初学者的书。不过如果你已经使用CSS有段时间了，那么这本书将使你马上跟上潮流，形成对CSS内部工作原理的深入见解，并且可能激发你的无限创造力。
 
  [1]: http://jiguang.github.com "译者"
- [2]: http://44ux.com/index.php/tag/html5/ "html5"
- [3]: http://44ux.com/index.php/tag/css3/ "css3"
+ [2]: http://jiguang.github.com/index.php/tag/html5/ "html5"
+ [3]: http://jiguang.github.com/index.php/tag/css3/ "css3"

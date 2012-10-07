@@ -5,7 +5,7 @@ excerpt:
 layout: post
 category:
   - Wordpress
-  - 奇技淫巧
+  - Tricks
 
 tags:
   - 教程
@@ -35,7 +35,7 @@ post_format: [ ]
 
 2. 在feed中加入”阅读全文“链接，找到你的模版文件中的functions.php，在<?php 和 ?> 之间添加以下代码：
 
-    /* RSS 中添加查看全文链接 @44ux.com */
+    /* RSS 中添加查看全文链接 @jiguang.github.com */
     function feed_read_more($content) {
         return $content . '<p><a rel="bookmark" href="'.get_permalink().'" target="_blank">阅读全文</a></p>';
     }
@@ -45,11 +45,11 @@ post_format: [ ]
 
 3. 还可以在feed中增添版权信息，让你的版权更加突出。同样是在functions.php中，增添以下代码（将版权信息改成你自己的）即可：
 
-    /* RSS 中添加版权信息 @44ux.com */
+    /* RSS 中添加版权信息 @jiguang.github.com */
     function feed_copyright($content) {
          if(is_single() or is_feed()) {
               $content.= "<p class='copyright'>";
-              $content.= '版权所有：<a title="Hi.[laser][8]! @44ux.com" href="http://jiguang.github.com/">Hi,laser! @44ux.com</a> <a rel="bookmark" title="'.get_the_title().'" href="'.get_permalink().'">《'.get_the_title().'》</a><br />';
+              $content.= '版权所有：<a title="Hi.[laser][8]! @jiguang.github.com" href="http://jiguang.github.com/">Hi,laser! @jiguang.github.com</a> <a rel="bookmark" title="'.get_the_title().'" href="'.get_permalink().'">《'.get_the_title().'》</a><br />';
               $content.= '本文链接：<a rel="bookmark" title="'.get_the_title().'" href="'.get_permalink().'">'.get_permalink().'</a><br />';
               $content.= '特别声明：除特别标注，本站文章均为原创，遵循<a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh_HK" target="_blank">CC BY-NC 3.0</a>，转载请注明出处';
               $content.= "</p><br />";
@@ -91,6 +91,6 @@ PS：关于采集一事要从两面来看，坚持产出原创文章确实很辛
  [4]: http://www.google.com.hk/search?sourceid=chrome&ie=UTF-8&q=wordpress%E9%98%B2%E9%87%87%E9%9B%86%E6%8F%92%E4%BB%B6
  [5]: http://fairyfish.net/2007/04/24/antileech/
  [6]: http://jiguang.github.com "笔者"
- []: http://44ux.com/wp-content/uploads/2012/02/summary.png
+ []: http://jiguang.github.com/content/uploads/2012/02/summary.png
  [8]: http://jiguang.github.com "姬光"
  [9]: http://bbs.dedecms.com/196185.html

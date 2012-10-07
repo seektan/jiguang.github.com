@@ -82,6 +82,6 @@ Ember also supplies built-in support for state management, so you’ll have a wa
 
 Ember同样提供了内置的对状态管理的支持，从而可以描述你的应用程序在各种不同的嵌套状态（比如登入登出，浏览文章，查看评论）间的流转。
 
- [1]: http://44ux.com/index.php/2012/06/javascript-mvc-with-emberjs/
+ [1]: http://jiguang.github.com/index.php/2012/06/javascript-mvc-with-emberjs/
  [2]: https://twitter.com/laserji
  [3]: http://en.wikipedia.org/wiki/Spaghetti_code

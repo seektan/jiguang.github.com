@@ -113,7 +113,7 @@ DEMO截图：
             }
         }
 
- []: http://44ux.com/demo/random-sort.html
- [2]: http://44ux.com/demo/random-sort.html
+ []: http://jiguang.github.com/demo/random-sort.html
+ [2]: http://jiguang.github.com/demo/random-sort.html
  [3]: http://yekai.net
  [4]: http://svn.webkit.org/repository/webkit/trunk/Source/JavaScriptCore/runtime/ArrayPrototype.cpp

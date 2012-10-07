@@ -138,9 +138,9 @@ test()
 
 另外补充一篇文章：<http://www.cnblogs.com/winter-cn/archive/2012/06/20/2556431.html>
 
- []: http://44ux.com/wp-content/uploads/2012/06/1.png
+ []: http://jiguang.github.com/content/uploads/2012/06/1.png
  [2]: http://jiguang.github.com "笔者"
- []: http://44ux.com/wp-content/uploads/2012/06/2.png
- []: http://44ux.com/wp-content/uploads/2012/06/3.png
- [5]: http://44ux.com/index.php/tag/nodejs-2/ "nodejs"
- []: http://44ux.com/wp-content/uploads/2012/06/4.png
+ []: http://jiguang.github.com/content/uploads/2012/06/2.png
+ []: http://jiguang.github.com/content/uploads/2012/06/3.png
+ [5]: http://jiguang.github.com/index.php/tag/nodejs-2/ "nodejs"
+ []: http://jiguang.github.com/content/uploads/2012/06/4.png

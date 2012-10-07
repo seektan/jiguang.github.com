@@ -55,7 +55,7 @@ V 1.0 版特性：
 
 如果大家有什么建议或者批评指正，欢迎在这里留言与我交流，感谢支持！
 
- []: http://44ux.com/wp-content/uploads/2012/04/cleaner.png
- []: http://44ux.com/wp-content/uploads/2012/04/screenshot.jpg
+ []: http://jiguang.github.com/content/uploads/2012/04/cleaner.png
+ []: http://jiguang.github.com/content/uploads/2012/04/screenshot.jpg
  [3]: https://chrome.google.com/webstore/detail/ajnfhahbkopfgiheliocnmeobejfdlfe?hl=en-US "Chrome商店英文版"
  [4]: https://chrome.google.com/webstore/detail/ajnfhahbkopfgiheliocnmeobejfdlfe "Chrome商店中文版"

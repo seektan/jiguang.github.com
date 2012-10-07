@@ -178,12 +178,12 @@ master可以改为任何你想要推入文件的资源库的名字。
 *   [GitHub Help][14]
 *   [A Visual Git Guide][15]
 
- [1]: http://44ux.com/index.php/tag/git/ "git"
+ [1]: http://jiguang.github.com/index.php/tag/git/ "git"
  [2]: http://code.google.com/p/git-osx-installer/downloads/list?can=3
  [3]: http://code.google.com/p/msysgit/downloads/list?can=3
  [4]: http://book.git-scm.com/2_installing_git.html
- []: http://44ux.com/wp-content/uploads/2012/01/trees1.png
- []: http://44ux.com/wp-content/uploads/2012/01/branches.png
+ []: http://jiguang.github.com/content/uploads/2012/01/trees1.png
+ []: http://jiguang.github.com/content/uploads/2012/01/branches.png
  [7]: http://gitx.laullon.com/
  [8]: http://www.git-tower.com/
  [9]: http://www.sourcetreeapp.com/

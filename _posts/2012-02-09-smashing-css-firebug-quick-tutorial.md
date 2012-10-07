@@ -104,17 +104,17 @@ Firebug（见图1-1）是任何网页开发人员的工具箱中不可或缺的�
 
 这个版本的Firebug并不像火狐扩展版的功能那么多，因此才有“精简版”一说，但是它仍然很好很强大。
 
-Hi！我是本书的译者姬光，如果你对本书或者译文有任何建议，欢迎在此留言与我交流，也欢迎光顾我的个人博客（[44ux.com][12]）与我交流：）
+Hi！我是本书的译者姬光，如果你对本书或者译文有任何建议，欢迎在此留言与我交流，也欢迎光顾我的个人博客（[jiguang.github.com][12]）与我交流：）
 
  [1]: http://jiguang.github.com "译者"
- [2]: http://44ux.com/wp-content/uploads/2012/02/firebug.png "firebug.png"
- [3]: http://44ux.com/wp-content/uploads/2012/02/checklayout.png "checklayout.png"
- [4]: http://44ux.com/wp-content/uploads/2012/02/styletab.png "styletab.png"
- [5]: http://44ux.com/wp-content/uploads/2012/02/inspectelement.png "inspectelement.png"
- [6]: http://44ux.com/wp-content/uploads/2012/02/disabledstyle.png "disabledstyle.png"
- [7]: http://44ux.com/wp-content/uploads/2012/02/computedstyle.png "computedstyle.png"
- [8]: http://44ux.com/wp-content/uploads/2012/02/layouttab.png "layouttab.png"
- [9]: http://44ux.com/wp-content/uploads/2012/02/editcss.png "editcss.png"
+ [2]: http://jiguang.github.com/content/uploads/2012/02/firebug.png "firebug.png"
+ [3]: http://jiguang.github.com/content/uploads/2012/02/checklayout.png "checklayout.png"
+ [4]: http://jiguang.github.com/content/uploads/2012/02/styletab.png "styletab.png"
+ [5]: http://jiguang.github.com/content/uploads/2012/02/inspectelement.png "inspectelement.png"
+ [6]: http://jiguang.github.com/content/uploads/2012/02/disabledstyle.png "disabledstyle.png"
+ [7]: http://jiguang.github.com/content/uploads/2012/02/computedstyle.png "computedstyle.png"
+ [8]: http://jiguang.github.com/content/uploads/2012/02/layouttab.png "layouttab.png"
+ [9]: http://jiguang.github.com/content/uploads/2012/02/editcss.png "editcss.png"
  [10]: http://getfirebug.com/lite.html
- [11]: http://44ux.com/wp-content/uploads/2012/02/firebuglite.png "firebuglite.png"
+ [11]: http://jiguang.github.com/content/uploads/2012/02/firebuglite.png "firebuglite.png"
  [12]: http://jiguang.github.com "姬光的博客"

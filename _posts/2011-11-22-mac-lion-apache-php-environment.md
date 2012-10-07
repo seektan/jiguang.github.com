@@ -58,7 +58,7 @@ Mac OS X 系统自带就有 Apache 和 PHP ，可以直接使用。这里有两�
 
 PS: 写完本文后才发现[秦歌][5]已经写过一篇非常详尽的文章[《在Mac OS X中配置Apache ＋ PHP ＋ MySQL》][6]，网上大部分都是抄袭他的博客的内容。大家可以参照这篇文章里的步骤安装 MySQL 和 PhpMyAdmin 等，我就不再赘述了。
 
- [1]: http://44ux.com/index.php/tag/mac/ "mac"
+ [1]: http://jiguang.github.com/index.php/tag/mac/ "mac"
  [2]: http://www.mamp.info/en/index.html
  [3]: http://www.apachefriends.org/en/xampp-macosx.html
  [4]: http://www.google.com.hk/search?hl=zh-CN&newwindow=1&safe=strict&q=apachectl&oq=apachectl&aq=f&aqi=&aql=&gs_sm=e&gs_upl=1853533l1857914l0l1858055l18l11l0l0l0l0l0l0ll0l0

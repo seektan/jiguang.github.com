@@ -426,7 +426,7 @@ getPixelColor()方法的目的是计算当前的像素。光线追踪是一个�
 *   [Official W3C Web Workers Spec][32]
 *   [Web Workers in IE10: Developer Guide][33]
 
- [1]: http://44ux.com/index.php/tag/html5/ "html5"
+ [1]: http://jiguang.github.com/index.php/tag/html5/ "html5"
  [2]: http://www.codeproject.com/KB/solution-center/HTML5-Web-Workers/image001.jpg
  [3]: http://www.codeproject.com/KB/solution-center/HTML5-Web-Workers/image002.jpg
  [4]: http://www.codeproject.com/KB/solution-center/HTML5-Web-Workers/image003.jpg

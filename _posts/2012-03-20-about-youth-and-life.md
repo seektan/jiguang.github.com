@@ -5,7 +5,7 @@ excerpt:
 layout: post
 category:
 
-  - 生活点滴
+  - LifeStyle
 tags: [ ]
 post_format: [ ]
 ---

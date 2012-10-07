@@ -191,7 +191,7 @@ Rectangle a=24 p=20 Square a=25 p=20
 
 原文链接：<http://howtonode.org/object-graphs-2>
 
- [1]: http://44ux.com/index.php/2012/02/learning-javascript-with-object-graphs/
- [2]: http://44ux.com/wp-content/uploads/2012/02/classic.png "classic.png"
- [3]: http://44ux.com/wp-content/uploads/2012/02/graph.png "graph.png"
- [4]: http://44ux.com/wp-content/uploads/2012/02/mvc.png "mvc.png"
+ [1]: http://jiguang.github.com/index.php/2012/02/learning-javascript-with-object-graphs/
+ [2]: http://jiguang.github.com/content/uploads/2012/02/classic.png "classic.png"
+ [3]: http://jiguang.github.com/content/uploads/2012/02/graph.png "graph.png"
+ [4]: http://jiguang.github.com/content/uploads/2012/02/mvc.png "mvc.png"

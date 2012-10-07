@@ -26,10 +26,10 @@ post_format: [ ]
 
 点击[直接下载][7]，如果下载链接变更失效，那么可以到[官方下载页面][8]，点击右侧“Download Now”下载。
 
- [1]: http://44ux.com/index.php/tag/mac/ "mac"
+ [1]: http://jiguang.github.com/index.php/tag/mac/ "mac"
  [2]: http://jiguang.github.com "笔者"
- [3]: http://44ux.com/index.php/2011/12/applescript-eye-sight-protect/
- [4]: http://44ux.com/wp-content/uploads/2012/03/overview1.png "overview.png"
+ [3]: http://jiguang.github.com/index.php/2011/12/applescript-eye-sight-protect/
+ [4]: http://jiguang.github.com/content/uploads/2012/03/overview1.png "overview.png"
  [5]: http://www.dejal.com/
  [6]: http://www.dejal.com/timeout/extras/
  [7]: http://www.dejal.com/download/?prod=timeout&vers=1.6.4&rel=gen&lang=en&op=show&ref=timeout

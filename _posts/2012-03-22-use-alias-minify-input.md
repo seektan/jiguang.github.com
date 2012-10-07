@@ -45,7 +45,7 @@ post_format: [ ]
 
 ![Alias2][4]
 
- [1]: http://44ux.com/index.php/tag/mac/ "mac"
- [2]: http://44ux.com/wp-content/uploads/2012/03/alias1.png "alias1.png"
- [3]: http://44ux.com/index.php/2011/11/mac-lion-apache-php-environment/
- [4]: http://44ux.com/wp-content/uploads/2012/03/alias2.png "alias2.png"
+ [1]: http://jiguang.github.com/index.php/tag/mac/ "mac"
+ [2]: http://jiguang.github.com/content/uploads/2012/03/alias1.png "alias1.png"
+ [3]: http://jiguang.github.com/index.php/2011/11/mac-lion-apache-php-environment/
+ [4]: http://jiguang.github.com/content/uploads/2012/03/alias2.png "alias2.png"

@@ -85,14 +85,14 @@ post_format: [ ]
 
 原文地址：[http://tympanus.net/codrops/2012/01/22/how-to-spice-up-your-menu-with-css3/][11]
 
- []: http://44ux.com/wp-content/uploads/2012/01/CSS3MenuHoverEffect.jpg
- [2]: http://44ux.com/go.php?url=http://tympanus.net/TipsTricks/CSS3MenuHoverEffect/
+ []: http://jiguang.github.com/content/uploads/2012/01/CSS3MenuHoverEffect.jpg
+ [2]: http://jiguang.github.com/go.php?url=http://tympanus.net/TipsTricks/CSS3MenuHoverEffect/
  [3]: http://tympanus.net/TipsTricks/CSS3MenuHoverEffect/CSS3MenuHoverEffect.zip
- [4]: http://44ux.com/index.php/category/tips-and-tricks/
- [5]: http://44ux.com/go.php?url=http://www.qianduan.net/useful-nth-child-recipies.html
+ [4]: http://jiguang.github.com/index.php/category/tips-and-tricks/
+ [5]: http://jiguang.github.com/go.php?url=http://www.qianduan.net/useful-nth-child-recipies.html
  [6]: http://jiguang.github.com "译者"
- [7]: http://44ux.com/go.php?url=http://tympanus.net/TipsTricks/CSS3MenuHoverEffect/index2.html
- [8]: http://44ux.com/go.php?url=http://tympanus.net/TipsTricks/CSS3MenuHoverEffect/index3.html
- [9]: http://44ux.com/go.php?url=http://www.bartoszkosowski.com/
- [10]: http://44ux.com/go.php?url=http://creativecommons.org/licenses/by-nc/3.0/
- [11]: http://44ux.com/go.php?url=http://tympanus.net/codrops/2012/01/22/how-to-spice-up-your-menu-with-css3/
+ [7]: http://jiguang.github.com/go.php?url=http://tympanus.net/TipsTricks/CSS3MenuHoverEffect/index2.html
+ [8]: http://jiguang.github.com/go.php?url=http://tympanus.net/TipsTricks/CSS3MenuHoverEffect/index3.html
+ [9]: http://jiguang.github.com/go.php?url=http://www.bartoszkosowski.com/
+ [10]: http://jiguang.github.com/go.php?url=http://creativecommons.org/licenses/by-nc/3.0/
+ [11]: http://jiguang.github.com/go.php?url=http://tympanus.net/codrops/2012/01/22/how-to-spice-up-your-menu-with-css3/

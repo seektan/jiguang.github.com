@@ -137,10 +137,10 @@ JavaScript并不只是一系列的链式数据结构，它还包含了被称作�
 
 原文地址：<http://howtonode.org/object-graphs>
 
- [1]: http://44ux.com/wp-content/uploads/2012/02/NewImage.png "NewImage.png"
+ [1]: http://jiguang.github.com/content/uploads/2012/02/NewImage.png "NewImage.png"
  [2]: http://jiguang.github.com "译者"
- [3]: http://44ux.com/wp-content/uploads/2012/02/prototypechain.png "prototypechain.png"
+ [3]: http://jiguang.github.com/content/uploads/2012/02/prototypechain.png "prototypechain.png"
  [4]: http://jslint.com/
- [5]: http://44ux.com/wp-content/uploads/2012/02/novar.png "novar.png"
+ [5]: http://jiguang.github.com/content/uploads/2012/02/novar.png "novar.png"
  [6]: http://howtonode.org/why-use-closure
  [7]: http://howtonode.org/what-is-this

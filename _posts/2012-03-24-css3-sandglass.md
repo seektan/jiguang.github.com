@@ -28,7 +28,7 @@ post_format: [ ]
     </head>
     <body>
     
-    ## CSS3 10秒倒计时沙漏 - Webkit only @44ux.com
+    ## CSS3 10秒倒计时沙漏 - Webkit only @jiguang.github.com
     
     
     
@@ -52,6 +52,6 @@ post_format: [ ]
 
 鼠标hover上去触发，没有使用JS，修改倒计时的时间只需要改掉 -webkit-transition 中的两个10s即可。目前由于鼠标移出后会恢复原来的状态，所以会有点儿奇怪，感觉像是水被抽回去的效果。点击这里[查看DEMO][3]。
 
- [1]: http://44ux.com/index.php/tag/css3/ "css3"
- [2]: http://44ux.com/wp-content/uploads/2012/03/sandglass.png "sandglass.png"
- [3]: http://44ux.com/demo/css3-sandglass.html
+ [1]: http://jiguang.github.com/index.php/tag/css3/ "css3"
+ [2]: http://jiguang.github.com/content/uploads/2012/03/sandglass.png "sandglass.png"
+ [3]: http://jiguang.github.com/demo/css3-sandglass.html

@@ -5,7 +5,7 @@ excerpt:
 layout: post
 category:
   - html-css
-  - 奇技淫巧
+  - Tricks
 
 tags:
   - 性能优化
@@ -80,7 +80,7 @@ Expression 只有 IE 支持，而且他的执行比大多数人想象的要频�
      	Position: absolute; left: 20px; top: 20px;
      }
 
-[44ux.com版权所有][1]
+[jiguang.github.com版权所有][1]
 
 **2. 关键要点**
 
@@ -228,7 +228,7 @@ Expression 只有 IE 支持，而且他的执行比大多数人想象的要频�
 
     button.indented {...}----->>.button-indented {...}
 
-程序员们经常会给某个 Class 前面加上标签名称（Tag Name），以更精确且快速的定位该节点，但是这样往往效率更差。因为页面上的 class 在全局范围内来讲应该是唯一的，用唯一的 Class 名称来定位一个节点往往比组合定位更加快捷。事实上，这种做法也可以避免由于开发修改页面元素的类型（Tag）而导致的样式失效的情况，做到样式与元素的分离，两者独立维护。[44ux.com版权所有][1]
+程序员们经常会给某个 Class 前面加上标签名称（Tag Name），以更精确且快速的定位该节点，但是这样往往效率更差。因为页面上的 class 在全局范围内来讲应该是唯一的，用唯一的 Class 名称来定位一个节点往往比组合定位更加快捷。事实上，这种做法也可以避免由于开发修改页面元素的类型（Tag）而导致的样式失效的情况，做到样式与元素的分离，两者独立维护。[jiguang.github.com版权所有][1]
 
 **2.19 尽量减少规则数量**
 
@@ -298,7 +298,7 @@ Descendant 选择器是耗时相对高的选择器，通常来讲，它在 CSS �
 
 可使用[YUI Compressor][5]或类似软件进行压缩后再发布。
 
-[44ux.com版权所有][1]
+[jiguang.github.com版权所有][1]
 
 **3. 高级技巧**
 
@@ -429,7 +429,7 @@ filter的版本是IE8以下的，–ms-filter的版本是IE9以上的，YUI会�
     <link rel="stylesheet" href="http://css.somedomain.com/global.css" type="text/css" />
     <link rel="stylesheet" href="http://css.somedomain.com/home.css" type="text/css" />
 
-[44ux.com版权所有][1]
+[jiguang.github.com版权所有][1]
 
 **参考资料：**
 
@@ -449,8 +449,8 @@ filter的版本是IE8以下的，–ms-filter的版本是IE9以上的，YUI会�
 
 [http://www.ibm.com/developerworks/cn/web/1009\_chengfu\_dojocss/][10]
 
- [1]: http://jiguang.github.com "From 44ux.com"
- [2]: http://44ux.com/index.php/tag/html5/ "html5"
+ [1]: http://jiguang.github.com "From jiguang.github.com"
+ [2]: http://jiguang.github.com/index.php/tag/html5/ "html5"
  [3]: http://validator.w3.org/nu/
  [4]: http://jigsaw.w3.org/css-validator/
  [5]: http://yuilibrary.com/projects/yuicompressor

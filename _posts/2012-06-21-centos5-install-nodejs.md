@@ -56,4 +56,4 @@ post_format: [ ]
 
 参考文献：http://stuff.blat.co.za/2011/06/03/installing-node-js-on-centos-5-5/
 
- [1]: http://44ux.com/index.php/tag/nodejs-2/ "nodejs"
+ [1]: http://jiguang.github.com/index.php/tag/nodejs-2/ "nodejs"

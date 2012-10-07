@@ -31,4 +31,4 @@ THE END
 相关链接：[Eric Meyer 新作《Smashing CSS》中文版样章][2]
 
  [1]: http://jiguang.github.com "译者"
- [2]: http://44ux.com/index.php/2012/04/smashing-css-sample-chapter/
+ [2]: http://jiguang.github.com/index.php/2012/04/smashing-css-sample-chapter/

@@ -175,4 +175,4 @@ http://www.adobe.com/devnet/[html5][14]/articles/flame-on-a-beginners-guide-to-e
  [14]: http://www.slideshare.net/jiguang/java-scriptmvcwithemberjs "Java script+mvc+with+emberjs"
  [15]: http://www.slideshare.net/
  [16]: http://www.slideshare.net/jiguang
- [17]: http://44ux.com/demo/ember/index.html
+ [17]: http://jiguang.github.com/demo/ember/index.html

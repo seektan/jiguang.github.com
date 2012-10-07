@@ -48,7 +48,7 @@ Firefox 10内置的这个工具目前只能查看HTML结构和CSS属性，对于
  [1]: http://www.mozilla.org/en-US/firefox/features/
  [2]: http://getfirebug.com/
  [3]: http://jiguang.github.com
- []: http://44ux.com/wp-content/uploads/2012/02/firefox_developer_tool.png
+ []: http://jiguang.github.com/content/uploads/2012/02/firefox_developer_tool.png
  [5]: http://player.youku.com/player.php/sid/XMzQ3NzM0MTI4/v.swf
  [6]: https://developer.mozilla.org/en/Firefox_10_for_developers
  [7]: http://www.webkit.org/blog-files/3d-transforms/poster-circle.html

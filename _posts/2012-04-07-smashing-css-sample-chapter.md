@@ -54,11 +54,11 @@ post_format: [ ]
  [1]: http://www.amazon.com/Smashing-CSS-Professional-Techniques-Magazine/dp/047068416X/ref=sr_1_1?ie=UTF8&qid=1333944011&sr=8-1
  [2]: http://meyerweb.com/
  [3]: http://www.amazon.cn/
- [4]: http://44ux.com/wp-content/uploads/2012/04/smashingcss.jpg "smashingcss.jpg"
- [5]: http://44ux.com/wp-content/uploads/2012/04/smashingcss1.jpg "smashingcss1.jpg"
+ [4]: http://jiguang.github.com/content/uploads/2012/04/smashingcss.jpg "smashingcss.jpg"
+ [5]: http://jiguang.github.com/content/uploads/2012/04/smashingcss1.jpg "smashingcss1.jpg"
  [6]: http://jiguang.github.com "笔者"
- [7]: http://44ux.com/index.php/2012/02/smashing-css-firebug-quick-tutorial/
+ [7]: http://jiguang.github.com/index.php/2012/02/smashing-css-firebug-quick-tutorial/
  [8]: http://www.ituring.com.cn/book/924
  [9]: http://www.ituring.com.cn/
- [10]: http://44ux.com/upload/page/smahing-css-sample-chapter.htm
+ [10]: http://jiguang.github.com/upload/page/smahing-css-sample-chapter.htm
  [11]: http://www.ituring.com.cn/book/download/72f70328-2304-4e16-be2a-35f50d814317

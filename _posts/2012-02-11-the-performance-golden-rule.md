@@ -55,9 +55,9 @@ post_format: [ ]
  [9]: http://www.stevesouders.com/blog/2009/04/27/loading-scripts-without-blocking/
  [10]: http://www.stevesouders.com/blog/2009/05/12/sharding-dominant-domains/
  [11]: http://jiguang.github.com "译者"
- [12]: http://44ux.com/wp-content/uploads/2012/02/golden-waterfall.png "golden-waterfall.png"
- [13]: http://44ux.com/wp-content/uploads/2012/02/golden-top10.png "golden-top10.png"
- [14]: http://44ux.com/wp-content/uploads/2012/02/golden-9990.png "golden-9990.png"
- [15]: http://44ux.com/wp-content/uploads/2012/02/golden-startups.png "golden-startups.png"
+ [12]: http://jiguang.github.com/content/uploads/2012/02/golden-waterfall.png "golden-waterfall.png"
+ [13]: http://jiguang.github.com/content/uploads/2012/02/golden-top10.png "golden-top10.png"
+ [14]: http://jiguang.github.com/content/uploads/2012/02/golden-9990.png "golden-9990.png"
+ [15]: http://jiguang.github.com/content/uploads/2012/02/golden-startups.png "golden-startups.png"
  [16]: http://httparchive.org/
- [17]: http://44ux.com/wp-content/uploads/2012/02/top50ksite1.png "top50ksite.png"
+ [17]: http://jiguang.github.com/content/uploads/2012/02/top50ksite1.png "top50ksite.png"

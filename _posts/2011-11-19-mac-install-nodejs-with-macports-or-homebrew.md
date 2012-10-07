@@ -45,11 +45,11 @@ post_format: [ ]
 
 即可安装。
 
- [1]: http://44ux.com/index.php/tag/mac/ "mac"
- [2]: http://44ux.com/index.php/tag/nodejs-2/ "nodejs"
+ [1]: http://jiguang.github.com/index.php/tag/mac/ "mac"
+ [2]: http://jiguang.github.com/index.php/tag/nodejs-2/ "nodejs"
  [3]: http://www.macports.org/install.php
  [4]: http://mxcl.github.com/homebrew/
  [5]: http://jiguang.github.com "姬光"
- [6]: http://44ux.com/index.php/tag/git/ "git"
+ [6]: http://jiguang.github.com/index.php/tag/git/ "git"
  [7]: http://help.github.com/win-set-up-git/
  [8]: http://nodejs.org/#download

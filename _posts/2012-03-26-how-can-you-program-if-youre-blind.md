@@ -5,7 +5,7 @@ excerpt:
 layout: post
 category:
 
-  - 生活点滴
+  - LifeStyle
 tags:
   - 可访问性
 post_format: [ ]
@@ -97,8 +97,8 @@ post_format: [ ]
  [3]: http://jiguang.github.com "笔者"
  [4]: http://freedomscientific.com/products/fs/jaws-product-page.asp
  [5]: http://jiguang.github.com "译者"
- [6]: http://44ux.com/wp-content/uploads/2012/03/fudiao-2.jpg "fudiao-2.jpg"
- [7]: http://44ux.com/index.php/tag/mac/ "mac"
+ [6]: http://jiguang.github.com/content/uploads/2012/03/fudiao-2.jpg "fudiao-2.jpg"
+ [7]: http://jiguang.github.com/index.php/tag/mac/ "mac"
  [8]: http://www.freedomscientific.com/products/fs/jaws-product-page.asp
  [9]: http://en.wikipedia.org/wiki/Refreshable_Braille_display
  [10]: http://en.wikipedia.org/wiki/List_of_screen_readers
