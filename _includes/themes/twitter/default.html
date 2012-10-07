@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} -- {{ site.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
@@ -44,15 +44,14 @@
       <div class="content">
         {{ content }}
       </div>
+    </div> <!-- /container -->
 
-      <footer>
-        <p>&copy; {{ site.author.name }} 2012 
+    <div class="footer">
+        <p>&copy; {{ site.author.name }} 2012
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
-      </footer>
-
-    </div> <!-- /container -->
+    </div>
 
     {% include JB/analytics %}
   </body>

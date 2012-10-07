@@ -1,35 +1,60 @@
 ---
 layout: page
 title: Hello cruel world!
-tagline: Front-end Development / HTML(5) / CSS(3) / JavaScript / NodeJs
+tagline: Life is like a box of chocolates, you never know what you're gonna get.
 ---
 {% include JB/setup %}
 
 ## What's new?
 
-博客文章已全部迁移到 Github Pages，拥有更快的访问速度，更稳定的服务，源代码管理，像Geek一样写博客！
+博客文章已全部迁移到 Github Pages，拥有更快的访问速度，更稳定的服务，版本控制，防止挂马等诸多优点，还不快来？
 
-## Recomend Articles
+## About
 
-<ul class="posts">
-    <li><a href="/JavaScript/2012/08/21/ember-js-doc-cn.html">Ember.js 中文文档</a></li>
-    <li><a href="/JavaScript/2012/05/16/basic-javascript-coding-pattern.html">JavaScript基本编码模式</a></li>
-    <li><a href="/html-css/Tricks/2012/05/03/high-efficient-css-technical.html">高效CSS开发核心要点</a></li>
-    <li><a href="/DevTools/2012/01/21/git-the-simple-guide.html">Git超简洁教程</a></li>
-    <li><a href="/LifeStyle/2012/03/26/how-can-you-program-if-youre-blind.html">盲人程序员的编程生涯</a></li>
-</ul>
+<div class="contact">
+This blog: 这里有关于#前端开发技术#的一些粗浅文章 <br>
+This guy: 姬光/男/80后/前端开发/小白 <br>
+Find me at:
+<a href="http://weibo.com/jiguang1984" title="新浪微博" target="_blank">新浪微博</a> or
+<a href="http://t.qq.com/jiguang1984" title="腾讯微博" target="_blank">腾讯微博</a> or
+<a href="mailto:jiguang1984@gmail.com" title="Email Me">Email:jiguang1984#gmail.com</a> <br>
+If you're lucky, QQ me: <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8"><img border="0"  src="http://wpa.qq.com/imgd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8&pic=41" alt="点击这里给我发消息" title="点击这里给我发消息" style="vertical-align:-5px;"></a>
+</div>
 
 ## Recent Articles
 
 <ul class="posts">
   {% for post in site.posts limit:10 %}
-    <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> -- <span class="post-date">{{ post.date | date_to_string }}</span></li>
+    <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> -- <span class="post-sub">{{ post.date | date_to_string }}</span></li>
   {% endfor %}
+</ul>
+
+## Recomend Articles
+
+<ul class="posts">
+    <li><a href="/JavaScript/2012/08/21/ember-js-doc-cn.html">Ember.js 中文文档</a> -- <span class="post-sub">官方文档中文版</span></li>
+    <li><a href="/JavaScript/2012/05/16/basic-javascript-coding-pattern.html">JavaScript基本编码模式</a> -- <span class="post-sub">JavaScript编码中的一些基本技巧，仅供参考</span></li>
+    <li><a href="/html-css/Tricks/2012/05/03/high-efficient-css-technical.html">高效CSS开发核心要点</a> -- <span class="post-sub">CSS编码中的一些基本技巧，根据 Google规范整理</span></li>
+    <li><a href="/DevTools/2012/01/21/git-the-simple-guide.html">Git超简洁教程</a> -- <span class="post-sub">简明易懂的Git教程</span></li>
+    <li><a href="/LifeStyle/2012/03/26/how-can-you-program-if-youre-blind.html">盲人程序员的编程生涯</a> -- <span class="post-sub">看看盲人程序员是如何工作的</span></li>
+</ul>
+
+## Tag Cloud
+
+<ul class="tag_box inline">
+  {% assign tags_list = site.tags %}
+  {% include JB/tags_list %}
 </ul>
 
 ## Recomend Books
 
-<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22785480">《精彩绝伦的CSS》</a>
+<div class="rec-book">
+<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22785480">精彩绝伦的CSS</a>
+
+<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22628333">JavaScript高级程序设计</a>
+
+<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22722790">JavaScript权威指南</a>
+</div>
 
 ## Subscribe
 
@@ -48,16 +73,7 @@ tagline: Front-end Development / HTML(5) / CSS(3) / JavaScript / NodeJs
 <!-- Feedsky FEED发布代码结束 -->
 </div>
 
-## Contact Me
-
-<div class="contact">
-You can find me at:
-<a href="http://weibo.com/jiguang1984" title="新浪微博">新浪微博</a> or
-<a href="http://t.qq.com/jiguang1984" title="腾讯微博">腾讯微博</a> or
-<a href="mailto:jiguang1984@gmail.com" title="腾讯微博">Email:jiguang1984#gmail.com</a>
-</div>
-
-## Friend Links
+## Friends Links
 
 <ul class="friends-links">
     <li><a href="http://xiedexu.cn/" target="_blank">DeXu.Xie's Blog</a></li>

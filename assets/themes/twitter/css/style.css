@@ -1,13 +1,16 @@
 /* Override some defaults */
-html, body {
+html, body{
   background-color: #eee;
   font:14px/1.5em Georgia, "Times New Roman", Times, serif;
 }
 .navbar {
   margin-bottom: 0;
 }
-.container > footer {
-  margin-top: 20px;
+.container{width:985px;}
+.footer {
+  width: 985px;
+  margin: 20px auto;
+  text-align:center;
 }
 .container > footer p {
   text-align: center; /* center align it with the container */
@@ -24,6 +27,9 @@ html, body {
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
      -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
           box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+.content p{
+    font:14px/1.5em Georgia, "Times New Roman", Times, serif;
 }
 
 /* Page header tweaks */
@@ -71,7 +77,8 @@ html, body {
 }
 
 /* add by laser 2012-10-07*/
-.posts .post-date{color:#999;}
+.posts .post-sub{color:#999;}
 .friends-links{overflow:hidden;*zoom:1;margin:0;padding:0;}
 .friends-links li{list-style:none;float:left;margin-right:10px;}
 .feed a{display:inline-block;*display:inline;*zoom:1;margin-right:10px;}
+.rec-book a{margin-right:10px;}
