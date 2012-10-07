@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>性能黄金法则</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Jekyll Bootstrap</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>性能黄金法则 <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <p>原文地址：<a href='http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/'>http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/</a></p>
+
+<p>昨天我在<a href='http://www.googleventures.com/'>Google Ventures</a>为他们的一些投资公司做了个研讨会。我不知道听众会有多少关于性能优化的背景知识，因此我从2007年的第一个演示开始，回顾了几乎跟性能优化相关的所有内容，真的是很怀旧啊。话说距离我开始谈论<a href='http://stevesouders.com/hpws/'>《高性能网站建设指南》</a>的最佳实践已经很多年了，我重新审视了这些早期的提示，比如<a href='http://developer.yahoo.com/blogs/ydn/posts/2007/04/rule_1_make_few/'>减少HTTP请求</a>，和<a href='http://developer.yahoo.com/blogs/ydn/posts/2007/05/high_performanc_2/'>添加Expires头</a>，还有<a href='http://developer.yahoo.com/blogs/ydn/posts/2007/07/high_performanc_3/'>压缩组件</a>。</p>
+
+<p>不过我还需要回顾得更远一些，想到在还没有<a href='http://velocityconf.com/velocity2012'>Velocity</a>和<a href='http://www.stevesouders.com/blog/2010/05/07/wpo-web-performance-optimization/'>WPO</a>之前，我或许还得澄清一下为什么我会如此关注前端性能。我找到了当时包含性能黄金法则的幻灯片：</p>
+
+<blockquote>
+<p>80-90%的最终用户响应时间都花在前端上。<br />从这里开始。</p>
+</blockquote>
+
+<p>还有一些其他相关的幻灯片展示了一些流行的网站分别花在后端和前端的时间，但是数据已经很旧并且很有限了，因此我决定更新一下，下面是我的成果。</p>
+
+<p>首先是一个瀑布图，它展示了前后端的划分。这个瀑布图是<a href='http://www.linkedin.com/'>LinkedIn</a>的。这里“后端”的时间是指从服务器返回第一个字节到客户端所花费的时间。它通常包含大部分的后端处理：数据库查询、远程web服务调用、拼接HTML等等。其余的是“前端”的时间，它包含了显而易见的前端阶段，诸如执行JavaScript代码以及渲染页面等。它同时也包含了下载页面上所有相关资源的时间。我把这些划分到前端时间里是因为，有许多切实可行的办法可以减少这个时间，比如 <a href='http://www.stevesouders.com/blog/2009/04/27/loading-scripts-without-blocking/'>异步加载脚本</a>，<a href='http://developer.yahoo.com/blogs/ydn/posts/2007/04/rule_1_make_few/'>合并脚本和样式表</a>以及<a href='http://www.stevesouders.com/blog/2009/05/12/sharding-dominant-domains/'>域名分散</a>（即通过多个域名实现并行下载的策略  ——<a title='译者' href='http://www.44ux.com'>译者</a>注）等。</p>
+
+<p><img alt='Golden waterfall' src='http://44ux.com/wp-content/uploads/2012/02/golden-waterfall.png' /></p>
+
+<p>对于排名前十位的网站分析结果显示，平均在前端花费的时间占比为76%，略低于黄金法则中提出的80-90%的值。不过别忘了，这些网站的前端都经过了高度的优化，并且其中两个是载入资源非常少的搜索页面（而不是结果页面）。</p>
+
+<p><img alt='Golden top10' src='http://44ux.com/wp-content/uploads/2012/02/golden-top10.png' /></p>
+
+<p>对于排名10000左右的10个网站进行的分析，可以得到一个更典型的视图。平均在前端花费的时间占比为92%，高于排名前10的76%，甚至高于黄金法则中建议的80-90%。</p>
+
+<p><img alt='Golden 9990' src='http://44ux.com/wp-content/uploads/2012/02/golden-9990.png' /></p>
+
+<p>为了使与会者接受这个法则，我展示了他们自己网站的前后端花费时间占比，得到的结果为前端占比84%。这有助于使他们的认可我的理论，即前端的性能才是最难最有挑战的，也是最应该给予关注的。</p>
+
+<p><img alt='Golden startups' src='http://44ux.com/wp-content/uploads/2012/02/golden-startups.png' /></p>
+
+<p>后来我想起来我在<a href='http://httparchive.org/'>HTTP Archive</a>上还有关于网站耗时的信息。不过我一般不展示这些信息，因为我认为真正的用户度量应该更准确一些，不过我计算了被抓取到的50000个网站的前后端耗时占比，结果前端占比为87%。</p>
+
+<p><img alt='Top50ksite' src='http://44ux.com/wp-content/uploads/2012/02/top50ksite1.png' /></p>
+
+<p>能够获取这些比2007年更新的信息来验证性能黄金法则真是太好了，而且它也显示了前端性能优化越来越受重视了。如果你担心可用性和可扩展性，那就关注一下后端。但是如果你担心载入网站时用户等待的时间太久，那么关注前端才是王道。</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/JavaScript/文章归档/2012/02/10/learning-javascript-with-object-graphs-part2" title="通过对象图学习JavaScript [之二]">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/Html+CSS/文章归档/2012/03/12/negative-proximity" title="消极接近（Negative Proximity）">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>11 February 2012</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#性能优化-ref">性能优化 <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#翻译-ref">翻译 <span>9</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Name Lastname 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

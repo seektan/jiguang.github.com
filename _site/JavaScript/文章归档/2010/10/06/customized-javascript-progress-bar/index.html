@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript实现可定制图片的进度条
+</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Jekyll Bootstrap</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>JavaScript实现可定制图片的进度条
+ <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <p>目前关于js进度条的应用，多数都是动态载入，或者纯js+css生成的朴素的进度条。有些时候我们需要在页面中展示一个静态的进度即可，比如网盘剩余空间等等，此时最好只给定一个进度的参数，便可生成全部的进度条。为了美观考虑，<a title='笔者' href='http://www.44ux.com'>笔者</a>尝试采用图片实现进度条，这种进度条的效果依赖于图片的样式和定制的参数，可以很方便地修改进度条的样式。在展示进度时，只需要给相应的html标签里加一个参数即可。下面是基于YUI实现的代码：</p>
+
+<pre><code>var D=YAHOO.util.Dom, E=YAHOO.util.Event;
+
+//可定制的进度条初始化函数，长度可任意，高度依赖背景图片能展示的高度范围
+var initProcess=function( classname, width, height, imgurl){
+    if(!classname)return;
+
+    //处理误传入单位的情况
+    if(width||height){
+        width=width.replace(&#39;px&#39;,&#39;&#39;);
+        height=height.replace(&#39;px&#39;,&#39;&#39;);
+    }
+
+    //处理未定义宽高的情况
+    width=width||100;
+    height=height||20;
+
+    //获取所有进度条容器
+    var containers=D.getElementsByClassName(classname);
+    if(containers){
+
+        //设置容器基本参数
+        D.setStyle(containers,&#39;display&#39;,&#39;none&#39;);
+        D.setStyle(containers,&#39;width&#39;, width+&#39;px&#39;);
+        D.setStyle(containers,&#39;height&#39;, height+&#39;px&#39;);
+
+        //初始化进度
+        for(vari=0, j=containers.length; i&lt;j; i++){
+            var inner=document.createElement(&#39;div&#39;);
+
+            D.setStyle(inner,&#39;background&#39;,&#39;url(&#39;+imgurl+&#39;) repeat 0 50% #f50&#39;);
+
+            if(D.getAttribute(containers[i],&#39;data-value&#39;)){
+                var value=parseInt(D.getAttribute(containers[i],&#39;data-value&#39;));
+
+                if(value&amp;&amp;value&gt;=0&amp;&amp;value&lt;=100){
+                    D.setStyle(inner,&#39;width&#39;, (width/100)*value + &#39;px&#39;);
+                    D.setStyle(inner,&#39;height&#39;, height+&#39;px&#39;);
+                }
+            }
+            containers[i].appendChild(inner);
+        }
+        D.setStyle(containers,&#39;display&#39;,&#39;block&#39;);
+    }
+};
+
+E.onDOMReady(function(){
+    //修改参数可以不同样式展示进度条
+    initProcess(&#39;process-bar&#39;,&#39;200&#39;,&#39;20&#39;,&#39;bar.png&#39;);
+});</code></pre>
+
+<p>这个例子只是千万种解决方案中的一种，根据你的情况可以酌情使用。</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/JavaScript/文章归档/2010/09/28/count-most-shown-character" title="JavaScript笔试题：统计出现最多的字符次数
+">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/Html+CSS/文章归档/2010/11/16/pseudo-classes-and-pseudo-elements" title="伪类(Pseudo-Classes)&伪元素(Pseudo-Elements)详解">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>06 October 2010</span></div>
+
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Name Lastname 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

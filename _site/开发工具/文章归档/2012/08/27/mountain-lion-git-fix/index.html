@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mountain Lion 中 Git “Command Not Found” 错误的解决办法
+</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Jekyll Bootstrap</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Mountain Lion 中 Git “Command Not Found” 错误的解决办法
+ <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <p>如果在之前的 Lion 系统中安装了 <a title='git' href='http://44ux.com/index.php/tag/git/'>git</a>，且升级到了 Mountain Lion 的话，就会出现 git 命令丢失的错误：</p>
+
+<pre><code>&quot;-bash: git: command not found&quot; </code></pre>
+
+<p>当在终端中执行 git 命令时则会出现下图所示：</p>
+
+<p><img alt='Git not found' src='http://44ux.com/wp-content/uploads/2012/08/git-not-found.jpeg' /></p>
+
+<p>不过不用担心，修复这个问题只需要两步（不过对于国内用户时间可能比较漫长）。</p>
+
+<p>Step 1</p>
+
+<p>打开 App Store 下载/更新 XCode，使其为最新版，<a title='笔者' href='http://www.44ux.com'>笔者</a>这里显示为 4.4.1（4F1003）。</p>
+
+<p><img alt='Install command line tools' src='http://44ux.com/wp-content/uploads/2012/08/install-command-line-tools.jpeg' /></p>
+
+<p>Step 2</p>
+
+<p>安装 Xcode 并运行，使用 Command + , 快捷键呼出 Preference 面板，转到 Downloads 面板并找到 Command Line Tools ，然后点击 Install。</p>
+
+<p><img alt='Install xcode' src='http://44ux.com/wp-content/uploads/2012/08/install-xcode.jpeg' /></p>
+
+<p>这时可能会要求你输入一个 Apple Developer ID，如果没有的话注册一个即可。</p>
+
+<p><img alt='Login with apple dev id' src='http://44ux.com/wp-content/uploads/2012/08/login-with-apple-dev-id.jpeg' /></p>
+
+<p>Step 3</p>
+
+<p>好吧，其实到这步已经完成了，再次打开终端，输入 git 就可以看到熟悉的文字啦。</p>
+
+<p><img alt='Test git in terminal' src='http://44ux.com/wp-content/uploads/2012/08/test-git-in-terminal.jpeg' /></p>
+
+<p>PS：上面几步看上去比较简单，但是对于国内用户来说 XCode 的下载和更新真是煎熬啊~</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/文章归档/生活点滴/2012/08/22/delete-cydia-wrong-repos" title="彻底删除 Cydia 中删不掉的无效源
+">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/Html+CSS/文章归档/2012/08/27/normalize-css-reset-for-html5" title="Normalize.css 支持 HTML5 的CSS Reset">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>27 August 2012</span></div>
+
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Name Lastname 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

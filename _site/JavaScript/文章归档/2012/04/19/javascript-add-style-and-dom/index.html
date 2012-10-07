@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript动态插入样式与结构</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Jekyll Bootstrap</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>JavaScript动态插入样式与结构 <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <p>JavaScript动态插入样式有两种情况，一种为插入link元素用于包含外部文件，另一种为插入style元素用于指定嵌入样式。</p>
+
+<p>第一种情况很简单，假设要在文档中插入如下元素：</p>
+
+<pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&gt;</code></pre>
+
+<p>那么使用这样的代码即可：</p>
+
+<pre><code>var link = document.getElementById(&quot;link&quot;);
+link.rel = &quot;stylesheet&quot;;
+link.type = &quot;text/css&quot;;
+link.href = &quot;style.css&quot;;
+var head = document.getElementByTagName(&quot;head&quot;)[0];
+head.appendChild(link);</code></pre>
+
+<p>不过要注意，必须将link元素添加到head而不是body中，才能保证在所有浏览器中行为一致。可以将这段代码封装为以下函数：</p>
+
+<pre><code>function loadStyle(url){
+	var link = document.getElementById(&quot;link&quot;);
+	link.rel = &quot;stylesheet&quot;;
+	link.type = &quot;text/css&quot;;
+	link.href = url;
+	var head = document.getElementByTagName(&quot;head&quot;)[0];
+	head.appendChild(link);
+}</code></pre>
+
+<p>另一种动态插入样式的方式是使用style元素：</p>
+
+<pre><code>&lt;style type=&quot;text/css&quot; &gt;
+body{background-color: red}
+&lt;/style&gt;</code></pre>
+
+<p>如果按照相同的逻辑，下面的代码应该是有效的：</p>
+
+<pre><code>var style = document.createElement(&quot;style&quot;);
+style.type = &quot;text/css&quot;;
+style.appendChild(document.createTextNode(&quot;body{background-color: red}&quot;));
+var head = document.getElementsByTagName(&quot;head&quot;)[0];
+head.appendChild(style);</code></pre>
+
+<p>不过事实上，这段代码只能在Firefox、Safari、Chrome和Opera中运行，在IE中则会报错。IE会将style当做一个特殊的节点，不允许访问其子节点。解决这个问题的方法就是访问元素的styleSheet属性，该属性又有一个cssText属性，可以接受CSS代码。代码如下：</p>
+
+<pre><code>var style = document.createElement(&quot;style&quot;);
+style.type = &quot;text/css&quot;;
+try{
+	style.appendChild(document.createTextNode(&quot;body{background-color:red} &quot;));
+} catch(ex){
+	style.styleSheet.cssText = &quot;body{background-color:red} &quot;;
+}
+var head = document.getElementByTagName(&quot;head&quot;)[0];
+head.appendChild(style);</code></pre>
+
+<p>整理成通用的函数则为：</p>
+
+<pre><code>function loadStyleString(css){
+	var style = document.createElement(&quot;style&quot;);
+	style.type = &quot;text/css&quot;;
+	try{
+		style.appendChild(document.createTextNode(css));
+	} catch(ex){
+		style.styleSheet.cssText = css;
+	}
+	var head = document.getElementByTagName(&quot;head&quot;)[0];
+	head.appendChild(style);
+}</code></pre>
+
+<p>那么，上面介绍的这些都是只插入样式的情况，如果样式和结构一起插入的话会有发生什么情况呢？例如，我们需要向页面中插入如下代码：</p>
+
+<pre><code>&lt;div class=&quot;foo&quot;&gt;This is a test&lt;/div&gt;</code></pre>
+
+<p>我们可能首先会想到innerHTML，直接将整段代码作为某个容器的innerHTML插入，但是你会发现在所有现代浏览器中都没问题，但是在IE8以下样式没有生效。这应该是浏览器渲染方式的问题，只有使用JavaScript异步加载样式和结构时才会出现，如果由后台吐出就不会有这个问题。如果想了解更多浏览器的工作原理，请看Ghost的这篇<a href='http://www.cssforest.org/blog/index.php?id=195'>《浏览器工作原理浅析》</a>。</p>
+
+<p>打开调试工具可以发现在dom结构中并没有生成style标签。如前所示，这一步会有兼容性问题，可以按照前面的代码进行处理，将style元素添加到head中即可解决IE中这个问题。</p>
+
+<pre><code>// 方案1：单独提取style将其插入到head中
+code.replace(regExp, function(match, cssText){
+
+var head = document.getElementsByTagName(&#39;head&#39;)[0],
+	style = document.createElement(&#39;style&#39;),
+	rules = document.createTextNode(cssText);
+
+	style.type = &#39;text/css&#39;;
+	if(style.styleSheet)
+		style.styleSheet.cssText = rules.nodeValue;
+	else
+		style.appendChild(rules);
+	head.appendChild(style);
+
+	return &#39;&#39;;
+});</code></pre>
+
+<p>另外，经过测试<a title='笔者' href='http://www.44ux.com'>笔者</a>发现还有另外一种解决方案，即将style元素放到dom结构下方，然后就可以直接使用innerHTML了。那么我们可以写一段脚本，将代码中的style部分提取出来，并将其挪到dom结构的下方：</p>
+
+<pre><code>var regExp = /&lt;style([\s\S]*?)&lt;/style&gt;/ig;
+
+// 方案2：将style放到代码底部
+if(code.match(regExp)[0]){
+	code = code.replace(regExp,&#39;&#39;) + code.match(regExp)[0];
+	document.getElementById(container).innerHTML = code;
+}</code></pre>
+
+<p>那么如何才能知道innerHTML操作的有没有成功呢？如果你使用类库的话，可以检测IE浏览器版本小于等于8。当然，还有更简洁一点的办法，如果innerHTML插入style成功了，则在dom结构中会多出一个style节点。那么我们可以计算插入前后页面中style节点的个数来判断是否成功。可以通过以下一个简单的函数来计算style节点个数：</p>
+
+<pre><code>// 计算页面内style节点的数目
+function countStyleSheets(){
+	return document.getElementsByTagName(&#39;style&#39;).length;
+}</code></pre>
+
+<p>然后在执行innerHTML插入操作后再比较一下：</p>
+
+<pre><code>if(countStyleSheets() === original){}</code></pre>
+
+<p>这样就可以根据判断结果来决定是否需要额外的操作，在需要使用JavaScript同时插入style和dom时可以采用这种方式。</p>
+
+<p><a href='http://44ux.com/demo/apply-custom-code.html'>查看DEMO</a></p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/Html+CSS/文章归档/2012/04/07/smashing-css-sample-chapter" title="Eric Meyer 新作《Smashing CSS》中文版样章试读
+">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/Html+CSS/文章归档/2012/04/22/smashing-css-preface" title="精彩绝伦的CSS 译者序">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>19 April 2012</span></div>
+
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Name Lastname 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

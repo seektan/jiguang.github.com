@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript万能表单验证</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Jekyll Bootstrap</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Javascript万能表单验证 <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <p>大家都知道验证表单采用正则表达式，在表单是固定的情况下，或者已知可以生成什么样的表单的情况下比较容易操作。但是有些情况下，或许表单是有一组定制的数据生成的，我们无法预知表单的类型，id等信息，那么是不是就只能后台验证了呢？这里<a title='笔者' href='http://www.44ux.com'>笔者</a>做了一个简单的验证程序，可以大致验证input和select必须有值，radio和checkbox至少要选中一项，代码中用到了几个YUI的函数，也可以自己用原生js或其他的库改写一下。</p>
+
+<pre><code>var D = YAHOO.util.Dom;
+
+var checkAll = function(aClass){
+    var list = D.getElementsByClassName(aClass),
+        tempName = &#39;&#39;,count,tempValue = false,value = true;
+
+    for(var i = 0, j = list.length; i&lt;j; i++){
+        if((list[i].name != &#39;&#39;)&amp;&amp;(list[i].type == &#39;radio&#39;||list[i].type == &#39;checkbox&#39;)){
+
+            if(list[i].name != tempName){
+                tempName = list[i].name;
+                tempValue = false;
+                count = document.getElementsByName(tempName).length-1;
+                tempValue = tempValue||(list[i].checked);
+            }else{
+                tempValue = tempValue||(list[i].checked);
+            }
+
+            if(count != 0){
+                count--;
+            }else{
+                value = value &amp;&amp; tempValue;
+                tempValue = false;
+                tempName = &#39;&#39;;
+            }
+
+        }else if(list[i].type == &#39;text&#39;||list[i].type == &#39;password&#39;||list[i].type == &#39;select-one&#39;){
+            value=value&amp;&amp;(list[i].value!=&#39;&#39;);
+        }
+
+    }
+    return value;
+};</code></pre>
+
+<p>PS：这个需求有点儿蛋疼了，不过在实际工作中，什么奇怪的需求都会遇到，你懂的。</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev disabled"><a>&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/JavaScript/文章归档/2010/08/16/methods-for-insert-options-into-select-with-javascript" title="JavaScript动态添加Option的几种方式
+">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>30 July 2010</span></div>
+
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Name Lastname 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mac系统隐藏文件（Finder）的两种方法
+</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Jekyll Bootstrap</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Mac系统隐藏文件（Finder）的两种方法
+ <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <p><a title='mac' href='http://44ux.com/index.php/tag/mac/'>mac</a>系统的Finder中默认是不显示隐藏文件的，搜索也搜不到。下面介绍两种显示和隐藏文件的办法。</p>
+
+<p>打开终端，通过下面的两行命令可以控制是否显示隐藏文件，注意大小写：</p>
+
+<p>显示Mac隐藏文件的命令：</p>
+
+<pre><code>defaults write com.apple.finder AppleShowAllFiles -bool true</code></pre>
+
+<p>隐藏Mac隐藏文件的命令：</p>
+
+<pre><code>defaults write com.apple.finder AppleShowAllFiles -bool false</code></pre>
+
+<p>键入相应命令后回车，然后关闭终端并重启Finder后才能生效。</p>
+
+<p>另外还有一条终端命令可以直接控制文件或文件夹的显隐：</p>
+
+<p>隐藏文件/文件夹命令：</p>
+
+<pre><code>chflags hidden (文件/文件夹的相对或绝对路径)</code></pre>
+
+<p>例如输入：</p>
+
+<pre><code>chflags hidden /Users/jiguang/Desktop/test</code></pre>
+
+<p>就可以隐藏桌面上的test文件夹</p>
+
+<p>显示文件/文件夹命令：</p>
+
+<pre><code>chflags nohidden (文件/文件夹的相对或绝对路径)</code></pre>
+
+<p>例如输入：</p>
+
+<pre><code>chflags nohidden /Users/jiguang/Desktop/test</code></pre>
+
+<p>就可以显示刚才隐藏掉的test文件夹了。</p>
+
+<p>这两种方法都只是设置Finder中的文件的显隐的，对于会使用终端的同学就不管用了。所以，还是换个地方把<a href='http://www.baidu.com/s?bs=mac%CF%B5%CD%B3%C8%E7%BA%CE%CF%D4%CA%BE%BA%CD%D2%FE%B2%D8%CE%C4%BC%FE&amp;f=8&amp;rsv_bp=1&amp;rsv_spt=3&amp;wd=%B2%D4%BE%AE%BF%D5&amp;inputT=1572'>苍井空</a>、<a href='http://www.baidu.com/s?bs=%B2%D4%BE%AE%BF%D5&amp;f=3&amp;rsv_bp=1&amp;rsv_spt=3&amp;wd=%CC%EC%BA%A3%D2%ED&amp;oq=%CC%EC%BB%B9%D2%D4&amp;rsp=0&amp;rsv_sug2=0&amp;inputT=3695'>天海翼</a>、<a href='http://www.baidu.com/s?bs=%CC%EC%BA%A3%D2%ED&amp;f=8&amp;rsv_bp=1&amp;rsv_spt=3&amp;wd=%D0%A1%D4%F3%C2%EA%C0%FB%D1%C7&amp;inputT=2213'>小泽玛利亚</a>等姐妹们好好保管吧。</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/lessons/2011/12/29/jekyll-introduction" title="Jekyll Introduction">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/文章归档/生活点滴/2011/12/29/story-of-a-song" title="歌曲《何日君再来》中的故事">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>29 December 2011</span></div>
+
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Name Lastname 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

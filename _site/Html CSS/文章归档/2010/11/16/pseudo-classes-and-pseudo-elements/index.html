@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>伪类(Pseudo-Classes)&伪元素(Pseudo-Elements)详解</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Jekyll Bootstrap</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>伪类(Pseudo-Classes)&伪元素(Pseudo-Elements)详解 <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <p>对于CSS中的伪类与伪对象，很多同学都不是很清楚，而且非常容易混淆，这里<span>笔者</span>尝试来解释一下它们的区别以及如何使用等知识。</p>
+
+<p>那么什么是伪类呢？之所以说它是“伪”的，不是为了赶时髦，其实可以理解为，它不是真正的一类对象，而是一类对象的某种状态。比如一类链接<pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;a&gt;的hover状态，就是个“伪”的类。</pre></p>
+
+<p>而伪对象呢，可以理解为本身不是单独的全新的对象，而是将已有的某些对象中划分出来一些，所以是“伪”对象。</p>
+
+<p>下 面引用《CSS权威指南》中的一段话帮助大家理解，伪类和伪元素，它们允许将样式应用于文档中不存在的结构上，或者是通过当前元素状态甚至是文档自身的状 态而推断的东西上。换句话说，可以不依赖于文档结构，而且在不能简单地通过研究文档的标记来推断的情况下，将样式应用于文档的某个部分。</p>
+
+<p>下面看一下伪类和伪对象都有哪些：</p>
+
+<dl>
+<dt><strong>伪类：</strong></dt>
+
+<dd>
+<p>link :hover :active :visited :focus :first-child :first :left :right :lang</p>
+</dd>
+
+<dt><strong>伪对象:</strong></dt>
+
+<dd>
+<p>first-letter :first-line :before :after</p>
+</dd>
+
+<dt>对于伪类，可能最常用的就是链接的样式，即:hover和:visited，如果需要将样式设置的比较全面，那么:link :hover :active :visited都需要设置，且要特别注意LVHA的顺序，否则在有些浏览器下会有bug。</dt>
+
+<dd>
+<p>link主要可以用来区分定位锚点和链接，因为二者都是<pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;a&gt;标签，而只有:link可以区分出含有href属性的&lt;a&gt;标签，即作为链接的&lt;a&gt;标签。</pre></p>
+</dd>
+</dl>
+
+<p>对于伪对象，上面列出的四个都会用到，相对来说:after伪对象用来清除浮动的应用较多。</p>
+
+<p>下面详细介绍每一个伪类或伪对象的使用方式：</p>
+
+<p><strong>伪类(Pseudo-Classes)</strong></p>
+
+<p><strong>:link</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : link { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置 a 对象在未被访问前的样式。</p>
+
+<p>默认值由浏览器决定。</p>
+
+<p>对于无 href 属性(特性)的 a 对象，此伪类不发生作用。</p>
+
+<p>请参阅 body 对象的 link 属性(特性)和 document 对象的 linkColor 特性。</p>
+
+<p>示例：</p>
+
+<p>a:link { font-size: 14pt; text-decoration: underline; color: blue; }</p>
+
+<p><strong>:hover</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : hover { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置对象在其鼠标悬停时的样式。</p>
+
+<p>在CSS1中此伪类仅可用于 a 对象。对于无 href 属性(特性)的 a 对象，此伪类不发生作用。</p>
+
+<p>在CSS2中此伪类可以应用于任何对象。</p>
+
+<p>示例：</p>
+
+<p>a:hover { font-size: 14pt; text-decoration: underline; color: blue; }</p>
+
+<p>a:hover span{ color:red; }</p>
+
+<p><strong>:active</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : active { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置对象在被用户激活(在鼠标点击与释放之间发生的事件)时的样式。</p>
+
+<p>在CSS1中此伪类仅可用于 a 对象。对于无 href 属性(特性)的 a 对象，此伪类不发生作用。</p>
+
+<p>在CSS2中此伪类可以应用于任何对象。</p>
+
+<p>并且 :active 可以和 :link 以及 :visited 状态同时发生。</p>
+
+<p>示例：</p>
+
+<p>a:active { font-size: 14pt; text-decoration: underline; color: blue; }</p>
+
+<p><strong>:visited</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : visited { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置 a 对象在其链接地址已被访问过时的样式。</p>
+
+<p>默认值由浏览器决定。定义网页过期时间或用户清空历史记录将影响此伪类的作用。</p>
+
+<p>对于无 href 属性(特性)的 a 对象，此伪类不发生作用。</p>
+
+<p>请参阅 body 对象的 vlink 属性(特性)和 document 对象的 vlinkColor 特性。</p>
+
+<p>示例：</p>
+
+<p>a:visited { font-size: 14pt; text-decoration: underline; color: blue; }</p>
+
+<p><strong>:first-child</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : first-child { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置 E 的第一个子对象的样式。</p>
+
+<p>示例：</p>
+
+<p>p a:first-child { color: green }</p>
+
+<p>table td:first-child { width:200px; }</p>
+
+<p><strong>:first</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : first { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置页面容器第一页使用的样式。仅用于 @page 规则。</p>
+
+<p>示例：</p>
+
+<p><strong>:left</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : left { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置页面容器位于装订线左边的所有页面使用的样式。仅用于 @page 规则。</p>
+
+<p>示例：</p>
+
+<p><strong>:right</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : right { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置页面容器位于装订线右边的所有页面使用的样式。仅用于 @page 规则。</p>
+
+<p>示例：</p>
+
+<p><strong>:lang</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : lang { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置对象使用特殊语言的内容的样式。</p>
+
+<p>示例：</p>
+
+<p>blockquote:lang(fr) { quotes: ‘?’ ‘ ?’ }</p>
+
+<p>/* 使用法语显示由quotes属性指定的法语的嵌套标记 <em>/</em></p>
+
+<p><strong>:focus</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : focus { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置对象在成为输入焦点(该对象的 onfocus 事件发生)时的样式。</p>
+
+<p>示例：</p>
+
+<p>a:focus { font-size: 14pt; text-decoration: underline; color: blue; }</p>
+
+<p>a:focus img { border: thin solid green }</p>
+
+<p><strong>伪对象(Pseudo-Elements)</strong></p>
+
+<p><strong>:after</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : after { sRules }</p>
+
+<p>说明：</p>
+
+<p>用来和 content 属性一起使用，设置在对象后(依据对象树的逻辑结构)发生的内容。</p>
+
+<p>示例：</p>
+
+<p>table:after { content: END OF TABLE }</p>
+
+<p><strong>:first-letter</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : first-letter { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置对象内的第一个字符的样式。</p>
+
+<p>此伪对象仅作用于块对象。内联要素要使用该属性，必须先设定对象的 height 或 width 属性，或者设定 position 属性为 absolute ，或者设定 display 属性为 block 。</p>
+
+<p>在此伪对象中配合使用 font-size 属性和 float 属性可以制作首字下沉效果。</p>
+
+<p>示例：</p>
+
+<p>p a:first-letter { color: green }</p>
+
+<p>div:first-letter { color:red;font-size:16px;float:left; }</p>
+
+<p><strong>:first-line</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : first-line { sRules }</p>
+
+<p>说明：</p>
+
+<p>设置对象内的第一行的样式。</p>
+
+<p>此伪对象仅作用于块对象。内联要素要使用该属性，必须先设定对象的 height 或 width 属性，或者设定 position 属性为 absolute ，或者设定 display 属性为 block 。</p>
+
+<p>如果未强制指定对象的 width 属性， 首行的内容长度可能不是固定的。</p>
+
+<p>示例：</p>
+
+<p>p a:first-line { color: green }</p>
+
+<p>div:first-line { color:red;font-size:16px; }</p>
+
+<p><strong>:before</strong></p>
+
+<p>语法：</p>
+
+<p>Selector : before { sRules }</p>
+
+<p>说明：</p>
+
+<p>用来和 content 属性一起使用，设置在对象前(依据对象树的逻辑结构)发生的内容。</p>
+
+<p>示例：</p>
+
+<p>em:before { content: url(“ding.wav”); }</p>
+
+<p>对于上面的这些伪类与伪元素，最容易混淆的就是:first-child了，看上去貌似是个伪元素，因为是“第一个孩子”嘛，跟:first-letter和:first-line看上去很像，但后两者确实是伪元素，而:first-child却是伪类。</p>
+
+<dl>
+<dt>我觉得这里可以这样理解：</dt>
+
+<dd>
+<p>first- child是第一个子对象，这个对象可以是任何元素，所以可以当做一“类”来处理，所以是伪类；而:first-letter和:first-line是 第一个字母和第一行，都是特定的文本元素，是前面选择器选取的元素中的一部分，而文档中并未单独存在“首字母”或者“首行”这样的元素，所以它们为伪元 素。</p>
+</dd>
+</dl>
+
+<p>这里再插入一段权威指南中的说明：之所以:first-line和:first-letter被当做伪元素引用，是因为它们在效果上使文档中产生了一个临时的元素。这是应用“虚构标记”的一个最典型的实例，正如CSS规范中所描述的那样。</p>
+
+<p>这里还有个例子可以帮助理解，假设有如下标记：</p>
+
+<p>P:first-line { color: gray; }</p>
+<p>This is a paragraph of text which has only one style applied to it. That style causes the first line to be gray. No other text in the paragraph is affected by this rule (at least, it shouldn’t be).</p>
+<p>进而假设用户代理显示的文本如下：</p>
+
+<p>This is a paragraph of text which has only</p>
+
+<p>one style applied to it. That style causes</p>
+
+<p>the first line to be gray. No other …</p>
+
+<p>等等。既然从“This”到“only”的文本应该是灰色，那么用户代理就可以使用类似于下面的虚构标记：</p>
+<pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;p&gt;&lt;p:first-line&gt;This is a paragraph of text which has only&lt;/p:first-line&gt;
+
+one style applied to it. That style causes the first line to be gray. No other …
+
+上面展示了从理论上来讲，伪元素选择符:first-line是如何工作的。
+
+而&lt;p:first- line&gt;元素并没有出现在源文档中，甚至于它根本就不是一个有效的元素。它的存在是建筑在用户代理之上的，其作用是将:first-line样式 应用于合适的文本块上。换句话说，&lt;p:first-line&gt;不是一个真正意义上的元素，而是一个伪元素。记住，不必再添加任何新标签，用 户代理会完成余下的工作。
+
+**能用于伪对象的属性**
+
+所有font属性&lt;/p&gt; 
+所有color和background属性
+
+text-decoration
+
+vertical-align（如果float属性设置成none）
+
+text-transform
+
+line-height
+
+所有margin属性
+
+所有padding属性
+
+所有border属性
+
+float属性
+
+clear&lt;/td&gt;</pre>
+<p>所有font属性&lt;/p&gt; 所有color和background属性</p>
+
+<p>word-spacing</p>
+
+<p>letter-spacing</p>
+
+<p>text-decoration</p>
+
+<p>vertical-align</p>
+
+<p>text-transform</p>
+
+<p>line-height</p>
+
+<p>clear&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; 这里还有一点需要注意的是，形如下面的例子：</p>
+
+<p>div &gt; p:first-child { text-indent: 0 }</p>
+
+<p>给人感觉似乎是div里面的p的第一个子元素，但事实上它选择的是，作为所有div的第一个子元素且是P的元素。</p>
+
+<p>它将匹配如下代码中的P元素：</p>
+<pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;P&gt; The last P before the note.  
+&lt;DIV&gt;  
+&lt;P&gt; The first P inside the note.  
+&lt;/DIV&gt;</pre>
+<p>而不会匹配下列代码中的第二个P元素：</p>
+<pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;P&gt; The last P before the note.  
+&lt;DIV&gt;  
+&lt;H2&gt;Note&lt;/H2&gt;  
+&lt;P&gt; The first P inside the note.  
+&lt;/DIV&gt;</pre>
+<p>下面的代码将匹配作为P元素的第一个子元素的EM元素：</p>
+
+<p>p:first-child em { font-weight : bold }</p>
+
+<p>注意：既然匿名的盒子（anonymous boxes）不是文档树（document tree）的一部分，那么当计算first-child时，它们也不计算在内。</p>
+
+<p>例如下列代码中的EM：</p>
+<pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;P&gt;abc &lt;EM&gt;default&lt;/EM&gt;
+
+是P元素的第一个子元素。
+
+下面的两个选择器是等效的：
+
+* &gt; a:first-child /* A is first child of any element */  
+a:first-child /* Same */
+
+伪类和伪对象很容易混淆，如果记不准的话很容易出现错误。[css3][2]（[CSS 3 Selectors Working draft][3]）中对此作出了改进，将伪对象用两个冒号表示，即::first-letter的这种形式来表示伪对象，这样就可以很直观地区分伪类和伪对象了。
+
+element:after  { *style properties* }  /* CSS2 syntax */
+
+element::after { *style properties* }  /* CSS3 syntax, not supported by IE8 */
+
+关于伪类(Pseudo-Classes)与伪对象(Pseudo-Elements)的更多信息，可以查看[官方文档][4]，这里就不再赘述了。如果有什么建议或者疑问，可以留言与我交流。
+
+ [1]: http://www.44ux.com
+ [2]: http://44ux.com/index.php/tag/css3/ &quot;css3&quot;
+ [3]: http://www.w3.org/TR/css3-selectors/
+ [4]: http://www.w3.org/TR/CSS2/selector.html#pseudo-elements</pre>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/JavaScript/文章归档/2010/10/06/customized-javascript-progress-bar" title="JavaScript实现可定制图片的进度条
+">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/JavaScript/文章归档/2011/08/19/javascript-regular-expressions" title="Javascript Regular Expressions">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>16 November 2010</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#教程-ref">教程 <span>6</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Name Lastname 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript动态添加Option的几种方式
+</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Jekyll Bootstrap</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>JavaScript动态添加Option的几种方式
+ <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <p>在处理表单的时候，经常会有这样的需求：给定一定的数据来生成某个select的option，或者更进一步，某些option或许预先选中或者有高亮显示。</p>
+
+<p>下面我们就来温习一下几种option的创建方式。这个需求要求某些选项要预先有高亮显示，可以通过添加class来处理。</p>
+
+<p>首先定义一个高亮的class，为了简单处理，只定义红色高亮：</p>
+
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+.hot-games{
+    background-color: #f00;
+}
+&lt;/style&gt;</code></pre>
+
+<p>然后预先定义一些用来生成选项的数据：</p>
+
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+var gameOptions = {
+    &quot;options&quot;: [
+        {
+            &quot;name&quot;:&quot;魔兽世界&quot;,
+            &quot;value&quot;:&quot;50007361&quot;,
+            &quot;isHot&quot;:&quot;false&quot;},
+        {
+            &quot;name&quot;:&quot;龙之谷&quot;,
+            &quot;value&quot;:&quot;50007937&quot;,
+            &quot;isHot&quot;:&quot;false&quot;},
+        {
+            &quot;name&quot;:&quot;永恒之塔&quot;,
+            &quot;value&quot;:&quot;50007385&quot;,
+            &quot;isHot&quot;:&quot;true&quot;},
+        {
+            &quot;name&quot;:&quot;奇迹世界&quot;,
+            &quot;value&quot;:&quot;50007800&quot;,
+            &quot;isHot&quot;:&quot;false&quot;}
+    ]
+};
+&lt;/script&gt;</code></pre>
+
+<p>这里是select元素，需要制定id和name属性：</p>
+
+<pre><code>&lt;select id=&quot;cat&quot; name=&quot;cat&quot; style=&quot;width:130px;&quot;&gt;&lt;/select&gt;</code></pre>
+
+<p>大致有三种方案可以增加option，一种是通过new Option() 构造函数，第二种是通过select.add()函数，第三种是通过增加innerHTML。下面比较一下三种方式的异同：</p>
+
+<p>首先获取到select元素：</p>
+
+<pre><code>var gameCat = document.getElementById(&#39;cat&#39;);</code></pre>
+
+<p>第一种方案，通过new Option()构造函数，该函数属0级DOM，所有浏览器都支持：</p>
+
+<pre><code>//方案1:new Option()构造函数
+for(var i = 0, j = gameOptions.options.length; i&lt;j; i++){
+    gameCat.options[i] = new Option(gameOptions.options[i].name, gameOptions.options[i].value);
+
+    if(gameOptions.options[i].isHot == &#39;true&#39;){
+        gameCat.options[i].className = &#39;hot-games&#39;;
+    }
+}</code></pre>
+
+<p>new Option(text, value)第一个参数为显示的文字，第二个为value值，如果想设置其他属性需要单独操作。</p>
+
+<p>第二种方案，通过document.createElement（）来创建选项，然后再设置选项的属性。在这里w3c标准是可以设置option的 label属性即为显示文本，但事实证明FF并不支持，只是给option增加了一个label属性。而w3c中定义的readonly的属性text，在FF中却可以设置。那么是否需要判断浏览器类型呢？当然不用，该方案代码如下：</p>
+
+<pre><code>//方案2:add()
+for(var i = 0, j = gameOptions.options.length; i&lt;j; i++) {
+    var option = document.createElement(&#39;option&#39;);
+
+    try{
+        //二级DOM中该属性为readonly，但FF确可写，且可显示为选项内容
+        option.text = gameOptions.options[i].name;
+    }catch(e){
+        //IE支持label，可以直接显示为选项的文字
+        option.label = gameOptions.options[i].name;
+    }
+
+    option.value = gameOptions.options[i].value;
+    option.className = (gameOptions.options[i].isHot==&#39;true&#39;)?&#39;hot-games&#39;:&#39;&#39;;
+
+    //如果不传第二个参数，FF下会报错
+    gameCat.add(option,null);
+}</code></pre>
+
+<p>这里要注意的add()函数的第二个参数，该参数为before，可以指定选项插到哪个选项之前，如果为null则插到最后。如果不指定这个参数在IE系不会有问题，FF下会报错，提示Not enough arguments,参数不足，所以最好传个null先。</p>
+
+<p>第三种方案，比较少用于select元素上，IE下是无效的，但是动态添加其他元素的孩子时经常用到。当然也可以设置元素属性后 appendChild(),同方案二。这里要先把select隐藏掉，这样可以减少浏览器重绘次数，对于display=’none’的元素的操作不会引起重绘或回流。再改变完之后再显示出来：</p>
+
+<pre><code>//方案3：innerHTML
+//IE无效，FF可用
+gameCat.style.display = &#39;none&#39;;
+for(vari=0, j = gameOptions.options.length; i&lt;j; i++) {
+    var isHot = (gameOptions.options[i].isHot == &#39;true&#39;)?&#39;&#39;:&#39;&#39;;
+    gameCat.innerHTML += &#39;&lt;option value=&#39; + gameOptions.options[i].value + isHot + &#39;&gt;&#39; + gameOptions.options[i].name + &#39;&lt;/option&gt;&#39;;
+}
+gameCat.style.display = &#39;block&#39;;</code></pre>
+
+<p>这三种方式最常用的就是第一种了，没有兼容性问题，其他两种只是在此作为例子，展示创建option的方法。</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/JavaScript/文章归档/2010/07/30/javascript-universal-form-validator" title="Javascript万能表单验证">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/JavaScript/文章归档/2010/09/28/count-most-shown-character" title="JavaScript笔试题：统计出现最多的字符次数
+">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>16 August 2010</span></div>
+
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Name Lastname 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+
