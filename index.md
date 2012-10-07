@@ -1,15 +1,15 @@
 ---
 layout: page
-title: A New Start!
-tagline: My blog has been moved to Github Page
+title: Welcome!
+tagline: Front-end Development / HTML(5) / CSS(3) / JavaScript / NodeJs
 ---
 {% include JB/setup %}
 
-## 博客文章已全部迁移到 Github Pages
+## What's new?
 
-更快的访问速度，更稳定的服务，源代码管理，像Geek一样写博客！
+博客文章已全部迁移到 Github Pages，拥有更快的访问速度，更稳定的服务，源代码管理，像Geek一样写博客！
 
-## 推荐文章
+## Recomend Articles
 
 <ul class="posts">
     <li><a href="/JavaScript/2012/08/21/ember-js-doc-cn.html">Ember.js 中文文档</a></li>
@@ -19,7 +19,7 @@ tagline: My blog has been moved to Github Page
     <li><a href="/LifeStyle/2012/03/26/how-can-you-program-if-youre-blind.html">盲人程序员的编程生涯</a></li>
 </ul>
 
-## 最新文章
+## Recent Articles
 
 <ul class="posts">
   {% for post in site.posts limit:10 %}
@@ -27,11 +27,11 @@ tagline: My blog has been moved to Github Page
   {% endfor %}
 </ul>
 
-## 推荐书籍
+## Recomend Books
 
-<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22785480">精彩绝伦的CSS</a>
+<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22785480">《精彩绝伦的CSS》</a>
 
-## 有情链接
+## Friend Links
 
 <ul class="friends-links">
     <li><a href="http://xiedexu.cn/" target="_blank">DeXu.Xie's Blog</a></li>
