@@ -7,12 +7,12 @@ tagline: Life is like a box of chocolates, you never know what you're gonna get.
 
 ## What's new?
 
-博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，版本控制，防止挂马等诸多优点，还不快来？
+博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，以及版本控制等功能
 
 ## About
 
 <div class="contact">
-This blog: 这里有关于#前端开发技术#的一些粗浅文章，我是小白，请多多指教：） <br>
+This blog: 这里有关于#前端开发技术#的一些粗浅文章 <br>
 This guy: 姬光/男/80后/前端开发/小白 <br>
 Find me at:
 <a href="http://weibo.com/jiguang1984" title="新浪微博" target="_blank">新浪微博</a> or
@@ -34,7 +34,7 @@ If you're lucky, QQ me: <a target="_blank" href="http://sighttp.qq.com/authd?IDK
 <ul class="posts">
     <li><a href="/JavaScript/2012/08/21/ember-js-doc-cn/">Ember.js 中文文档</a> -- <span class="post-sub">官方文档中文版</span></li>
     <li><a href="/JavaScript/2012/05/16/basic-javascript-coding-pattern/">JavaScript基本编码模式</a> -- <span class="post-sub">JavaScript编码中的一些基本技巧，仅供参考</span></li>
-    <li><a href="/html-css/Tricks/2012/05/03/high-efficient-css-technical/">高效CSS开发核心要点</a> -- <span class="post-sub">CSS编码中的一些基本技巧，根据 Google规范整理</span></li>
+    <li><a href="/html-css/2012/05/03/high-efficient-css-technical/">高效CSS开发核心要点</a> -- <span class="post-sub">CSS编码中的一些基本技巧，根据 Google规范整理</span></li>
     <li><a href="/DevTools/2012/01/21/git-the-simple-guide/">Git超简洁教程</a> -- <span class="post-sub">简明易懂的Git教程</span></li>
     <li><a href="/LifeStyle/2012/03/26/how-can-you-program-if-youre-blind/">盲人程序员的编程生涯</a> -- <span class="post-sub">看看盲人程序员是如何工作的</span></li>
 </ul>
