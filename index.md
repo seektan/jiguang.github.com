@@ -1,7 +1,7 @@
 ---
 layout: page
 title: A New Start!
-tagline: My blog has been changed to Github Page
+tagline: My blog has been moved to Github Page
 ---
 {% include JB/setup %}
 
@@ -12,7 +12,7 @@ tagline: My blog has been changed to Github Page
 ## Recent Posts
 
 <ul class="posts">
-  {% for post in site.posts limit:5 %}
+  {% for post in site.posts limit:10 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
