@@ -1,6 +1,6 @@
 ---
 author: jiguang
-title: '伪类(Pseudo-Classes)&伪元素(Pseudo-Elements)详解'
+title: '伪类(Pseudo-Classes)与伪元素(Pseudo-Elements)详解'
 excerpt:
 layout: post
 category:
