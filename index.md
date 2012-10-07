@@ -9,7 +9,17 @@ tagline: My blog has been moved to Github Page
 
 更快的访问速度，更稳定的服务，源代码管理，像Geek一样写博客！
 
-## Recent Posts
+## 推荐文章
+
+<ul class="posts">
+    <li><a href="/JavaScript/2012/08/21/ember-js-doc-cn.html">Ember.js 中文文档</a></li>
+    <li><a href="/JavaScript/2012/05/16/basic-javascript-coding-pattern.html">JavaScript基本编码模式</a></li>
+    <li><a href="/html-css/Tricks/2012/05/03/high-efficient-css-technical.html">高效CSS开发核心要点</a></li>
+    <li><a href="/DevTools/2012/01/21/git-the-simple-guide.html">Git超简洁教程</a></li>
+    <li><a href="/LifeStyle/2012/03/26/how-can-you-program-if-youre-blind.html">盲人程序员的编程生涯</a></li>
+</ul>
+
+## 最新文章
 
 <ul class="posts">
   {% for post in site.posts limit:10 %}
@@ -17,7 +27,11 @@ tagline: My blog has been moved to Github Page
   {% endfor %}
 </ul>
 
-## Friends Links
+## 推荐书籍
+
+<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22785480">精彩绝伦的CSS</a>
+
+## 有情链接
 
 <ul class="friends-links">
     <li><a href="http://xiedexu.cn/" target="_blank">DeXu.Xie's Blog</a></li>
@@ -34,6 +48,7 @@ tagline: My blog has been moved to Github Page
     <li><a href="http://isnowe.com/" target="_blank">爱斯诺</a></li>
     <li><a href="http://lison.sinaapp.com/" target="_blank">阿伦的技术博客</a></li>
     <li><a href="http://www.wheattime.com/" target="_blank">麦时</a></li>
+    <li><a href="http://www.92app.com/" target="_blank">爱佳软</a></li>
 </ul>
 
 

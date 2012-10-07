@@ -2,6 +2,7 @@
 html, body {
   background-color: #eee;
   font-size:14px;
+  line-height:20px;
 }
 .navbar {
   margin-bottom: 0;

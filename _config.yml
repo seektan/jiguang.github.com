@@ -9,6 +9,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
+
 title : Hi,laser! @44ux.com
 tagline: 前端开发 JavaScript HTML5 CSS3
 author :
@@ -78,10 +79,12 @@ JB :
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
+
   comments :
     provider : disqus
     disqus :
       short_name : hilaser
+
    #livefyre :
    #  site_id : 123
    #intensedebate :
@@ -95,11 +98,13 @@ JB :
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
-  #        
+  #
+
   analytics :
     provider : google 
     google : 
         tracking_id : 'UA-28439709-1'
+
   #getclicky :
   #    site_id :
   #  mixpanel :
