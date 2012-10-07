@@ -32,11 +32,11 @@ If you're lucky, QQ me: <a target="_blank" href="http://sighttp.qq.com/authd?IDK
 ## Recomend Articles
 
 <ul class="posts">
-    <li><a href="/JavaScript/2012/08/21/ember-js-doc-cn.html">Ember.js 中文文档</a> -- <span class="post-sub">官方文档中文版</span></li>
-    <li><a href="/JavaScript/2012/05/16/basic-javascript-coding-pattern.html">JavaScript基本编码模式</a> -- <span class="post-sub">JavaScript编码中的一些基本技巧，仅供参考</span></li>
-    <li><a href="/html-css/Tricks/2012/05/03/high-efficient-css-technical.html">高效CSS开发核心要点</a> -- <span class="post-sub">CSS编码中的一些基本技巧，根据 Google规范整理</span></li>
-    <li><a href="/DevTools/2012/01/21/git-the-simple-guide.html">Git超简洁教程</a> -- <span class="post-sub">简明易懂的Git教程</span></li>
-    <li><a href="/LifeStyle/2012/03/26/how-can-you-program-if-youre-blind.html">盲人程序员的编程生涯</a> -- <span class="post-sub">看看盲人程序员是如何工作的</span></li>
+    <li><a href="/JavaScript/2012/08/21/ember-js-doc-cn/">Ember.js 中文文档</a> -- <span class="post-sub">官方文档中文版</span></li>
+    <li><a href="/JavaScript/2012/05/16/basic-javascript-coding-pattern/">JavaScript基本编码模式</a> -- <span class="post-sub">JavaScript编码中的一些基本技巧，仅供参考</span></li>
+    <li><a href="/html-css/Tricks/2012/05/03/high-efficient-css-technical/">高效CSS开发核心要点</a> -- <span class="post-sub">CSS编码中的一些基本技巧，根据 Google规范整理</span></li>
+    <li><a href="/DevTools/2012/01/21/git-the-simple-guide/">Git超简洁教程</a> -- <span class="post-sub">简明易懂的Git教程</span></li>
+    <li><a href="/LifeStyle/2012/03/26/how-can-you-program-if-youre-blind/">盲人程序员的编程生涯</a> -- <span class="post-sub">看看盲人程序员是如何工作的</span></li>
 </ul>
 
 ## Tag Cloud
