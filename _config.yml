@@ -9,15 +9,13 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-
-title : Hi,laser! @44ux.com
-tagline: 前端开发 JavaScript HTML5 CSS3
+title: Hi,laser! @44ux.com
+tagline: JavaScript HTML5 CSS3
 author :
   name : Ji Guang
   email : jiguang@gmail.com
   github : jiguang
   twitter : laserji
-# feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -38,7 +36,7 @@ JB :
   # Links in your website should always be prefixed with {{BASE_PATH}}
   # however this value will be dynamically changed depending on your deployment situation.
   #
-  CNAME (http://www.44ux.com)
+  # CNAME (http://www.44ux.com)
   #   DO NOT SET BASE_PATH 
   #   (urls will be prefixed with "/" and work relatively)
   #
@@ -79,7 +77,6 @@ JB :
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
-
   comments :
     provider : disqus
     disqus :
@@ -99,12 +96,10 @@ JB :
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
   #
-
   analytics :
     provider : google 
     google : 
         tracking_id : 'UA-28439709-1'
-
   #getclicky :
   #    site_id :
   #  mixpanel :
