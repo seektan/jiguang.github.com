@@ -5,7 +5,6 @@ excerpt: >
   IE6/7在使用Javascript操作DOM之后经常出现的奇怪样式错误的一种解决办法。
 layout: post
 category:
-  - html-css
   - JavaScript
 tags:
   - bug

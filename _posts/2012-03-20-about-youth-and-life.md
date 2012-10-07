@@ -4,7 +4,6 @@ title: 青春与生命
 excerpt:
 layout: post
 category:
-
   - LifeStyle
 tags: [ ]
 post_format: [ ]

@@ -1,8 +1,7 @@
 /* Override some defaults */
 html, body {
   background-color: #eee;
-  font-size:14px;
-  line-height:20px;
+  font:14px/1.5em Georgia, "Times New Roman", Times, serif;
 }
 .navbar {
   margin-bottom: 0;
@@ -71,5 +70,7 @@ html, body {
 	color:#FFF;
 }
 
+/* add by laser 2012-10-07*/
+.posts .post-date{color:#999;}
 .friends-links{overflow:hidden;*zoom:1;margin:0;padding:0;}
 .friends-links li{list-style:none;float:left;margin-right:10px;}

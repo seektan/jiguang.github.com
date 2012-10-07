@@ -35,6 +35,25 @@
     {% assign tags_list = page.tags %}
     {% include JB/tags_list %}
     </ul>
-  {% endunless %}  
+  {% endunless %}
+
+    <h4>Recent Posts</h4>
+    <ul class="posts">
+      {% for post in site.posts limit:10 %}
+        <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <h4>Categories</h4>
+    <ul>
+      {% assign categories_list = site.categories %}
+      {% include JB/categories_list %}
+    </ul>
+
+    <h4>Tag Cloud</h4>
+    <ul class="tag_box inline">
+      {% assign tags_list = site.tags %}
+      {% include JB/tags_list %}
+    </ul>
   </div>
 </div>

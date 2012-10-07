@@ -9,7 +9,6 @@ excerpt: >
   的快速入门教程。
 layout: post
 category:
-  - html-css
   - JavaScript
 
 tags:

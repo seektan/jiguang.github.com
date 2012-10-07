@@ -4,7 +4,6 @@ title: 最小化DEMO测试代码
 excerpt:
 layout: post
 category:
-  - html-css
   - JavaScript
 
 tags:

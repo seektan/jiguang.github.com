@@ -5,8 +5,6 @@ excerpt:
 layout: post
 category:
   - Wordpress
-  - Tricks
-
 tags:
   - 教程
 post_format: [ ]

@@ -5,7 +5,7 @@ tagline: My blog has been moved to Github Page
 ---
 {% include JB/setup %}
 
-## 博客文章已全部迁移到 Github Page
+## 博客文章已全部迁移到 Github Pages
 
 更快的访问速度，更稳定的服务，源代码管理，像Geek一样写博客！
 
@@ -23,7 +23,7 @@ tagline: My blog has been moved to Github Page
 
 <ul class="posts">
   {% for post in site.posts limit:10 %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> -- <span class="post-date">{{ post.date | date_to_string }}</span></li>
   {% endfor %}
 </ul>
 

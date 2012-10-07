@@ -8,7 +8,6 @@ excerpt: >
 layout: post
 category:
   - Mac
-  - PHP
 
 tags:
   - Apache

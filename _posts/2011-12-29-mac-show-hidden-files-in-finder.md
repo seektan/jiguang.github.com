@@ -6,7 +6,6 @@ excerpt:
 layout: post
 category:
   - Mac
-  - Tricks
 
 tags: [ ]
 post_format: [ ]

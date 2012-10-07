@@ -6,7 +6,6 @@ title: >
 excerpt:
 layout: post
 category:
-
   - LifeStyle
 tags:
   - iOS

@@ -7,7 +7,6 @@ excerpt: >
   Mac 下安装 nodejs 的方法。
 layout: post
 category:
-  - Mac
   - NodeJs
 
 tags:

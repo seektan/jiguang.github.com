@@ -5,7 +5,6 @@ excerpt:
 layout: post
 category:
   - html-css
-  - Tricks
 
 tags:
   - 性能优化

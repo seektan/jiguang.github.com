@@ -4,7 +4,6 @@ title: 盲人程序员的编程生涯
 excerpt:
 layout: post
 category:
-
   - LifeStyle
 tags:
   - 可访问性
