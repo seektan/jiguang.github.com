@@ -6,8 +6,8 @@ title: >
 excerpt:
 layout: post
 category:
-  - Html+CSS
-  - 文章归档
+  - html-css
+
 tags:
   - Smashing CSS
   - 翻译
@@ -56,7 +56,7 @@ post_format: [ ]
  [3]: http://www.amazon.cn/
  [4]: http://44ux.com/wp-content/uploads/2012/04/smashingcss.jpg "smashingcss.jpg"
  [5]: http://44ux.com/wp-content/uploads/2012/04/smashingcss1.jpg "smashingcss1.jpg"
- [6]: http://www.44ux.com "笔者"
+ [6]: http://jiguang.github.com "笔者"
  [7]: http://44ux.com/index.php/2012/02/smashing-css-firebug-quick-tutorial/
  [8]: http://www.ituring.com.cn/book/924
  [9]: http://www.ituring.com.cn/

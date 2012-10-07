@@ -5,7 +5,6 @@ excerpt:
 layout: post
 category:
   - JavaScript
-  - 文章归档
 tags: [ ]
 post_format: [ ]
 ---
@@ -47,4 +46,4 @@ post_format: [ ]
 
 PS：这个需求有点儿蛋疼了，不过在实际工作中，什么奇怪的需求都会遇到，你懂的。
 
- [1]: http://www.44ux.com "笔者"
+ [1]: http://jiguang.github.com "笔者"

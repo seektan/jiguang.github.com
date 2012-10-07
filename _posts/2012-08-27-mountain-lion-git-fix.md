@@ -6,8 +6,8 @@ title: >
 excerpt:
 layout: post
 category:
-  - 开发工具
-  - 文章归档
+  - DevTools
+
 tags: [ ]
 post_format: [ ]
 ---
@@ -47,7 +47,7 @@ PS：上面几步看上去比较简单，但是对于国内用户来说 XCode �
 
  [1]: http://44ux.com/index.php/tag/git/ "git"
  [2]: http://44ux.com/wp-content/uploads/2012/08/git-not-found.jpeg "git-not-found.jpeg"
- [3]: http://www.44ux.com "笔者"
+ [3]: http://jiguang.github.com "笔者"
  [4]: http://44ux.com/wp-content/uploads/2012/08/install-command-line-tools.jpeg "install-command-line-tools.jpeg"
  [5]: http://44ux.com/wp-content/uploads/2012/08/install-xcode.jpeg "install-xcode.jpeg"
  [6]: http://44ux.com/wp-content/uploads/2012/08/login-with-apple-dev-id.jpeg "login-with-apple-dev-id.jpeg"

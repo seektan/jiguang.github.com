@@ -5,9 +5,8 @@ excerpt: >
   IE6/7在使用Javascript操作DOM之后经常出现的奇怪样式错误的一种解决办法。
 layout: post
 category:
-  - Html+CSS
+  - html-css
   - JavaScript
-  - 文章归档
 tags:
   - bug
   - IE
@@ -44,6 +43,6 @@ post_format: [ ]
 
 补充资料20120209：[《浏览器工作原理浅析》][2] from [CSS森林][3]
 
- [1]: http://www.44ux.com "笔者"
+ [1]: http://jiguang.github.com "笔者"
  [2]: http://www.cssforest.org/blog/index.php?id=195
  [3]: http://www.cssforest.org/blog/

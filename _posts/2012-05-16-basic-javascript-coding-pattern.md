@@ -5,7 +5,7 @@ excerpt:
 layout: post
 category:
   - JavaScript
-  - 文章归档
+
 tags: [ ]
 post_format: [ ]
 ---
@@ -325,4 +325,4 @@ post_format: [ ]
 
 基本上目前想到的只有这些，欢迎大家补充讨论：）
 
- [1]: http://www.44ux.com "笔者"
+ [1]: http://jiguang.github.com "笔者"

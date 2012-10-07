@@ -4,9 +4,9 @@ title: 最小化DEMO测试代码
 excerpt:
 layout: post
 category:
-  - Html+CSS
+  - html-css
   - JavaScript
-  - 文章归档
+
 tags:
   - demo
 post_format: [ ]
@@ -63,4 +63,4 @@ post_format: [ ]
 
 目前只整理了这几个，也是我平时用到最多的，欢迎补充！
 
- [1]: http://www.44ux.com "笔者"
+ [1]: http://jiguang.github.com "笔者"

@@ -4,8 +4,7 @@ title: 隧道
 excerpt: 伪文艺范儿骚人小湿一宿。
 layout: post
 category:
-  - 文章归档
-  - 生活点滴
+  - LifeStyle
 tags: [ ]
 post_format: [ ]
 ---

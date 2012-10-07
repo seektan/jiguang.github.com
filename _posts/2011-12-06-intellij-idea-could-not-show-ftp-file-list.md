@@ -8,8 +8,8 @@ excerpt: >
   配置以及一些注意事项。
 layout: post
 category:
-  - 开发工具
-  - 文章归档
+  - DevTools
+
 tags:
   - IDEA
 post_format: [ ]
@@ -43,4 +43,4 @@ post_format: [ ]
 再次打开“Tools -> Deployment ”，单击下方的“Automatic Upload”，这样就完成了自动同步的设置，当本地的 wordpress 目录中有文件修改并保存时，将自动同步到服务器（前提是本地与服务器上目录结构一致且文件名相同）。
 
  [1]: http://www.jetbrains.com/idea/
- [2]: http://www.44ux.com "姬光"
+ [2]: http://jiguang.github.com "姬光"

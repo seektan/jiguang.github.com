@@ -164,7 +164,7 @@ http://www.adobe.com/devnet/[html5][14]/articles/flame-on-a-beginners-guide-to-e
  [3]: http://sproutcore.com/
  [4]: http://www.infoq.com/cn/news/2012/05/js-mvc-framework
  [5]: http://lostechies.com/derickbailey/2012/02/21/emberjs-initial-impressions-compared-to-backbone/
- [6]: http://www.44ux.com "笔者"
+ [6]: http://jiguang.github.com "笔者"
  [7]: http://zh.wikipedia.org/wiki/MVC
  [8]: http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B
  [9]: http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84

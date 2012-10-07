@@ -4,7 +4,7 @@ title: 青春与生命
 excerpt:
 layout: post
 category:
-  - 文章归档
+
   - 生活点滴
 tags: [ ]
 post_format: [ ]

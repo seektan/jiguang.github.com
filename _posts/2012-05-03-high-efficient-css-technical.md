@@ -4,9 +4,9 @@ title: 高效CSS开发核心要点
 excerpt:
 layout: post
 category:
-  - Html+CSS
+  - html-css
   - 奇技淫巧
-  - 文章归档
+
 tags:
   - 性能优化
   - 技巧
@@ -449,7 +449,7 @@ filter的版本是IE8以下的，–ms-filter的版本是IE9以上的，YUI会�
 
 [http://www.ibm.com/developerworks/cn/web/1009\_chengfu\_dojocss/][10]
 
- [1]: http://www.44ux.com "From 44ux.com"
+ [1]: http://jiguang.github.com "From 44ux.com"
  [2]: http://44ux.com/index.php/tag/html5/ "html5"
  [3]: http://validator.w3.org/nu/
  [4]: http://jigsaw.w3.org/css-validator/

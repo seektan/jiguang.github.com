@@ -4,8 +4,8 @@ title: A/B测试相关资料汇总
 excerpt:
 layout: post
 category:
-  - 开发工具
-  - 文章归档
+  - DevTools
+
 tags:
   - A/B Test
 post_format: [ ]

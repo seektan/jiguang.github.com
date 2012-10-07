@@ -4,8 +4,8 @@ title: Normalize.css 支持 HTML5 的CSS Reset
 excerpt:
 layout: post
 category:
-  - Html+CSS
-  - 文章归档
+  - html-css
+
 tags:
   - HTML5
 post_format: [ ]
@@ -389,6 +389,6 @@ post_format: [ ]
 
  [1]: http://necolas.github.com/normalize.css/
  [2]: http://44ux.com/index.php/tag/html5/ "html5"
- [3]: http://www.44ux.com "姬光"
+ [3]: http://jiguang.github.com "姬光"
  [4]: http://44ux.com/index.php/tag/git/ "git"
  [5]: http://necolas.github.com/normalize.css/1.0.1/normalize.css

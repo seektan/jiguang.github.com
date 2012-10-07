@@ -4,8 +4,8 @@ title: 消极接近（Negative Proximity）
 excerpt:
 layout: post
 category:
-  - Html+CSS
-  - 文章归档
+  - html-css
+
 tags:
   - 翻译
 post_format: [ ]

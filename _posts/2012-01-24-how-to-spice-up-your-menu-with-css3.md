@@ -5,8 +5,8 @@ excerpt: >
   通过为每个菜单项添加图像，并在鼠标悬停时滑出来创建优美的菜单效果。
 layout: post
 category:
-  - Html+CSS
-  - 文章归档
+  - html-css
+
 tags:
   - CSS3
   - 翻译
@@ -90,7 +90,7 @@ post_format: [ ]
  [3]: http://tympanus.net/TipsTricks/CSS3MenuHoverEffect/CSS3MenuHoverEffect.zip
  [4]: http://44ux.com/index.php/category/tips-and-tricks/
  [5]: http://44ux.com/go.php?url=http://www.qianduan.net/useful-nth-child-recipies.html
- [6]: http://www.44ux.com "译者"
+ [6]: http://jiguang.github.com "译者"
  [7]: http://44ux.com/go.php?url=http://tympanus.net/TipsTricks/CSS3MenuHoverEffect/index2.html
  [8]: http://44ux.com/go.php?url=http://tympanus.net/TipsTricks/CSS3MenuHoverEffect/index3.html
  [9]: http://44ux.com/go.php?url=http://www.bartoszkosowski.com/

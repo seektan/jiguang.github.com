@@ -10,7 +10,7 @@ excerpt: >
 layout: post
 category:
   - Wordpress
-  - 文章归档
+
 tags: [ ]
 post_format: [ ]
 ---
@@ -83,4 +83,4 @@ Notice: has_cap was called with an argument that is deprecated since version 2.0
 <http://wordpress.org/support/topic/an-unexpected-http-error-occurred-during-the-api-request-on-wordpress-3>
 
  [1]: http://codex.wordpress.org/Roles_and_Capabilities
- [2]: http://www.44ux.com "姬光"
+ [2]: http://jiguang.github.com "姬光"

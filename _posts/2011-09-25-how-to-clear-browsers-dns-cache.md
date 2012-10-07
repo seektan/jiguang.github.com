@@ -4,8 +4,7 @@ title: 如何清除各种浏览器的DNS缓存
 excerpt:
 layout: post
 category:
-  - 开发工具
-  - 文章归档
+  - DevTools
 tags: [ ]
 post_format: [ ]
 ---

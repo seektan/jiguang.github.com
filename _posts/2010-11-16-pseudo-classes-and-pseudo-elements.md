@@ -4,8 +4,7 @@ title: '伪类(Pseudo-Classes)&伪元素(Pseudo-Elements)详解'
 excerpt:
 layout: post
 category:
-  - Html+CSS
-  - 文章归档
+  - html-css
 tags:
   - 教程
 post_format: [ ]
@@ -394,7 +393,7 @@ element::after { *style properties* }  /* CSS3 syntax, not supported by IE8 */
 
 关于伪类(Pseudo-Classes)与伪对象(Pseudo-Elements)的更多信息，可以查看[官方文档][4]，这里就不再赘述了。如果有什么建议或者疑问，可以留言与我交流。
 
- [1]: http://www.44ux.com
+ [1]: http://jiguang.github.com
  [2]: http://44ux.com/index.php/tag/css3/ "css3"
  [3]: http://www.w3.org/TR/css3-selectors/
  [4]: http://www.w3.org/TR/CSS2/selector.html#pseudo-elements

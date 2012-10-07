@@ -5,7 +5,7 @@ excerpt:
 layout: post
 category:
   - JavaScript
-  - 文章归档
+
 tags: [ ]
 post_format: [ ]
 ---

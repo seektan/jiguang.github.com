@@ -6,7 +6,7 @@ layout: post
 category:
   - Wordpress
   - 奇技淫巧
-  - 文章归档
+
 tags:
   - 教程
 post_format: [ ]
@@ -49,7 +49,7 @@ post_format: [ ]
     function feed_copyright($content) {
          if(is_single() or is_feed()) {
               $content.= "<p class='copyright'>";
-              $content.= '版权所有：<a title="Hi.[laser][8]! @44ux.com" href="http://www.44ux.com/">Hi,laser! @44ux.com</a> <a rel="bookmark" title="'.get_the_title().'" href="'.get_permalink().'">《'.get_the_title().'》</a><br />';
+              $content.= '版权所有：<a title="Hi.[laser][8]! @44ux.com" href="http://jiguang.github.com/">Hi,laser! @44ux.com</a> <a rel="bookmark" title="'.get_the_title().'" href="'.get_permalink().'">《'.get_the_title().'》</a><br />';
               $content.= '本文链接：<a rel="bookmark" title="'.get_the_title().'" href="'.get_permalink().'">'.get_permalink().'</a><br />';
               $content.= '特别声明：除特别标注，本站文章均为原创，遵循<a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh_HK" target="_blank">CC BY-NC 3.0</a>，转载请注明出处';
               $content.= "</p><br />";
@@ -90,7 +90,7 @@ PS：关于采集一事要从两面来看，坚持产出原创文章确实很辛
  [3]: http://baike.baidu.com/view/15867.htm
  [4]: http://www.google.com.hk/search?sourceid=chrome&ie=UTF-8&q=wordpress%E9%98%B2%E9%87%87%E9%9B%86%E6%8F%92%E4%BB%B6
  [5]: http://fairyfish.net/2007/04/24/antileech/
- [6]: http://www.44ux.com "笔者"
+ [6]: http://jiguang.github.com "笔者"
  []: http://44ux.com/wp-content/uploads/2012/02/summary.png
- [8]: http://www.44ux.com "姬光"
+ [8]: http://jiguang.github.com "姬光"
  [9]: http://bbs.dedecms.com/196185.html

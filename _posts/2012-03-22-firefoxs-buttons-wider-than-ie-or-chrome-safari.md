@@ -5,8 +5,8 @@ title: >
 excerpt:
 layout: post
 category:
-  - Html+CSS
-  - 文章归档
+  - html-css
+
 tags:
   - Firefox
 post_format: [ ]

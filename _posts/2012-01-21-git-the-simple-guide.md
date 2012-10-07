@@ -5,8 +5,8 @@ excerpt: >
   关于Git使用的超级简洁的教程，10分钟学会Git！
 layout: post
 category:
-  - 开发工具
-  - 文章归档
+  - DevTools
+
 tags:
   - Git
   - 教程

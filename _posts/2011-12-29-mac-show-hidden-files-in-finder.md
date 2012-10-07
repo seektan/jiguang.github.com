@@ -7,7 +7,7 @@ layout: post
 category:
   - Mac
   - 奇技淫巧
-  - 文章归档
+
 tags: [ ]
 post_format: [ ]
 ---

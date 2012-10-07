@@ -4,7 +4,7 @@ title: 盲人程序员的编程生涯
 excerpt:
 layout: post
 category:
-  - 文章归档
+
   - 生活点滴
 tags:
   - 可访问性
@@ -94,9 +94,9 @@ post_format: [ ]
 
  [1]: http://stackoverflow.com/
  [2]: http://stackoverflow.com/questions/118984/how-can-you-program-if-youre-blind
- [3]: http://www.44ux.com "笔者"
+ [3]: http://jiguang.github.com "笔者"
  [4]: http://freedomscientific.com/products/fs/jaws-product-page.asp
- [5]: http://www.44ux.com "译者"
+ [5]: http://jiguang.github.com "译者"
  [6]: http://44ux.com/wp-content/uploads/2012/03/fudiao-2.jpg "fudiao-2.jpg"
  [7]: http://44ux.com/index.php/tag/mac/ "mac"
  [8]: http://www.freedomscientific.com/products/fs/jaws-product-page.asp

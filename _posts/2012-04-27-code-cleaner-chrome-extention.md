@@ -6,9 +6,9 @@ title: >
 excerpt:
 layout: post
 category:
-  - Html+CSS
-  - 开发工具
-  - 文章归档
+  - html-css
+  - DevTools
+
 tags:
   - Code Cleaner
 post_format: [ ]

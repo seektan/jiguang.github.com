@@ -9,7 +9,7 @@ layout: post
 category:
   - Mac
   - PHP
-  - 文章归档
+
 tags:
   - Apache
 post_format: [ ]

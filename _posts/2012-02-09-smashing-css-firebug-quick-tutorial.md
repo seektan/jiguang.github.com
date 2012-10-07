@@ -4,8 +4,8 @@ title: '[TEAP早期试读]Firebug快速入门教程'
 excerpt:
 layout: post
 category:
-  - 开发工具
-  - 文章归档
+  - DevTools
+
 tags:
   - 翻译
 post_format: [ ]
@@ -106,7 +106,7 @@ Firebug（见图1-1）是任何网页开发人员的工具箱中不可或缺的�
 
 Hi！我是本书的译者姬光，如果你对本书或者译文有任何建议，欢迎在此留言与我交流，也欢迎光顾我的个人博客（[44ux.com][12]）与我交流：）
 
- [1]: http://www.44ux.com "译者"
+ [1]: http://jiguang.github.com "译者"
  [2]: http://44ux.com/wp-content/uploads/2012/02/firebug.png "firebug.png"
  [3]: http://44ux.com/wp-content/uploads/2012/02/checklayout.png "checklayout.png"
  [4]: http://44ux.com/wp-content/uploads/2012/02/styletab.png "styletab.png"
@@ -117,4 +117,4 @@ Hi！我是本书的译者姬光，如果你对本书或者译文有任何建议
  [9]: http://44ux.com/wp-content/uploads/2012/02/editcss.png "editcss.png"
  [10]: http://getfirebug.com/lite.html
  [11]: http://44ux.com/wp-content/uploads/2012/02/firebuglite.png "firebuglite.png"
- [12]: http://www.44ux.com "姬光的博客"
+ [12]: http://jiguang.github.com "姬光的博客"

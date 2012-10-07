@@ -4,8 +4,8 @@ title: 精彩绝伦的CSS 译者序
 excerpt:
 layout: post
 category:
-  - Html+CSS
-  - 文章归档
+  - html-css
+
 tags:
   - Smashing CSS
 post_format: [ ]
@@ -30,5 +30,5 @@ THE END
 
 相关链接：[Eric Meyer 新作《Smashing CSS》中文版样章][2]
 
- [1]: http://www.44ux.com "译者"
+ [1]: http://jiguang.github.com "译者"
  [2]: http://44ux.com/index.php/2012/04/smashing-css-sample-chapter/

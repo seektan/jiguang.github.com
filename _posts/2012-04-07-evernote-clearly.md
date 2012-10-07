@@ -6,8 +6,8 @@ title: >
 excerpt:
 layout: post
 category:
-  - 开发工具
-  - 文章归档
+  - DevTools
+
 tags:
   - Evernote
 post_format: [ ]
@@ -49,7 +49,7 @@ post_format: [ ]
 PS：这个插件只能用在拥有大段文字的文章页，用在其他页的话可能不会有什么好效果。
 
  [1]: https://www.evernote.com/clearly/
- [2]: http://www.44ux.com "笔者"
+ [2]: http://jiguang.github.com "笔者"
  []: http://44ux.com/wp-content/uploads/2012/04/evernote_clearly.png
  [4]: http://44ux.com/wp-content/uploads/2012/04/163-test-1.png "163-test-1.png"
  [5]: http://44ux.com/wp-content/uploads/2012/04/163-test-2.png "163-test-2.png"

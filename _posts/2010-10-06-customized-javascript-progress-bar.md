@@ -6,7 +6,6 @@ excerpt:
 layout: post
 category:
   - JavaScript
-  - 文章归档
 tags: [ ]
 post_format: [ ]
 ---
@@ -64,4 +63,4 @@ post_format: [ ]
 
 这个例子只是千万种解决方案中的一种，根据你的情况可以酌情使用。
 
- [1]: http://www.44ux.com "笔者"
+ [1]: http://jiguang.github.com "笔者"

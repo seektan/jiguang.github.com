@@ -6,7 +6,7 @@ excerpt:
 layout: post
 category:
   - Mac
-  - 文章归档
+
 tags: [ ]
 post_format: [ ]
 ---
@@ -38,4 +38,4 @@ post_format: [ ]
  [2]: http://mac.xunlei.com/
  [3]: http://44ux.com/wp-content/uploads/2012/03/macthunder1.png "macthunder1.png"
  [4]: http://44ux.com/wp-content/uploads/2012/03/macthunder2.png "macthunder2.png"
- [5]: http://www.44ux.com "笔者"
+ [5]: http://jiguang.github.com "笔者"

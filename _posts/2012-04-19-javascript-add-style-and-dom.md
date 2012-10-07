@@ -5,7 +5,7 @@ excerpt:
 layout: post
 category:
   - JavaScript
-  - 文章归档
+
 tags: [ ]
 post_format: [ ]
 ---
@@ -126,5 +126,5 @@ JavaScript动态插入样式有两种情况，一种为插入link元素用于包
 [查看DEMO][3]
 
  [1]: http://www.cssforest.org/blog/index.php?id=195
- [2]: http://www.44ux.com "笔者"
+ [2]: http://jiguang.github.com "笔者"
  [3]: http://44ux.com/demo/apply-custom-code.html

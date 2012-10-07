@@ -7,7 +7,7 @@ excerpt: >
 layout: post
 category:
   - Mac
-  - 文章归档
+
 tags: [ ]
 post_format: [ ]
 ---

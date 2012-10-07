@@ -6,7 +6,7 @@ title: >
 excerpt:
 layout: post
 category:
-  - 文章归档
+
   - 生活点滴
 tags:
   - iOS
@@ -130,7 +130,7 @@ post_format: [ ]
 
 推荐理由：花样多，内容丰富，不过要注意了，收费软件极多，国外很注重版权的。也同时提醒国人并不是cydia软件都是免费的，他们也是有版权的。使用需购买。
 
- [1]: http://www.44ux.com "姬光"
+ [1]: http://jiguang.github.com "姬光"
  [2]: http://weibo.com/178apt?s=6cm7D0
  [3]: http://apt.weiphone.com/ "http://apt.weiphone.com/"
  [4]: http://www.saurik.com/

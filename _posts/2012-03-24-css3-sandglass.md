@@ -4,8 +4,8 @@ title: CSS3实现倒计时沙漏
 excerpt:
 layout: post
 category:
-  - Html+CSS
-  - 文章归档
+  - html-css
+
 tags:
   - CSS3
 post_format: [ ]

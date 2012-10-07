@@ -5,7 +5,7 @@ excerpt:
 layout: post
 category:
   - JavaScript
-  - 文章归档
+
 tags:
   - 教程
   - 翻译

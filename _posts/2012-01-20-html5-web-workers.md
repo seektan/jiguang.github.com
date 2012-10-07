@@ -9,9 +9,9 @@ excerpt: >
   的快速入门教程。
 layout: post
 category:
-  - Html+CSS
+  - html-css
   - JavaScript
-  - 文章归档
+
 tags:
   - HTML5
   - Web Workers
