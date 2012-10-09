@@ -2,7 +2,7 @@
 layout: post
 title: "Canvas toDataURL decoded by PHP"
 description: ""
-category: 
+category:
 tags: [canvas, PHP]
 ---
 {% include JB/setup %}
