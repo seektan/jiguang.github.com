@@ -82,5 +82,5 @@ html, body{
 .friends-links li{list-style:none;float:left;margin-right:10px;}
 .feed a{display:inline-block;*display:inline;*zoom:1;margin-right:10px;}
 .rec-book a{margin-right:10px;}
-.thumbnail{margin-top:10px;font-size:12px;}
-.more{text-align: right;}
+.posts .thumbnail{margin-top:10px;font-size:12px;}
+.posts .thumbnail a, .posts .thumbnail a:hover{color:#333;text-decoration: none;}
