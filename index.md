@@ -13,9 +13,8 @@ tagline: Life is like a box of chocolates, you never know what you're gonna get.
 
 <ul class="posts">
   {% for post in site.posts limit:10 %}
-    <li><a href="{{ BASE_PATH }}{{ post.url }}" target="_blank">{{ post.title }}</a> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
+    <li><h3><a class="tit" href="{{ BASE_PATH }}{{ post.url }}" target="_blank">{{ post.title }}</a></h3> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
         <p class="abstract"><a href="{{ BASE_PATH }}{{ post.url }}"  target="_blank" title="Read more...">{{ post.content | strip_html | truncatewords:50 }}</a></p>
-        <p class="more"><a href="{{ post.url }}" target="_blank">Read more...</a></p>
     </li>
   {% endfor %}
 </ul>
