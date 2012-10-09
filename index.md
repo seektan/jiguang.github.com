@@ -26,8 +26,8 @@ If you're lucky, QQ me: <a target="_blank" href="http://sighttp.qq.com/authd?IDK
 <ul class="posts">
   {% for post in site.posts limit:10 %}
     <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
-        <p class="thumbnail">{{ post.content | strip_html | truncatewords:75 }}</p>
-        <p class="more"><a href="{{ post.url }}">Read more...</a></p>
+        <p class="thumbnail">{{ post.content | strip_html | truncatewords:50}}</p>
+        <p class="more"><a href="{{ post.url }}" class="btn btn-mini">Read more...</a></p>
     </li>
   {% endfor %}
 </ul>
