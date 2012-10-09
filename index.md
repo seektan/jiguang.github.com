@@ -68,10 +68,10 @@ tagline: Life is like a box of chocolates, you never know what you're gonna get.
 <div class="contact">
 About me: 姬光/男/80后/前端开发/小白 <br>
 Find me at:
-<a href="http://weibo.com/jiguang1984" title="新浪微博" target="_blank">&nbsp;新浪微博&nbsp;</a>
-<a href="http://t.qq.com/jiguang1984" title="腾讯微博" target="_blank">腾讯微博&nbsp;</a>
-<a href="mailto:jiguang1984@gmail.com" title="Email Me">Email:jiguang1984#gmail.com &nbsp;</a>
-If you're lucky, QQ me: <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8"><img border="0"  src="http://wpa.qq.com/imgd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8&pic=41" alt="点击这里给我发消息" title="点击这里给我发消息" style="vertical-align:-5px;"></a>
+<a href="http://weibo.com/jiguang1984" title="新浪微博" target="_blank">新浪微博</a> or
+<a href="http://t.qq.com/jiguang1984" title="腾讯微博" target="_blank">腾讯微博</a> or
+<a href="mailto:jiguang1984@gmail.com" title="Email Me">Email:jiguang1984#gmail.com</a>
+, If you're lucky, QQ me: <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8"><img border="0"  src="http://wpa.qq.com/imgd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8&pic=41" alt="点击这里给我发消息" title="点击这里给我发消息" style="vertical-align:-5px;"></a>
 </div>
 
 ## Friends Links
