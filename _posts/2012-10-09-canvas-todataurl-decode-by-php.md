@@ -7,7 +7,7 @@ tags: [canvas, PHP]
 ---
 {% include JB/setup %}
 
-ÎÒÃÇÖªµÀ Canvas µÄ [toDataURL](https://developer.mozilla.org/en-US/docs/DOM/HTMLCanvasElement) ·½·¨¿ÉÒÔÉú³É base64 ±àÂëµÄ dataURL ĞÎÊ½µÄÍ¼Æ¬µ½Ò³ÃæÖĞ£¬ÀıÈç£º
+æˆ‘ä»¬çŸ¥é“ Canvas çš„ [toDataURL](https://developer.mozilla.org/en-US/docs/DOM/HTMLCanvasElement) æ–¹æ³•å¯ä»¥ç”Ÿæˆ base64 ç¼–ç çš„ dataURL å½¢å¼çš„å›¾ç‰‡åˆ°é¡µé¢ä¸­ï¼Œä¾‹å¦‚ï¼š
 
     function test() {
          var canvas = document.getElementById("canvas");
@@ -18,25 +18,25 @@ tags: [canvas, PHP]
          document.body.appendChild(newImg);
     }
 
-ÄÇÃ´£¬ÈçºÎ½«Éú³ÉºóµÄÍ¼Æ¬±£´æÏÂÀ´ÄØ£¿
+é‚£ä¹ˆï¼Œå¦‚ä½•å°†ç”Ÿæˆåçš„å›¾ç‰‡ä¿å­˜ä¸‹æ¥å‘¢ï¼Ÿ
 
-Èç¹ûÔÚ¿Í»§¶ËµÄ»°£¬×î¼òµ¥µÄ·½Ê½¾ÍÊÇÊó±êÓÒ¼ü->Áí´æÎª£¬ÄÇÃ´ÔÚ·şÎñÆ÷¶ËÈçºÎ±£´æÄØ£¿
+å¦‚æœåœ¨å®¢æˆ·ç«¯çš„è¯ï¼Œæœ€ç®€å•çš„æ–¹å¼å°±æ˜¯é¼ æ ‡å³é”®->å¦å­˜ä¸ºï¼Œé‚£ä¹ˆåœ¨æœåŠ¡å™¨ç«¯å¦‚ä½•ä¿å­˜å‘¢ï¼Ÿ
 
-¼ÙÉè·şÎñÆ÷¶ËÊ¹ÓÃµÄÊÇPHP£¬ÄÇÃ´¿ÉÒÔÊ¹ÓÃPHPµÄ [base64_decode](http://php.net/manual/en/function.base64-decode.php) ·½·¨£¬²»¹ıÓĞ¼¸µãĞèÒª×¢Òâ£º
+å‡è®¾æœåŠ¡å™¨ç«¯ä½¿ç”¨çš„æ˜¯PHPï¼Œé‚£ä¹ˆå¯ä»¥ä½¿ç”¨PHPçš„ [base64_decode](http://php.net/manual/en/function.base64-decode.php) æ–¹æ³•ï¼Œä¸è¿‡æœ‰å‡ ç‚¹éœ€è¦æ³¨æ„ï¼š
 
-1£¬ĞèÒª½«¿Õ¸ñ×ª»»Îª¼ÓºÅ£º
+1ï¼Œéœ€è¦å°†ç©ºæ ¼è½¬æ¢ä¸ºåŠ å·ï¼š
 
     $encodedData = str_replace(' ','+',$encodedData);
 
-2£¬ĞèÒªÈ¥µôÇ°ÃæµÄÇ°×º£º
+2ï¼Œéœ€è¦å»æ‰å‰é¢çš„å‰ç¼€ï¼š
 
     $encodedData = preg_replace('/^data:image\/(png|jpg);base64,/','',$encodedData);
 
-3£¬Ç°Á½²½¶¼¿ÉÒÔÔÚ¿Í»§¶ËÊ¹ÓÃ JavaScript Íê³É£¬È»ºó½«´¦ÀíÍêµÄÊı¾İ post ¸ø PHP Ò³Ãæ£¬ÔÙµ÷ÓÃ base64_decode ¼´¿É£º
+3ï¼Œå‰ä¸¤æ­¥éƒ½å¯ä»¥åœ¨å®¢æˆ·ç«¯ä½¿ç”¨ JavaScript å®Œæˆï¼Œç„¶åå°†å¤„ç†å®Œçš„æ•°æ® post ç»™ PHP é¡µé¢ï¼Œå†è°ƒç”¨ base64_decode å³å¯ï¼š
 
     $decocedData = base64_decode($encodedData);
 
-4£¬½âÂëºó£¬¿ÉÒÔ½«Í¼Æ¬Ö±½ÓÏÔÊ¾³öÀ´£º
+4ï¼Œè§£ç åï¼Œå¯ä»¥å°†å›¾ç‰‡ç›´æ¥æ˜¾ç¤ºå‡ºæ¥ï¼š
 
     header("Content-type: image/png");
     echo $decocedData;
