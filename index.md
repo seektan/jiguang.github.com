@@ -9,34 +9,24 @@ tagline: Life is like a box of chocolates, you never know what you're gonna get.
 
 博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，以及版本控制等功能
 
-## About
-
-<div class="contact">
-This blog: 这里有关于#前端开发技术#的一些粗浅文章 <br>
-This guy: 姬光/男/80后/前端开发/小白 <br>
-Find me at:
-<a href="http://weibo.com/jiguang1984" title="新浪微博" target="_blank">新浪微博</a> or
-<a href="http://t.qq.com/jiguang1984" title="腾讯微博" target="_blank">腾讯微博</a> or
-<a href="mailto:jiguang1984@gmail.com" title="Email Me">Email:jiguang1984#gmail.com</a> <br>
-If you're lucky, QQ me: <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8"><img border="0"  src="http://wpa.qq.com/imgd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8&pic=41" alt="点击这里给我发消息" title="点击这里给我发消息" style="vertical-align:-5px;"></a>
-</div>
-
 ## Recent Articles
 
 <ul class="posts">
   {% for post in site.posts limit:10 %}
-    <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> -- <span class="post-sub">{{ post.date | date_to_string }}</span></li>
+    <li><h3><a class="tit" href="{{ BASE_PATH }}{{ post.url }}" target="_blank">{{ post.title }}</a></h3> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
+        <p class="abstract"><a href="{{ BASE_PATH }}{{ post.url }}"  target="_blank" title="Read more...">{{ post.content | strip_html | truncatewords:50 }}</a></p>
+    </li>
   {% endfor %}
 </ul>
 
 ## Recomend Articles
 
 <ul class="posts">
-    <li><a href="/JavaScript/2012/08/21/ember-js-doc-cn/">Ember.js 中文文档</a> -- <span class="post-sub">官方文档中文版</span></li>
-    <li><a href="/JavaScript/2012/05/16/basic-javascript-coding-pattern/">JavaScript基本编码模式</a> -- <span class="post-sub">JavaScript编码中的一些基本技巧，仅供参考</span></li>
-    <li><a href="/html-css/2012/05/03/high-efficient-css-technical/">高效CSS开发核心要点</a> -- <span class="post-sub">CSS编码中的一些基本技巧，根据 Google规范整理</span></li>
-    <li><a href="/DevTools/2012/01/21/git-the-simple-guide/">Git超简洁教程</a> -- <span class="post-sub">简明易懂的Git教程</span></li>
-    <li><a href="/LifeStyle/2012/03/26/how-can-you-program-if-youre-blind/">盲人程序员的编程生涯</a> -- <span class="post-sub">看看盲人程序员是如何工作的</span></li>
+    <li><a href="/JavaScript/2012/08/21/ember-js-doc-cn/" target="_blank">Ember.js 中文文档</a> -- <span class="post-sub">官方文档中文版</span></li>
+    <li><a href="/JavaScript/2012/05/16/basic-javascript-coding-pattern/" target="_blank">JavaScript基本编码模式</a> -- <span class="post-sub">JavaScript编码中的一些基本技巧，仅供参考</span></li>
+    <li><a href="/html-css/2012/05/03/high-efficient-css-technical/" target="_blank">高效CSS开发核心要点</a> -- <span class="post-sub">CSS编码中的一些基本技巧，根据 Google规范整理</span></li>
+    <li><a href="/DevTools/2012/01/21/git-the-simple-guide/" target="_blank">Git超简洁教程</a> -- <span class="post-sub">简明易懂的Git教程</span></li>
+    <li><a href="/LifeStyle/2012/03/26/how-can-you-program-if-youre-blind/" target="_blank">盲人程序员的编程生涯</a> -- <span class="post-sub">看看盲人程序员是如何工作的</span></li>
 </ul>
 
 ## Tag Cloud
@@ -49,11 +39,11 @@ If you're lucky, QQ me: <a target="_blank" href="http://sighttp.qq.com/authd?IDK
 ## Recomend Books
 
 <div class="rec-book">
-<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22785480">精彩绝伦的CSS</a>
+<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22785480">《精彩绝伦的CSS》</a>
 
-<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22628333">JavaScript高级程序设计</a>
+<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22628333">《JavaScript高级程序设计》</a>
 
-<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22722790">JavaScript权威指南</a>
+<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22722790">《JavaScript权威指南》</a>
 </div>
 
 ## Subscribe
@@ -71,6 +61,17 @@ If you're lucky, QQ me: <a target="_blank" href="http://sighttp.qq.com/authd?IDK
 <a href="http://mail.qq.com/cgi-bin/feed?u=http://feed.44ux.com" target="_blank"><img border="0" src="http://img.feedsky.com/images/icon_subshot02_qq.gif" alt="QQ&#37038;&#31665;" vspace="2" style="margin-bottom:3px" ></a>
 <a href="http://9.douban.com/reader/subscribe?url=http://feed.44ux.com" target="_blank"><img border="0" src="http://img.feedsky.com/images/icon_subshot02_douban.gif" alt="&#20061;&#28857;" vspace="2" style="margin-bottom:3px" ></a>
 <!-- Feedsky FEED发布代码结束 -->
+</div>
+
+## Who am I?
+
+<div class="contact">
+About me: 姬光/男/80后/前端开发/小白 <br>
+Find me at:
+<a href="http://weibo.com/jiguang1984" title="新浪微博" target="_blank">新浪微博</a> or
+<a href="http://t.qq.com/jiguang1984" title="腾讯微博" target="_blank">腾讯微博</a> or
+<a href="mailto:jiguang1984@gmail.com" title="Email Me">Email:jiguang1984#gmail.com</a>
+If you're lucky, QQ me: <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8"><img border="0"  src="http://wpa.qq.com/imgd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8&pic=41" alt="点击这里给我发消息" title="点击这里给我发消息" style="vertical-align:-5px;"></a>
 </div>
 
 ## Friends Links

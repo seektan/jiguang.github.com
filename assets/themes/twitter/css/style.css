@@ -82,3 +82,6 @@ html, body{
 .friends-links li{list-style:none;float:left;margin-right:10px;}
 .feed a{display:inline-block;*display:inline;*zoom:1;margin-right:10px;}
 .rec-book a{margin-right:10px;}
+.posts h3{font-size:16px;display: inline-block;*display: inline;*zoom:1;}
+.posts .abstract{margin-top:10px;}
+.posts .abstract a, .posts .abstract a:hover{color:#333;text-decoration: none;}
