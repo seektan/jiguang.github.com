@@ -7,7 +7,6 @@ excerpt:
 layout: post
 category:
   - DevTools
-
 tags:
   - Code Cleaner
 post_format: [ ]
@@ -15,8 +14,6 @@ post_format: [ ]
 在实际开发的过程中，尤其是一些大型项目的开发中，经常会遇到代码复用的问题，很多代码是可复用的，但并不一定已经形成复用组件。这时就需要手动拷贝原始代码，由于手动拷贝的原始代码含有大量无用信息，所以清理工作就变得很重要。
 
 Code Cleaner 就是这样一个代码清理工具，它可以方便地清理代码中的冗余信息，清理后可得到简洁可复用的DOM结构，非常适合团队复用代码。如果一段代码经常会用到，后续再继续整理到组件库即可。
-
-[![][2]][2]
 
 下面是该扩展的简介：
 
@@ -36,7 +33,8 @@ V 1.0 版特性：
 
 屏幕截图：
 
-[![][3]][3]
+![1](http://jiguang.github.com/content/uploads/2012/04/cleaner.png)
+![2](http://jiguang.github.com/content/uploads/2012/04/screenshot.jpg)
 
 这里是下载地址：[Chrome商店英文版][3]    [Chrome商店中文版][4]
 
@@ -54,7 +52,5 @@ V 1.0 版特性：
 
 如果大家有什么建议或者批评指正，欢迎在这里留言与我交流，感谢支持！
 
- []: http://jiguang.github.com/content/uploads/2012/04/cleaner.png
- []: http://jiguang.github.com/content/uploads/2012/04/screenshot.jpg
  [3]: https://chrome.google.com/webstore/detail/ajnfhahbkopfgiheliocnmeobejfdlfe?hl=en-US "Chrome商店英文版"
  [4]: https://chrome.google.com/webstore/detail/ajnfhahbkopfgiheliocnmeobejfdlfe "Chrome商店中文版"
