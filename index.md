@@ -7,7 +7,7 @@ tagline: Life is like a box of chocolates, you never know what you're gonna get.
 
 ## What's new?
 
-博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，以及版本控制等功能。
+博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，以及版本控制等功能。可以通过[44ux.com](http://www.44ux.com) 和 [jiguang.github.com](http://jiguang.github.com) 访问本站。
 
 ## Recent Articles
 
