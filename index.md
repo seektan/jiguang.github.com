@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Life is like an Unidentified Fucking Object
+title: Life is like an Undefined Fucking Object
 tagline: is that an UFO?
 ---
 {% include JB/setup %}
 
 ## What's new?
 
-博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，以及版本控制等功能。可以通过[44ux.com](http://www.44ux.com) 和 [jiguang.github.com](http://jiguang.github.com) 访问本站。
+博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，以及版本控制等功能，您可以通过[44ux.com](http://www.44ux.com) 和 [jiguang.github.com](http://jiguang.github.com) 访问本站。订阅地址仍然不变：[feed.44ux.com](http://feed.44ux.com)。
 
 ## Recent Articles
 
@@ -30,11 +30,11 @@ tagline: is that an UFO?
 ## Recomend Books
 
 <div class="rec-book">
-<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22785480">《精彩绝伦的CSS》</a>
+<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22785480">精彩绝伦的CSS</a>
 
-<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22628333">《JavaScript高级程序设计》</a>
+<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22628333">JavaScript高级程序设计</a>
 
-<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22722790">《JavaScript权威指南》</a>
+<a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22722790">JavaScript权威指南</a>
 </div>
 
 ## Subscribe
