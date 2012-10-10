@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello cruel world!
-tagline: Life is like a box of chocolates, you never know what you're gonna get.
+title: Life is like an Unidentified Fucking Object
+tagline: is that an UFO?
 ---
 {% include JB/setup %}
 
@@ -13,20 +13,11 @@ tagline: Life is like a box of chocolates, you never know what you're gonna get.
 
 <ul class="posts">
   {% for post in site.posts limit:10 %}
-    <li><h3><a class="tit" href="{{ BASE_PATH }}{{ post.url }}" target="_blank">{{ post.title }}</a></h3> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
-        <p class="abstract"><a href="{{ BASE_PATH }}{{ post.url }}"  target="_blank" title="Read more...">{{ post.content | strip_html | truncatewords:50 }}</a></p>
+    <li><h3><a class="tit" href="{{ BASE_PATH }}{{ post.url }}" target="_blank" title="{{ post.title }}">{{ post.title }}</a></h3> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
+        <p class="abstract">{{ post.content | strip_html | truncatewords:50 }}</p>
+        <p class="more"><a href="{{ BASE_PATH }}{{ post.url }}"  target="_blank" title="Read more...">Continue Reading ...</a></p>
     </li>
   {% endfor %}
-</ul>
-
-## Recomend Articles
-
-<ul class="posts">
-    <li><a href="/JavaScript/2012/08/21/ember-js-doc-cn/" target="_blank">Ember.js 中文文档</a> -- <span class="post-sub">官方文档中文版</span></li>
-    <li><a href="/JavaScript/2012/05/16/basic-javascript-coding-pattern/" target="_blank">JavaScript基本编码模式</a> -- <span class="post-sub">JavaScript编码中的一些基本技巧，仅供参考</span></li>
-    <li><a href="/html-css/2012/05/03/high-efficient-css-technical/" target="_blank">高效CSS开发核心要点</a> -- <span class="post-sub">CSS编码中的一些基本技巧，根据 Google规范整理</span></li>
-    <li><a href="/DevTools/2012/01/21/git-the-simple-guide/" target="_blank">Git超简洁教程</a> -- <span class="post-sub">简明易懂的Git教程</span></li>
-    <li><a href="/LifeStyle/2012/03/26/how-can-you-program-if-youre-blind/" target="_blank">盲人程序员的编程生涯</a> -- <span class="post-sub">看看盲人程序员是如何工作的</span></li>
 </ul>
 
 ## Tag Cloud

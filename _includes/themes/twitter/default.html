@@ -14,7 +14,8 @@
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.ui.totop.js"></script>
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -51,6 +52,22 @@
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a> <a href="https://github.com/jiguang/jiguang.github.com" target="_blank"> [site source]</a>
         </p>
     </div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+	  			containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+	 		};
+			*/
+
+			$().UItoTop({scrollSpeed: 500});
+
+		});
+	</script>
 
     {% include JB/analytics %}
   </body>
