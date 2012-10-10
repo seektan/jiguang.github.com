@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Jekyll in Windows shows 'Invalid byte sequence in GBK' error"
-description: "在 Windows 中使用 Jekyll 出现 Invalid byte sequence in GBK 错误，导致 _site 目录为空"
+title: "Jekyll在Windows下生成_site目录为空的解决方案"
+description: "在 Windows 中使用 Jekyll 出现 Invalid byte sequence in GBK 错误，导致 _site 目录为空的解决方案"
 category:
   - html-css
 tags: [markdown]
@@ -26,17 +26,17 @@ Mac 下安装 [Jekyll][1] 非常简单，几乎不会遇到问题，但是一到
 
     jekyll --server --no-auto
 
-命令查看 Ruby 报错（也可以将 \_config.yml 中的 `auto: true` 改为 `auto: false`），可能会出现一坨错误，其中可能包含“invalid byte sequence in GBK”字样。
+命令查看 Ruby 报错（也可以将 \_config.yml 中的 `auto: true` 改为 `auto: false`），可能会出现一坨错误，其中可能包含`invalid byte sequence in GBK`字样。
 
 那么很明显这是个编码问题，请仔细查看报错的文件位置，如果是 Ruby 本身的问题，那么有两种解决方案：
 
-1， Ruby代码的编码格式有问题：
+1. Ruby代码的编码格式有问题：
 
 解决方案是在该ruby文件头声明正确的编码
 
     # encoding: GB2312
 
-2， 读取的文件编码不对：
+2. 读取的文件编码不对：
 
 解决方案：Ruby 在 window 中默认的文件读取编码是GBK, 因此只要在打开文件时改变编码即可。
 
