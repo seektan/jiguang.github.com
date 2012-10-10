@@ -6,7 +6,7 @@ category:
   - html-css
 tags: [markdown]
 ---
-{% include JB/setup %}
+{% include JB/setup %} 
 
 [Markdown][1] 是一种非常简洁的标记语言，目前已经非常流行，并且获得了许多大网站的支持。关于 Markdown 的简介，可以查看[这篇文章][2]，网上也有很多教程，这里不再赘述。
 

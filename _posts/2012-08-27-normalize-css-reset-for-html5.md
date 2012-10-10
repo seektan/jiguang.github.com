@@ -8,7 +8,7 @@ category:
 
 tags:
   - HTML5
-post_format: [ ]
+post_format: [ ] 
 ---
 [Nomalize.css][1] 是一个支持 [html5][2] 标准的 CSS Rest，可以页面中的元素在各浏览器中表现尽量一致。目前 [nomalize.css][1] 有两个版本，一个版本包含了支持旧浏览器的 reset，另外一个版本只支持 IE 8+, Firefox 4+, Safari 5+, Opera, Chrome，这两个版本都可以在 [官方网站][1] 上下载。
 
