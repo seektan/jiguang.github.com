@@ -7,7 +7,7 @@ tagline: is that an UFO?
 
 ## What's new?
 
-博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，以及版本控制等功能，您可以通过[44ux.com](http://www.44ux.com) 和 [jiguang.github.com](http://jiguang.github.com) 访问本站。订阅地址仍然不变：[feed.44ux.com](http://feed.44ux.com)。
+博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，以及版本控制等功能。您可以通过[44ux.com](http://www.44ux.com) 和 [jiguang.github.com](http://jiguang.github.com) 访问本站。订阅地址仍然不变：<a href="http://feed.44ux.com" title="feed.44ux.com" target="_blank">feed.44ux.com</a>，欢迎订阅本站 ;)
 
 ## Recent Articles
 
