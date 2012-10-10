@@ -10,7 +10,7 @@ tags: [markdown]
 
 Mac 下安装 [Jekyll][1] 非常简单，几乎不会遇到问题，但是一到了 Windows 就各种纠结。如果你不知道什么是 Jekyll 和 Github Pages，可以看一下[阮老师的这篇文章][2]。
 
-本文讲述的是 _site 目录生成内容为空的解决方案，前提是你已经在 Windows 下[安装][3]好了 Jekyll。
+本文讲述的是 \_site 目录生成内容为空的解决方案，前提是你已经在 Windows 下[安装][3]好了 Jekyll。
 
 **基本症状：**
 
@@ -18,7 +18,7 @@ Mac 下安装 [Jekyll][1] 非常简单，几乎不会遇到问题，但是一到
 
     jekyll --server
 
-此时命令会很快结束，但是查看站点目录中的 _site 目录却没有内容。
+此时命令会很快结束，但是查看站点目录中的 \_site 目录却没有内容。
 
 **解决方案：**
 
@@ -26,7 +26,7 @@ Mac 下安装 [Jekyll][1] 非常简单，几乎不会遇到问题，但是一到
 
     jekyll --server --no-auto
 
-命令查看 Ruby 报错（也可以将 _config.yml 中的 `auto: true` 改为 `auto: false`），可能会出现一坨错误，其中可能包含“invalid byte sequence in GBK”字样。
+命令查看 Ruby 报错（也可以将 \_config.yml 中的 `auto: true` 改为 `auto: false`），可能会出现一坨错误，其中可能包含“invalid byte sequence in GBK”字样。
 
 那么很明显这是个编码问题，请仔细查看报错的文件位置，如果是 Ruby 本身的问题，那么有两种解决方案：
 
