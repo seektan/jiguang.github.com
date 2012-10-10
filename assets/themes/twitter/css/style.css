@@ -83,7 +83,7 @@ html, body{
 .span12, .container{width:985px;}
 .container .span12{width:985px;}
 ul.posts{ list-style:none;margin:0;padding:0;}
-.posts li{margin-bottom:15px;padding-bottom:10px;border-bottom:1px solid #e7e7e7;}
+.index_posts li{margin-bottom:15px;padding-bottom:10px;border-bottom:1px solid #e7e7e7;}
 .posts .post-sub{color:#999;}
 .span12 h2{padding-bottom:5px;}
 .friends-links{overflow:hidden;*zoom:1;margin:0;padding:0;}

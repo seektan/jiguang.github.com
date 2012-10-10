@@ -11,7 +11,7 @@ tagline: is that an UFO?
 
 ## Recent Articles
 
-<ul class="posts">
+<ul class="posts index_posts">
   {% for post in site.posts limit:10 %}
     <li><h3><a class="tit" href="{{ BASE_PATH }}{{ post.url }}" target="_blank" title="{{ post.title }}">{{ post.title }}</a></h3> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
         <p class="abstract">{{ post.content | strip_html | truncatewords:50 }}</p>
