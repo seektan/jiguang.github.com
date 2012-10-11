@@ -84,6 +84,9 @@ tagline: is that an UFO?
     <li><a href="http://lison.sinaapp.com/" target="_blank">阿伦的技术博客</a></li>
     <li><a href="http://www.wheattime.com/" target="_blank">麦时</a></li>
     <li><a href="http://www.92app.com/" target="_blank">爱佳软</a></li>
+    <li><a href="http://www.feimos.com/" target="_blank">费墨</a></li>
+    <li><a href="http://haipi8.com/" target="_blank" title="坤哥">嗨皮吧</a></li>
+    <li><a href="http://www.hohoo.me/" target="_blank">豪豪</a></li>
 </ul>
 
 
