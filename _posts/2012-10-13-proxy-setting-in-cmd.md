@@ -4,11 +4,13 @@ title: "CMD 和 Git 中的代理设置"
 description: "为 Git 和 cmd 设置代理"
 category:
  - DevTools
-tags: [Note]
+tags: [Note, Git]
 ---
 {% include JB/setup %}
 
-**cmd 设置代理**
+前些天在公司配置 [Jekyll][4] 的时候用到 CMD 的代理设置，这里记录一下，另附上 Git 的代理设置，以备查阅。
+
+**CMD 设置代理**
 
 在 [cmd][1] 环境下设置代理可能不是很常用，但是某些情况下还是可能会用到，比如公司的电脑只能通过设置代理访问外网，而你需要在 cmd 环境下使用 `gem` 命令更新文件时。
 
@@ -25,7 +27,7 @@ tags: [Note]
 
 设置完成后，就可以在 `cmd` 下正常使用网络了。
 
-**git 设置代理**
+**Git 设置代理**
 
 [Git][3] 的代理设置也非常简单，一句话就搞定了：
 
@@ -52,3 +54,4 @@ PS：有些同学可能使用的 Git 的客户端，比如界面很上流的 [Gi
 [1]: http://baike.baidu.com/view/65856.htm
 [2]: http://windows.github.com/
 [3]: http://44ux.com/tags.html#Git-ref
+[4]: https://github.com/mojombo/jekyll

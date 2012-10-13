@@ -4,7 +4,7 @@ title: "Jekyll在Windows下生成_site目录为空的解决方案"
 description: "在 Windows 中使用 Jekyll 出现 Invalid byte sequence in GBK 错误，导致 _site 目录为空的解决方案"
 category:
   - html-css
-tags: [markdown]
+tags: [Markdown, Jekyll]
 ---
 {% include JB/setup %} 
 
