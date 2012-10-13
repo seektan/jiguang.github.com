@@ -1,7 +1,7 @@
 ---
 layout: page
-title: { Undefined Fucking Object }
-tagline: is that an UFO?
+title: Life is like an Undefined Fucking Object
+tagline: 前端开发/用户体验/网站重构/电子商务
 ---
 {% include JB/setup %}
 
