@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Life is like an Undefined Fucking Object
+title: \{ Undefined Fucking Object \}
 tagline: is that an UFO?
 ---
 {% include JB/setup %}
@@ -14,7 +14,7 @@ tagline: is that an UFO?
 <ul class="posts index_posts">
   {% for post in site.posts limit:10 %}
     <li><h3><a class="tit" href="{{ BASE_PATH }}{{ post.url }}" target="_blank" title="{{ post.title }}">{{ post.title }}</a></h3> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
-    <a class="comment" href="{{ BASE_PATH }}{{ post.url }}#disqus_thread">comment</a>
+    <!--<a class="comment" href="{{ BASE_PATH }}{{ post.url }}#disqus_thread">link</a>-->
         <p class="abstract">{{ post.content | strip_html | truncatewords:50 }}</p>
         <p class="more"><a href="{{ BASE_PATH }}{{ post.url }}"  target="_blank" title="Read more...">Continue Reading ...</a></p>
     </li>
