@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "为什么Git每次提交时总要求输入密码？"
-description: "Git每次提交时询问密码"
+title: "Git 每次提交时总是要求输入用户名和密码"
+description: "为什么Git每次提交时总要求输入密码？"
 category:
   - DevTools
 tags: [Git, Mac]
@@ -16,7 +16,9 @@ tags: [Git, Mac]
 
 ![clone https][1]
 
-那么 HTTPS 的地址是做什么用的呢？它是用在一些防火墙或者代理服务器设置比较严格的情况下的，比如有些公司是禁止使用 SSH 连接外网的，那么在这种情况下要想使用 Git 的话，就只能用 HTTPS 的方式了。使用 HTTPS 的方式，也有储存密码的方式，本文后面会讲到。我们这里首推的方式是切换到 SSH，如果你的网络环境支持的话。
+HTTPS 的地址是做什么用的呢？其实它主要是用在一些防火墙或者代理服务器设置比较严格的情况下的，比如有些公司是禁止使用 SSH 连接外网，那么在这种情况下要想使用 Git 的话，就只能用 HTTPS 的方式了。
+
+使用 HTTPS 的方式，也有储存密码的方式，本文后面会讲到。我们这里首推的方式是切换到 SSH，如果你的网络环境支持的话。
 
 **切换到 SSH 方式（推荐）**
 
@@ -24,15 +26,15 @@ tags: [Git, Mac]
 
 通过命令行工具切换 URL 的步骤如下：
 
-1. 打开你在 github.com 上的 repo
+打开你在 github.com 上的 repo
 
 ![clone https][2]
 
-2. 选择 SSH 克隆 URL，点击 URL 右侧的复制按钮将其复制到剪贴板
+选择 SSH 克隆 URL，点击 URL 右侧的复制按钮将其复制到剪贴板
 
 ![clone https][3]
 
-3. 打开命令行工具，运行 `git remote set-url origin` 例如：
+打开命令行工具，运行 `git remote set-url origin` 例如：
 
     $ git remote set-url origin git@github.com:user/repo.git
 
@@ -86,7 +88,7 @@ tags: [Git, Mac]
 
 经过这样的设置之后，下次再克隆 HTTPS 地址时会询问你的用户名和密码，并授权给 OSX keychain。完成这些之后你的用户名和密码就会存储到 keychain 中，再也不会在 Git 中询问了。
 
-注意：这个凭据助手只适用于克隆 HTTPS 形式的 URL，如果使用 SSH 形式的 URL，请按上文步骤进行操作。
+**NOTE：**这个凭据助手只适用于克隆 HTTPS 形式的 URL，如果使用 SSH 形式的 URL，请按上文步骤进行操作。
 
 [1]: http://www.44ux.com/content/uploads/2012/10/clone-https.png
 [2]: http://www.44ux.com/content/uploads/2012/10/ssh-clone-url.png
