@@ -1,6 +1,6 @@
 ---
 layout: page
-title: \{ Undefined Fucking Object \}
+title: { Undefined Fucking Object }
 tagline: is that an UFO?
 ---
 {% include JB/setup %}
