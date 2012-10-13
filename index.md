@@ -73,6 +73,7 @@ tagline: is that UFO?
     <li><a href="http://xiedexu.cn/" target="_blank">DeXu.Xie's Blog</a></li>
     <li><a href="http://www.feelcss.com/" target="_blank">Hey@feelcss</a></li>
     <li><a href="http://www.36ria.com/" target="_blank">ria之家</a></li>
+    <li><a href="http://www.gracecode.com/" target="_blank" title="明城">Gracecode</a></li>
     <li><a href="http://vivienchen.me/" target="_blank">Vivien's blog</a></li>
     <li><a href="http://js8.in/" target="_blank">三水清</a></li>
     <li><a href="http://www.cn-cuckoo.com/" target="_blank">为之漫笔</a></li>
