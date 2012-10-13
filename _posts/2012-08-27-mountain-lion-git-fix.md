@@ -8,7 +8,7 @@ layout: post
 category:
   - DevTools
 
-tags: [ ]
+tags: [Git, Mac]
 post_format: [ ]
 ---
 如果在之前的 Lion 系统中安装了 [git][1]，且升级到了 Mountain Lion 的话，就会出现 git 命令丢失的错误：
