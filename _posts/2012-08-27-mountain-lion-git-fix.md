@@ -25,13 +25,13 @@ Step 1
 
 打开 App Store 下载/更新 XCode，使其为最新版，[笔者][3]这里显示为 4.4.1（4F1003）。
 
-![Install command line tools][4]
+![Install command line tools][5]
 
 Step 2
 
 安装 Xcode 并运行，使用 Command + , 快捷键呼出 Preference 面板，转到 Downloads 面板并找到 Command Line Tools ，然后点击 Install。
 
-![Install xcode][5]
+![Install xcode][4]
 
 这时可能会要求你输入一个 Apple Developer ID，如果没有的话注册一个即可。
 
