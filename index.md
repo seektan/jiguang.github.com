@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Life is like an Undefined Fucking Object
-tagline: 前端开发/用户体验/网站重构/电子商务
+tagline: is that UFO?
 ---
 {% include JB/setup %}
 
@@ -14,7 +14,7 @@ tagline: 前端开发/用户体验/网站重构/电子商务
 <ul class="posts index_posts">
   {% for post in site.posts limit:10 %}
     <li><h3><a class="tit" href="{{ BASE_PATH }}{{ post.url }}" target="_blank" title="{{ post.title }}">{{ post.title }}</a></h3> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
-    <!--<a class="comment" href="{{ BASE_PATH }}{{ post.url }}#disqus_thread">link</a>-->
+    <!--<a class="comment" href="http://44ux.com{{ BASE_PATH }}{{ post.url }}#disqus_thread" data-disqus-identifier="article_1_identifier">link</a>-->
         <p class="abstract">{{ post.content | strip_html | truncatewords:50 }}</p>
         <p class="more"><a href="{{ BASE_PATH }}{{ post.url }}"  target="_blank" title="Read more...">Continue Reading ...</a></p>
     </li>
