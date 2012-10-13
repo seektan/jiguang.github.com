@@ -88,6 +88,17 @@ tagline: is that an UFO?
     <li><a href="http://www.feimos.com/" target="_blank">费墨</a></li>
     <li><a href="http://haipi8.com/" target="_blank" title="坤哥">嗨皮吧</a></li>
     <li><a href="http://www.hohoo.me/" target="_blank">豪豪</a></li>
+    <li><a href="http://www.sannielu.com/" target="_blank">LuLu的幸福生活</a></li>
+    <li><a href="http://lasas.me/" target="_blank">Larthas</a></li>
+    <li><a href="http://icolin.org/" target="_blank">icolin</a></li>
+    <li><a href="http://www.bu-anjing.com/" target="_blank">Harika の碎碎念</a></li>
+    <li><a href="http://www.hotels2map.com/" target="_blank">Jacob</a></li>
+    <li><a href="http://www.hepeng.org/blog/" target="_blank">Peng</a></li>
+    <li><a href="http://reeqi.name/" target="_blank">简单生活</a></li>
+    <li><a href="http://gmeiz.me/" target="_blank">G妹纸</a></li>
+    <li><a href="http://ooxx.me/" target="_blank">大猫の意淫筆記</a></li>
+    <li><a href="http://pufen.net/" target="_blank">飘飘</a></li>
+    <li><a href="http://www.qianduan.net/" target="_blank">前端观察</a></li>
 </ul>
 
 
