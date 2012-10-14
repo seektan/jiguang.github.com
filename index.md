@@ -36,6 +36,8 @@ tagline: is that UFO?
 <a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22628333">JavaScript高级程序设计</a>
 
 <a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22722790">JavaScript权威指南</a>
+
+<a target="_blank" href="http://44ux.com/content/downloads/manong_1.pdf" title="图灵公司码农第一期">码农第一期</a>
 </div>
 
 ## Subscribe
