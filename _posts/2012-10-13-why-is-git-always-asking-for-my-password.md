@@ -91,6 +91,8 @@ Password: [enter your password]
 # said "/usr/bin/git", use `sudo mv git-credential-osxkeychain /usr/bin`.
 {% endhighlight %}
 
+Windows 用户也可以直接下载[download-git-credential-osxkeychain][8]，然后手动复制粘贴到 `Git安装目录/bin` 中。
+
 若想让 Git 使用 osxkeychain，可以在 Git 的全局设置中进行设置：
 
 {% highlight bash %}
@@ -109,3 +111,4 @@ $ git config --global credential.helper osxkeychain
 [5]: http://44ux.com/tags.html#Git-ref
 [6]: http://mxcl.github.com/homebrew/
 [7]: http://44ux.com/blog/2012/08/27/mountain-lion-git-fix/
+[8]: http://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain
