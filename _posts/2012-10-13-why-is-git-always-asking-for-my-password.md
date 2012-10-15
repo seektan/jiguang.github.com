@@ -37,12 +37,14 @@ HTTPS 的地址是做什么用的呢？其实它主要是用在一些防火墙�
 打开命令行工具，运行 `git remote set-url origin` 例如：
 
 {% highlight bash %}
-    $ git remote set-url origin git@github.com:user/repo.git
+$ git remote set-url origin git@github.com:user/repo.git
 {% endhighlight %}
 
 然后再次 commit，如果出现类似：
 
-    Permission denied (publickey).
+{% highlight bash %}
+Permission denied (publickey).
+{% endhighlight %}
 
 字样，那么说明你的 SSH key 没有设置或已经失效（譬如升级到 Mountain Lion 系统后），请重新参照上文的[官方文档][4]进行设置即可。
 
@@ -52,41 +54,49 @@ HTTPS 的地址是做什么用的呢？其实它主要是用在一些防火墙�
 
 如果你装了 [homebrew][6]，那么应该已经自带了 osxkeychain，可以通过下面的命令验证：
 
-    $ git credential-osxkeychain
-    # Test for the cred helper
-    Usage: git credential-osxkeychain <get|store|erase>
+{% highlight bash %}
+$ git credential-osxkeychain
+# Test for the cred helper
+Usage: git credential-osxkeychain <get|store|erase>
+{% endhighlight %}
 
 如果没有安装的话，可以使用 `curl` 下载并安装：
 
-    $ git credential-osxkeychain
-    # Test for the cred helper
-    git: 'credential-osxkeychain' is not a git command. See 'git --help'.
+{% highlight bash %}
+$ git credential-osxkeychain
+# Test for the cred helper
+git: 'credential-osxkeychain' is not a git command. See 'git --help'.
 
-    $ curl -s -O http://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain
-    # Download the helper
+$ curl -s -O http://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain
+# Download the helper
 
-    $ chmod u+x git-credential-osxkeychain
-    # Fix the permissions on the file so it can be run
+$ chmod u+x git-credential-osxkeychain
+# Fix the permissions on the file so it can be run
+{% endhighlight %}
 
 现在，你需要将助手安装到与 Git 的安装目录相同的位置：
 
-    $ which git
-    # Find where git is installed
-    /usr/local/git/bin/git
+{% highlight bash %}
+$ which git
+# Find where git is installed
+/usr/local/git/bin/git
 
-    $ sudo mv git-credential-osxkeychain /usr/local/git/bin/
-    # Move the file so git can access it
-    Password: [enter your password]
+$ sudo mv git-credential-osxkeychain /usr/local/git/bin/
+# Move the file so git can access it
+Password: [enter your password]
 
-    # NOTE: the path /usr/local/git/bin may vary based on your OS version or where
-    # you have installed Git. If `which git` showed a different value, you should
-    # adjust the location to which you `mv` the file.  For example, if `which git`
-    # said "/usr/bin/git", use `sudo mv git-credential-osxkeychain /usr/bin`.
+# NOTE: the path /usr/local/git/bin may vary based on your OS version or where
+# you have installed Git. If `which git` showed a different value, you should
+# adjust the location to which you `mv` the file.  For example, if `which git`
+# said "/usr/bin/git", use `sudo mv git-credential-osxkeychain /usr/bin`.
+{% endhighlight %}
 
 若想让 Git 使用 osxkeychain，可以在 Git 的全局设置中进行设置：
 
-    $ git config --global credential.helper osxkeychain
-    # Set git to use the osxkeychain credential helper
+{% highlight bash %}
+$ git config --global credential.helper osxkeychain
+# Set git to use the osxkeychain credential helper
+{% endhighlight %}
 
 经过这样的设置之后，下次再克隆 HTTPS 地址时会询问你的用户名和密码，并授权给 OSX keychain。完成这些之后你的用户名和密码就会存储到 keychain 中，再也不会在 Git 中询问了。
 
