@@ -110,11 +110,8 @@ $ git config --global credential.helper osxkeychain
 
 [Source](https://github.com/anurse/git-credential-winstore)
 
-解压缩文件并运行里面的 git-credential-winstore.exe，然后按照上文方法更新 git config 即可。
+解压缩文件并运行里面的 git-credential-winstore.exe 即可。
 
-{% highlight bash %}
-$ git config --global credential.helper osxkeychain
-{% endhighlight %}
 
 **参考：**
 
