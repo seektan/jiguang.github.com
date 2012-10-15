@@ -36,7 +36,9 @@ HTTPS 的地址是做什么用的呢？其实它主要是用在一些防火墙�
 
 打开命令行工具，运行 `git remote set-url origin` 例如：
 
+{% highlight bash %}
     $ git remote set-url origin git@github.com:user/repo.git
+{% endhighlight %}
 
 然后再次 commit，如果出现类似：
 
