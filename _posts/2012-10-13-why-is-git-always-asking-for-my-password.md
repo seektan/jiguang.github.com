@@ -50,9 +50,11 @@ Permission denied (publickey).
 
 **HTTPS 方式保存密码**
 
-如果你的网络环境中只能使用 HTTPS 的方式，那么可以尝试安装 osxkeychain 凭据助手，并在 Git 中设置使用。注意：Git 版本要在 1.7.10 及以上才可使用。
+**OSX 用户**
 
-如果你装了 [homebrew][6]，那么应该已经自带了 osxkeychain，可以通过下面的命令验证：
+如果你的网络环境中只能使用 HTTPS 的方式，那么可以尝试安装 osxkeychain 凭据助手，并在 Git 中设置使用。注意：Git 版本要在 1.7.9 及以上才可使用。
+
+如果你装了 [homebrew][6] 的话，那么应该已经自带了 osxkeychain，可以通过下面的命令验证：
 
 {% highlight bash %}
 $ git credential-osxkeychain
@@ -60,7 +62,7 @@ $ git credential-osxkeychain
 Usage: git credential-osxkeychain <get|store|erase>
 {% endhighlight %}
 
-如果没有安装的话，可以使用 `curl` 下载并安装：
+如果没有安装，那么可以使用 `curl` 下载并安装：
 
 {% highlight bash %}
 $ git credential-osxkeychain
@@ -100,20 +102,39 @@ $ git config --global credential.helper osxkeychain
 
 经过这样的设置之后，下次再克隆 HTTPS 地址时会询问你的用户名和密码，并授权给 OSX keychain。完成这些之后你的用户名和密码就会存储到 keychain 中，再也不会在 Git 中询问了。
 
+**Windows 用户**
+
 如果你是 Windows 用户，那么首先可以考虑使用 [GitHub for Windows][11]，它已经包含了该助手。
 
 如果你是钟爱命令行的话，可以下载对应系统的版本：
 
-[Windows Vista & 7](http://github-media-downloads.s3.amazonaws.com/windows/GitWindowsExtras.zip)
+[Windows Vista & 7 版本](http://github-media-downloads.s3.amazonaws.com/windows/GitWindowsExtras.zip)
 
-[Windows 8](http://github-media-downloads.s3.amazonaws.com/windows/GitWindowsExtras-Fx4.zip)
+[Windows 8 版本](http://github-media-downloads.s3.amazonaws.com/windows/GitWindowsExtras-Fx4.zip)
 
-[Source](https://github.com/anurse/git-credential-winstore)
+[Source 版本](https://github.com/anurse/git-credential-winstore)
 
-解压缩文件并将里面的 git-credential-winstore.exe 放到 git 所在的目录，运行即可。
+解压缩文件并将里面的 git-credential-winstore.exe 放到 git 所在的目录运行即可，下次再 commit 的时候，会弹出个窗口询问用户名和密码，填写一次即可永久保存了。
 
+**NOTE：** 一定要将 git-credential-winstore.exe 复制到 git 所在目录才行，比如我的目录是在 `D:\Program Files\Git\bin` 中。
 
-**参考：**
+**Linux 用户**
+
+Linux 用户可以使用 'cache' 认证助手包来缓存认证信息，运行下面的命令来启用凭据缓存，启用后每次输入密码将保存一小时（3600秒）：
+
+{% highlight bash %}
+git config --global credential.helper 'cache --timeout 3600'
+{% endhighlight %}
+
+下面的命令可以查看 'cache' 认证助手的所有配置：
+
+{% highlight bash %}
+git help credential-cache
+{% endhighlight %}
+
+除了这些方法之外，还有一种使用 .netrc 文件的方式，感兴趣的同学可以看看参考资料中的第一篇文章。
+
+**参考资料：**
 
 [https://confluence.atlassian.com/display/STASH/Permanently+authenticating+with+Git+repositories][9]
 [https://help.github.com/articles/set-up-git][10]
