@@ -16,7 +16,9 @@ Mac 下安装 [Jekyll][1] 非常简单，几乎不会遇到问题，但是一到
 
 在 cmd 中运行：
 
-    jekyll --server
+{% highlight bash %}
+jekyll --server
+{% endhighlight %}
 
 此时命令会很快结束，但是查看站点目录中的 \_site 目录却没有内容。
 
@@ -24,7 +26,9 @@ Mac 下安装 [Jekyll][1] 非常简单，几乎不会遇到问题，但是一到
 
 首先使用：
 
-    jekyll --server --no-auto
+{% highlight bash %}
+jekyll --server --no-auto
+{% endhighlight %}
 
 命令查看 Ruby 报错（也可以将 \_config.yml 中的 `auto: true` 改为 `auto: false`），可能会出现一坨错误，其中可能包含`invalid byte sequence in GBK`字样。
 
@@ -34,25 +38,35 @@ Mac 下安装 [Jekyll][1] 非常简单，几乎不会遇到问题，但是一到
 
 解决方案是在该ruby文件头声明正确的编码
 
-    # encoding: GB2312
+{% highlight bash %}
+# encoding: GB2312
+{% endhighlight %}
 
 2. 读取的文件编码不对：
 
 解决方案：Ruby 在 window 中默认的文件读取编码是GBK, 因此只要在打开文件时改变编码即可。
 
-    File.open("scroll.js", 'r:utf-8')
+{% highlight bash %}
+File.open("scroll.js", 'r:utf-8')
+{% endhighlight %}
 
 如果报错位置是在 Jekyll 的目录中，例如：
 
-    C:\Ruby193\lib\ruby\gems\1.9.1\gems\jekyll-0.11.2\lib\jekyll\convertible.rb:27:in `read_yaml': invalid byte sequence in US-ASCII (ArgumentError)
+{% highlight bash %}
+C:\Ruby193\lib\ruby\gems\1.9.1\gems\jekyll-0.11.2\lib\jekyll\convertible.rb:27:in `read_yaml': invalid byte sequence in US-ASCII (ArgumentError)
+{% endhighlight %}
 
 那么我们可以看到，在 convertible.rb 文件中第27行出现错误（具体行号见实际报错提示），那么我们找到这一行：
 
-    self.content = File.read(File.join(base, name))
+{% highlight bash %}
+self.content = File.read(File.join(base, name))
+{% endhighlight %}
 
 将其修改为：
 
-    self.content = File.read(File.join(base, name), :encoding => "utf-8")
+{% highlight bash %}
+self.content = File.read(File.join(base, name), :encoding => "utf-8")
+{% endhighlight %}
 
 即可解决。同时，一定要确保你的文章要保存为 [UTF-8 无 BOM 格式][4]才行。
 

@@ -10,14 +10,16 @@ tags: [canvas, PHP]
 
 我们知道 Canvas 的 [toDataURL](https://developer.mozilla.org/en-US/docs/DOM/HTMLCanvasElement) 方法可以生成 base64 编码的 dataURL 形式的图片到页面中，例如：
 
-    function test() {
-         var canvas = document.getElementById("canvas");
-         var url = canvas.toDataURL();
+{% highlight javascript %}
+function test() {
+     var canvas = document.getElementById("canvas");
+     var url = canvas.toDataURL();
 
-         var newImg = document.createElement("img");
-         newImg.src = url;
-         document.body.appendChild(newImg);
-    }
+     var newImg = document.createElement("img");
+     newImg.src = url;
+     document.body.appendChild(newImg);
+}
+{% endhighlight %}
 
 那么，如何将生成后的图片保存下来呢？
 
@@ -27,17 +29,25 @@ tags: [canvas, PHP]
 
 1，需要将空格转换为加号：
 
-    $encodedData = str_replace(' ','+',$encodedData);
+{% highlight php %}
+$encodedData = str_replace(' ','+',$encodedData);
+{% endhighlight %}
 
 2，需要去掉前面的前缀：
 
-    $encodedData = preg_replace('/^data:image\/(png|jpg);base64,/','',$encodedData);
+{% highlight php %}
+$encodedData = preg_replace('/^data:image\/(png|jpg);base64,/','',$encodedData);
+{% endhighlight %}
 
 3，前两步都可以在客户端使用 JavaScript 完成，然后将处理完的数据 post 给 PHP 页面，再调用 base64_decode 即可：
 
-    $decocedData = base64_decode($encodedData);
+{% highlight php %}
+$decocedData = base64_decode($encodedData);
+{% endhighlight %}
 
 4，解码后，可以将图片直接显示出来：
 
-    header("Content-type: image/png");
-    echo $decocedData;
+{% highlight php %}
+header("Content-type: image/png");
+echo $decocedData;
+{% endhighlight %}
