@@ -1,7 +1,7 @@
 /* Override some defaults */
 html, body{
   /*background-color: #eee;*/
-  font:14px/1.5em Georgia, "Times New Roman", Times, serif;
+  font:14px/1.5em Georgia, Arial, "Times New Roman", Times,\5b8b\4f53, sans-serif;
 }
 .navbar {
   margin-bottom: 0;
