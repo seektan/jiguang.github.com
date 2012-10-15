@@ -91,8 +91,6 @@ Password: [enter your password]
 # said "/usr/bin/git", use `sudo mv git-credential-osxkeychain /usr/bin`.
 {% endhighlight %}
 
-Windows 用户也可以直接下载[download-git-credential-osxkeychain][8]，然后手动复制粘贴到 `Git安装目录/bin` 中。
-
 若想让 Git 使用 osxkeychain，可以在 Git 的全局设置中进行设置：
 
 {% highlight bash %}
@@ -102,7 +100,27 @@ $ git config --global credential.helper osxkeychain
 
 经过这样的设置之后，下次再克隆 HTTPS 地址时会询问你的用户名和密码，并授权给 OSX keychain。完成这些之后你的用户名和密码就会存储到 keychain 中，再也不会在 Git 中询问了。
 
-**NOTE：**这个凭据助手只适用于克隆 HTTPS 形式的 URL，如果使用 SSH 形式的 URL，请按上文步骤进行操作。
+如果你是 Windows 用户，那么首先可以考虑使用 [GitHub for Windows][11]，它已经包含了该助手。
+
+如果你是钟爱命令行的话，可以下载对应系统的版本：
+
+[Windows Vista & 7](http://github-media-downloads.s3.amazonaws.com/windows/GitWindowsExtras.zip)
+
+[Windows 8](http://github-media-downloads.s3.amazonaws.com/windows/GitWindowsExtras-Fx4.zip)
+
+[Source](https://github.com/anurse/git-credential-winstore)
+
+解压缩文件并运行里面的 git-credential-winstore.exe，然后按照上文方法更新 git config 即可。
+
+{% highlight bash %}
+$ git config --global credential.helper osxkeychain
+{% endhighlight %}
+
+**参考：**
+
+[https://confluence.atlassian.com/display/STASH/Permanently+authenticating+with+Git+repositories][9]
+[https://help.github.com/articles/set-up-git][10]
+
 
 [1]: http://www.44ux.com/content/uploads/2012/10/clone-https.png
 [2]: http://www.44ux.com/content/uploads/2012/10/ssh-clone-url.png
@@ -112,3 +130,6 @@ $ git config --global credential.helper osxkeychain
 [6]: http://mxcl.github.com/homebrew/
 [7]: http://44ux.com/blog/2012/08/27/mountain-lion-git-fix/
 [8]: http://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain
+[9]: https://confluence.atlassian.com/display/STASH/Permanently+authenticating+with+Git+repositories
+[10]: https://help.github.com/articles/set-up-git
+[11]: http://github-windows.s3.amazonaws.com/GitHubSetup.exe
