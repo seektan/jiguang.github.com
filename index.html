@@ -1,19 +1,18 @@
 ---
 layout: page
 title: Life is like an Undefined Fucking Object
-tagline: is that UFO?
 ---
 {% include JB/setup %}
 
-## What's new?
+<h2>What's new?</h2>
 
-博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，以及版本控制等功能。您可以通过[44ux.com](http://www.44ux.com) 和 [jiguang.github.com](http://jiguang.github.com) 访问本站。订阅地址仍然不变：<a href="http://feed.44ux.com" title="feed.44ux.com" target="_blank">feed.44ux.com</a>，欢迎订阅本站 ;)
+博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，以及版本控制等功能。您可以通过<a href="http://www.44ux.com" title="首页">44ux.com</a> 和 <a href="http://jiguang.github.com" title="首页">jiguang.github.com</a> 访问本站。订阅地址仍然不变：<a href="http://feed.44ux.com" title="feed.44ux.com" target="_blank">feed.44ux.com</a>，欢迎订阅本站 ;)
 
-## Recent Articles
+<h2>Recent Articles</h2>
 
 <ul class="posts index_posts">
-  {% for post in site.posts limit:10 %}
-    <li><h3><a class="tit" href="{{ BASE_PATH }}{{ post.url }}" target="_blank" title="{{ post.title }}">{{ post.title }}</a></h3> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
+  {% for post in paginator.posts limit:10 %}
+    <li><h3><a class="tit" href="{{ BASE_PATH }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
         <!--<a class="comment" href="http://44ux.com{{ BASE_PATH }}{{ post.url }}#disqus_thread" data-disqus-identifier="article_1_identifier">link</a>-->
         <p class="abstract">{{ post.content | strip_html | truncatewords:50 }}</p>
         <p class="more"><a href="{{ BASE_PATH }}{{ post.url }}"  target="_blank" title="Read more...">Continue Reading ...</a></p>
@@ -21,14 +20,63 @@ tagline: is that UFO?
   {% endfor %}
 </ul>
 
-## Tag Cloud
+<!-- Pagination links -->
+<div id="post-pagination" class="custom_pagination">
+
+    {% if paginator.previous_page %}
+    <p class="previous">
+        {% if paginator.previous_page == 1 %}
+        <a href="/">Previous</a>
+        {% else %}
+        <a href="/page{{paginator.previous_page}}">Previous</a>
+        {% endif %}
+    </p>
+    {% else %}
+    <p class="previous disabled">
+        <span>Previous</span>
+    </p>
+    {% endif %}
+
+    <ul class="pages">
+        <li class="page">
+            {% if paginator.page == 1 %}
+            <span class="current-page">1</span>
+            {% else %}
+            <a href="/">1</a>
+            {% endif %}
+        </li>
+
+        {% for count in (2..paginator.total_pages) %}
+        <li class="page">
+            {% if count == paginator.page %}
+            <span class="current-page">{{count}}</span>
+            {% else %}
+            <a href="/page{{count}}">{{count}}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+    {% if paginator.next_page %}
+    <p class="next">
+        <a href="/page{{paginator.next_page}}">Next</a>
+    </p>
+    {% else %}
+    <p class="next disabled">
+        <span>Next</span>
+    </p>
+    {% endif %}
+
+</div>
+
+<h2>Tag Cloud</h2>
 
 <ul class="tag_box inline">
   {% assign tags_list = site.tags %}
   {% include JB/tags_list %}
 </ul>
 
-## Recomend Books
+<h2>Recomend Books</h2>
 
 <div class="rec-book">
 <a target="_blank" href="http://union.dangdang.com/transfer.php?sys_id=1&ad_type=10&from=P-267863&backurl=http%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22785480">精彩绝伦的CSS</a>
@@ -40,7 +88,7 @@ tagline: is that UFO?
 <a target="_blank" href="http://44ux.com/content/downloads/manong_1.pdf" title="图灵公司码农第一期">码农第一期</a>
 </div>
 
-## Subscribe
+<h2>Subscribe</h2>
 
 <div class="feed">
 <!-- Feedsky FEED发布代码开始 -->
@@ -57,7 +105,7 @@ tagline: is that UFO?
 <!-- Feedsky FEED发布代码结束 -->
 </div>
 
-## About & Contact
+<h2>About & Contact</h2>
 
 <div class="contact">
 <p>
@@ -69,7 +117,7 @@ tagline: is that UFO?
 , If you're lucky, QQ me:  <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8"><img border="0"  src="http://wpa.qq.com/imgd?IDKEY=f8942300d9c8ce7cad4b929faeccf20eb6fc117ed5edb2a8&pic=41" alt="点击这里给我发消息" title="点击这里给我发消息" style="vertical-align:-5px;"></a>
 </div>
 
-## Friends Links
+<h2>Friends Links</h2>
 
 <ul class="friends-links">
     <li><a href="http://xiedexu.cn/" target="_blank">DeXu.Xie's Blog</a></li>

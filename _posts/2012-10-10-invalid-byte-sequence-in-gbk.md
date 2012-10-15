@@ -53,7 +53,7 @@ File.open("scroll.js", 'r:utf-8')
 如果报错位置是在 Jekyll 的目录中，例如：
 
 {% highlight bash %}
-C:\Ruby193\lib\ruby\gems\1.9.1\gems\jekyll-0.11.2\lib\jekyll\convertible.rb:27:in `read_yaml': invalid byte sequence in US-ASCII (ArgumentError)
+C:\Ruby193\lib\ruby\gems\1.9.1\gems\jekyll-0.11.2\lib\jekyll\convertible.rb:27:in `read_yaml`: invalid byte sequence in US-ASCII (ArgumentError)
 {% endhighlight %}
 
 那么我们可以看到，在 convertible.rb 文件中第27行出现错误（具体行号见实际报错提示），那么我们找到这一行：
