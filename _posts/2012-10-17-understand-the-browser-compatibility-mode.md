@@ -143,12 +143,14 @@ UA:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET C
 当 Internet Explorer 9 遇到未包含 `X-UA-Compatible` 标头的网页时，它将使用 `<!DOCTYPE>` 指令来确定如何显示该网页。 如果该指令丢失或未指定基于标准的文档类型，则 Internet Explorer 9 将以 IE5 模式（怪异模式）来显示该网页。
 
 如果 `<!DOCTYPE>` 指令指定了基于标准的文档类型，则 Internet Explorer 9 将以 IE9 模式显示该网页，但出现以下情况时除外：
-* 为该网页启用了兼容性视图。
-* 该网页是在 Intranet 区域中加载的，并且已将 Internet Explorer 9 配置为使用兼容性视图来显示 Intranet 区域中的网页。
-* 已将 Internet Explorer 8 配置为使用兼容性视图来显示所有网站。
-* 已将 Internet Explorer 8 配置为使用[兼容性视图列表（其实是个黑名单，其中指定了一组始终使用兼容性视图显示的网站）](http://msdn.microsoft.com/en-us/library/dd567845(v=VS.85\).aspx)。
-* 已使用开发人员工具覆盖在该网页中指定的设置。
-* 该网页遇到了页面布局错误，并且已将 Internet Explorer 9 配置为，通过在兼容性视图中重新打开网页来自动从此类错误中恢复。
+
+
++ 为该网页启用了兼容性视图。
++ 该网页是在 Intranet 区域中加载的，并且已将 Internet Explorer 9 配置为使用兼容性视图来显示 Intranet 区域中的网页。
++ 已将 Internet Explorer 8 配置为使用兼容性视图来显示所有网站。
++ 已将 Internet Explorer 8 配置为使用[兼容性视图列表（其实是个黑名单，其中指定了一组始终使用兼容性视图显示的网站）](http://msdn.microsoft.com/en-us/library/dd567845(v=VS.85\).aspx)。
++ 已使用开发人员工具覆盖在该网页中指定的设置。
++ 该网页遇到了页面布局错误，并且已将 Internet Explorer 9 配置为，通过在兼容性视图中重新打开网页来自动从此类错误中恢复。
 
 此外，可以使用下面的注册表项来控制 Internet Explorer 对未包含 X-UA-Compatible 标头的页面的处理方式。
 
