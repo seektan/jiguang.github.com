@@ -33,6 +33,7 @@ html, body{
 }
 .content p{
     font:14px/1.8em Georgia, "Times New Roman", Times, serif;
+    word-wrap: break-word;
 }
 
 /* Page header tweaks */
