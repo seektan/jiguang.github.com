@@ -4,7 +4,7 @@ title: "Insert iframe into Markdown"
 description: "在 Markdown 中插入 iframe"
 category:
   - html-css
-tags: [markdown]
+tags: [Markdown]
 ---
 {% include JB/setup %} 
 

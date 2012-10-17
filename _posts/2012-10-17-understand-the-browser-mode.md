@@ -6,7 +6,7 @@ category:
   - html-css
   - DevTools
 published: false
-tags: []
+tags: [Browser, HTML5]
 ---
 {% include JB/setup %}
 
