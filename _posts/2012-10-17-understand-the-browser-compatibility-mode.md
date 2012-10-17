@@ -86,11 +86,11 @@ Firefox、Safari、Chrome、Opera (自 7.5 以后)、 IE8 和 IE9 都有一个�
 
 **IE的浏览器模式**
 
-IE8有4种模式：IE5.5怪癖模式、IE7标准模式、IE8 准标准模式和IE8标准模式，而IE9有7种模式: IE5.5怪异模式、IE7标准模式、IE8准标准模式、IE8标准模式、IE9准标准模式、IE9标准模式、XML模式。
+IE8有4种模式：IE5.5怪异模式、IE7标准模式、IE8 准标准模式和IE8标准模式，而IE9有7种模式: IE5.5怪异模式、IE7标准模式、IE8准标准模式、IE8标准模式、IE9准标准模式、IE9标准模式、XML模式。
 
-其中 XML模式 是针对 XML 文档的，这里不打算阐述，细节可以看这篇文章[Defining Document Compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx)中有阐述。
+其中 XML模式 是针对 XML 文档的，这里不打算阐述，细节可以看这篇文章[Defining Document Compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85\).aspx) 中有详细阐述。
 
-在 IE8 及以后的的 IE 浏览器中，支持 X-UA-Compatible 头，可以通过在服务器端设置 HTTP 头，或者在页面中插入 `<meta>` 标签来实现：
+在 IE8 及以后的的 IE 浏览器中，支持 `X-UA-Compatible` 头，可以通过在服务器端设置 HTTP 头，或者在页面中插入 `<meta>` 标签来实现：
 
     HTTP:
     Header set X-UA-Compatible "IE=8"
@@ -100,7 +100,7 @@ IE8有4种模式：IE5.5怪癖模式、IE7标准模式、IE8 准标准模式和I
 
 这种方法主要是防止老的页面在较新的浏览器中显示不正常的情况的， 比如上面的代码可以强制 IE8 以上版本的浏览器以IE7的模式进行渲染。
 
-注意，不要在新开发的网页中使用这种技术，这种技术只应该作为新老网页更替过程中的过渡方案。由于目前新开发的网页都是尽量支持最新版本的浏览器的，所以这种技术也会慢慢被淘汰，感兴趣的同学可以详细阅读 [微软的这篇文档](http://msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx)。
+注意，不要在新开发的网页中使用这种技术，这种技术只应该作为新老网页更替过程中的过渡方案。由于目前新开发的网页都是尽量支持最新版本的浏览器的，所以这种技术也会慢慢被淘汰，感兴趣的同学可以详细阅读 [微软的这篇文档](http://msdn.microsoft.com/en-us/library/cc288325(VS.85\).aspx)。
 
 **小结：** 这里我们需要知道有这种方式可以强制浏览器以某种模式运行，但只应作为过渡方案，不应在新开发的网页中使用。
 
@@ -117,11 +117,9 @@ IE8有4种模式：IE5.5怪癖模式、IE7标准模式、IE8 准标准模式和I
 
 如果我们使用一句简单的 JavaScript 语句来查看用户代理（User-Agent）字符串的值，则可以看到 IE9 兼容性视图 与 IE9 的区别：
 
-{% highlight javascript %}
-<script type="text/javascript">
-    alert('UA:'+navigator.userAgent);
-</script>
-{% endhighlight %}
+    <script type="text/javascript">
+        alert('UA:'+navigator.userAgent);
+    </script>
 
 输出结果如下所示，注意其中的 MSIE 版本号已经不同。判断浏览器模式就是判断 User-Agent 中的版本号，即 MSIE 后面的数值：
 
@@ -142,16 +140,16 @@ UA:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET C
 
 **控制默认的渲染方式**
 
-当 Internet Explorer 9 遇到未包含 X-UA-Compatible 标头的网页时，它将使用 `<!DOCTYPE>` 指令来确定如何显示该网页。 如果该指令丢失或未指定基于标准的文档类型，则 Internet Explorer 9 将以 IE5 模式（怪异模式）来显示该网页。
+当 Internet Explorer 9 遇到未包含 `X-UA-Compatible` 标头的网页时，它将使用 `<!DOCTYPE>` 指令来确定如何显示该网页。 如果该指令丢失或未指定基于标准的文档类型，则 Internet Explorer 9 将以 IE5 模式（怪异模式）来显示该网页。
 
 如果 `<!DOCTYPE>` 指令指定了基于标准的文档类型，则 Internet Explorer 9 将以 IE9 模式显示该网页，但出现以下情况时除外：
 
-- 为该网页启用了兼容性视图。
-- 该网页是在 Intranet 区域中加载的，并且已将 Internet Explorer 9 配置为使用兼容性视图来显示 Intranet 区域中的网页。
-- 已将 Internet Explorer 8 配置为使用兼容性视图来显示所有网站。
-- 已将 Internet Explorer 8 配置为使用[兼容性视图列表（其实是个黑名单，其中指定了一组始终使用兼容性视图显示的网站）](http://msdn.microsoft.com/en-us/library/dd567845(v=VS.85).aspx)。
-- 已使用开发人员工具覆盖在该网页中指定的设置。
-- 该网页遇到了页面布局错误，并且已将 Internet Explorer 9 配置为，通过在兼容性视图中重新打开网页来自动从此类错误中恢复。
+1. 为该网页启用了兼容性视图。
+2. 该网页是在 Intranet 区域中加载的，并且已将 Internet Explorer 9 配置为使用兼容性视图来显示 Intranet 区域中的网页。
+3. 已将 Internet Explorer 8 配置为使用兼容性视图来显示所有网站。
+4. 已将 Internet Explorer 8 配置为使用[兼容性视图列表（其实是个黑名单，其中指定了一组始终使用兼容性视图显示的网站）](http://msdn.microsoft.com/en-us/library/dd567845(v=VS.85\).aspx)。
+5. 已使用开发人员工具覆盖在该网页中指定的设置。
+6. 该网页遇到了页面布局错误，并且已将 Internet Explorer 9 配置为，通过在兼容性视图中重新打开网页来自动从此类错误中恢复。
 
 此外，可以使用下面的注册表项来控制 Internet Explorer 对未包含 X-UA-Compatible 标头的页面的处理方式。
 
@@ -164,9 +162,9 @@ UA:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET C
                                   FEATURE_BROWSER_EMULATION
                                        iexplore.exe = (DWORD)
 
-DWORD 值必须等于下列值之一：
+其中 `DWORD` 值必须等于下列值之一：
 
-<table class="table" style="margin:10px 0;">
+<table class="table" style="margin:10px 0;font-size:12px;">
 	<tbody><tr><td>值</td><td>说明</td></tr>
 		<tr><td>7000</td><td>包含基于标准的 &lt;!DOCTYPE&gt; 指令的页面将以 IE7 模式显示。</td></tr>
 		<tr><td>8000</td><td>包含基于标准的 &lt;!DOCTYPE&gt; 指令的页面以 IE8 模式显示。</td></tr>
