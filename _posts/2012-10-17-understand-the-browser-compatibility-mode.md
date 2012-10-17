@@ -123,7 +123,7 @@ IE8有4种模式：IE5.5怪异模式、IE7标准模式、IE8 准标准模式和I
 
 输出结果如下所示，注意其中的 MSIE 版本号已经不同。判断浏览器模式就是判断 User-Agent 中的版本号，即 MSIE 后面的数值：
 
-{% highlight javascript linenos %}
+{% highlight javascript %}
 // IE9
 UA:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0)
 
@@ -143,7 +143,6 @@ UA:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET C
 当 Internet Explorer 9 遇到未包含 `X-UA-Compatible` 标头的网页时，它将使用 `<!DOCTYPE>` 指令来确定如何显示该网页。 如果该指令丢失或未指定基于标准的文档类型，则 Internet Explorer 9 将以 IE5 模式（怪异模式）来显示该网页。
 
 如果 `<!DOCTYPE>` 指令指定了基于标准的文档类型，则 Internet Explorer 9 将以 IE9 模式显示该网页，但出现以下情况时除外：
-
 * 为该网页启用了兼容性视图。
 * 该网页是在 Intranet 区域中加载的，并且已将 Internet Explorer 9 配置为使用兼容性视图来显示 Intranet 区域中的网页。
 * 已将 Internet Explorer 8 配置为使用兼容性视图来显示所有网站。
@@ -183,7 +182,7 @@ UA:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET C
 
 那么，如果需要兼容 IE6 和 IE7 的话（必须的 ...），则相应的检测代码大致如下：
 
-{% highlight javascript linenos %}
+{% highlight javascript %}
 engine = null;
 if (window.navigator.appName == "Microsoft Internet Explorer")
 {

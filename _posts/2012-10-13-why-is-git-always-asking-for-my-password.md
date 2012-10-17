@@ -36,13 +36,13 @@ HTTPS 的地址是做什么用的呢？其实它主要是用在一些防火墙�
 
 打开命令行工具，运行 `git remote set-url origin` 例如：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 $ git remote set-url origin git@github.com:user/repo.git
 {% endhighlight %}
 
 然后再次 commit，如果出现类似：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 Permission denied (publickey).
 {% endhighlight %}
 
@@ -56,7 +56,7 @@ Permission denied (publickey).
 
 如果你装了 [homebrew][6] 的话，那么应该已经自带了 osxkeychain，可以通过下面的命令验证：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 $ git credential-osxkeychain
 # Test for the cred helper
 Usage: git credential-osxkeychain <get|store|erase>
@@ -64,7 +64,7 @@ Usage: git credential-osxkeychain <get|store|erase>
 
 如果没有安装，那么可以使用 `curl` 下载并安装：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 $ git credential-osxkeychain
 # Test for the cred helper
 git: 'credential-osxkeychain' is not a git command. See 'git --help'.
@@ -78,7 +78,7 @@ $ chmod u+x git-credential-osxkeychain
 
 现在，你需要将助手安装到与 Git 的安装目录相同的位置：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 $ which git
 # Find where git is installed
 /usr/local/git/bin/git
@@ -95,7 +95,7 @@ Password: [enter your password]
 
 若想让 Git 使用 osxkeychain，可以在 Git 的全局设置中进行设置：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 $ git config --global credential.helper osxkeychain
 # Set git to use the osxkeychain credential helper
 {% endhighlight %}
@@ -122,13 +122,13 @@ $ git config --global credential.helper osxkeychain
 
 Linux 用户可以使用 'cache' 认证助手包来缓存认证信息，运行下面的命令来启用凭据缓存，启用后每次输入密码将保存一小时（3600秒）：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 git config --global credential.helper 'cache --timeout 3600'
 {% endhighlight %}
 
 下面的命令可以查看 'cache' 认证助手的所有配置：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 git help credential-cache
 {% endhighlight %}
 

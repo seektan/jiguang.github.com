@@ -10,7 +10,7 @@ tags: [canvas, PHP]
 
 我们知道 Canvas 的 [toDataURL](https://developer.mozilla.org/en-US/docs/DOM/HTMLCanvasElement) 方法可以生成 base64 编码的 dataURL 形式的图片到页面中，例如：
 
-{% highlight javascript linenos %}
+{% highlight javascript %}
 function test() {
      var canvas = document.getElementById("canvas");
      var url = canvas.toDataURL();
@@ -29,25 +29,25 @@ function test() {
 
 1，需要将空格转换为加号：
 
-{% highlight php linenos %}
+{% highlight php %}
 $encodedData = str_replace(' ','+',$encodedData);
 {% endhighlight %}
 
 2，需要去掉前面的前缀：
 
-{% highlight php linenos %}
+{% highlight php %}
 $encodedData = preg_replace('/^data:image\/(png|jpg);base64,/','',$encodedData);
 {% endhighlight %}
 
 3，前两步都可以在客户端使用 JavaScript 完成，然后将处理完的数据 post 给 PHP 页面，再调用 base64_decode 即可：
 
-{% highlight php linenos %}
+{% highlight php %}
 $decocedData = base64_decode($encodedData);
 {% endhighlight %}
 
 4，解码后，可以将图片直接显示出来：
 
-{% highlight php linenos %}
+{% highlight php %}
 header("Content-type: image/png");
 echo $decocedData;
 {% endhighlight %}

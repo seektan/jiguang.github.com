@@ -18,13 +18,13 @@ tags: [Note, Git]
 
 为 cmd 设置代理很简单，首先打开 cmd （win + R，输入 cmd，然后按 enter 键），然后输入如下命令：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 set http_proxy=http://proxy.yourname.com:8080
 {% endhighlight %}
 
 其中 `http://proxy.yourname.com` 是你的代理服务器地址，而 `8080` 是端口号，如果有则设置。另外，如果你的代理服务器要求用户名和密码的话，那么还需要：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 set http_proxy_user=<你的用户名>
 set http_proxy_pass=<你的密码>
 {% endhighlight %}
@@ -35,13 +35,13 @@ set http_proxy_pass=<你的密码>
 
 [Git][3] 的代理设置也非常简单，一句话就搞定了：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 git config --global http://proxy.yourname.com:8080
 {% endhighlight %}
 
 如果需要用户名密码的话，则设置：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 git config –global http.proxy http://user:password@proxy.yourname.com:8080
 {% endhighlight %}
 
@@ -49,13 +49,13 @@ git config –global http.proxy http://user:password@proxy.yourname.com:8080
 
 设置完成后，可以通过如下命令来查看设置是否生效：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 git config –get –global http.proxy
 {% endhighlight %}
 
 如果某一天你不喜欢她了，需要删除代理设置，那么可以使用：
 
-{% highlight bash linenos %}
+{% highlight bash %}
 git config --system (或 --global 或 --local) --unset http.proxy
 {% endhighlight %}
 

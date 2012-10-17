@@ -14,7 +14,7 @@ post_format: [ ]
 
 这里 [laser][3] 取最新的2.0.1版本，将其中的注释简单翻译一下，方便大家学习。
 
-{% highlight css linenos %}
+{% highlight css %}
     /*! normalize.css v2.0.1 | MIT License | [git][4].io/normalize */
 
     /* ==========================================================================
