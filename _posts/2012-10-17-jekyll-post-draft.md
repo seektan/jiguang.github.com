@@ -52,17 +52,24 @@ Jekyll 中有以下几个预定义的全局变量：
 
 任何其他非预定义的变量，都将在转换时被发送到 [Liquid][4] 模板引擎中，例如设置文章标题的话可以在布局模板中使用下面的代码进行设置：
 
-    &lt;title&gt;\{\{ page.title \}\}&lt;/title&gt;
+    <title>{{ page.title }}</title>
 
-现在我们已经熟悉了 Jekyll 中的这些配置选项，那么保存草稿的话则是将 published 属性 设置为 false 即可，这个文件就不会生成文章页面了。
+现在我们已经熟悉了 Jekyll 中的这些配置选项的作用了，那么保存草稿的话就是将 `published` 属性设置为 `false` 即可，这个文件就不会生成文章页面了：
 
-不过需要注意的是，只要你的文件提交到了 Github，那么还是有可能被人看到的（如果经常有人关注提交的代码的话），所以还是要酌情处理。
+    ---
+    layout: post
+    title: Blogging Like a Hacker
+    published: false
+    ---
+
+不过需要注意的是，只要你的文件提交到了 [Github][5]，那么还是有可能被人看到的（如果你的粉丝经常关注你所提交的代码的话），所以还是要酌情处理，看草稿阶段是否能见人接客。
 
 
 [1]: https://github.com/mojombo/jekyll
 [2]: http://yaml.org/
 [3]: http://44ux.com/blog/2012/10/10/invalid-byte-sequence-in-gbk/
 [4]: http://liquidmarkup.org/
+[5]: http://github.com/
 
 
 
