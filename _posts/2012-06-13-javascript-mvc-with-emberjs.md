@@ -33,22 +33,28 @@ Ember.js 依赖于[jQuery][10]，要想使用Ember.js需要先引入jQuery。在
 
 如果是自己新建的目录和文件，那么需要分别下载Ember.js和jQuery的文件然后引入：
 
+{% highlight html linenos %}
     <script src="js/libs/jquery-1.7.2.min.js"></script>
     <script src="js/libs/ember-0.9.8.1.min.js"></script>
     <script src="js/app.js"></script>
+{% endhighlight %}
 
 引入文件之后，可以使用jQuery的所有方法，结合Ember.js的方法开发大型App了。下面介绍一些Ember.js的基本功能，以窥一斑。
 
 首先，建立任何App都要先声明一个命名空间：
 
+{% highlight javascript linenos %}
     // add a namespace, Em === Ember
     var App = Em.Application.create();
+{% endhighlight %}
 
 该命名空间可以保证各个App不发生冲突，同时它也有时间代理的功能，可以捕获所有冒泡的事件。如果你的App只是页面中的一部分，那么也可以指定一个根元素，这样事件就只会冒泡到该根元素：
 
+{% highlight javascript linenos %}
     window.App = Ember.Application.create({
     	rootElement: '#sidebar'
     });
+{% endhighlight %}
 
 下面介绍几个简单的例子。
 
@@ -56,6 +62,7 @@ Ember.js 依赖于[jQuery][10]，要想使用Ember.js需要先引入jQuery。在
 
 JS中的对象App.president的值fullName已经和视图绑定，当按下按钮更新对象属性时，视图也会自动更新。
 
+{% highlight javascript linenos %}
     <script type="text/x-handlebars">
         The President of the United States is {{App.president.fullName}}.
     </script>
@@ -74,12 +81,13 @@ JS中的对象App.president的值fullName已经和视图绑定，当按下按钮
     $('#btn1').click( function() {
         App.president.set('lastName', 'Obamaomao');
     });
-    
+{% endhighlight %}
 
 **2. 延迟使用的模板**
 
 有的时候我们不希望模板在页面载入时立即显示，那么可以把它放到script标签中，并增添data-template-name属性来为模板命名，之后就可以在Ember.js中控制模板的填充和显隐了。
 
+{% highlight javascript linenos %}
     <div id="temp-wrap" style="border: 3px solid #c22;width:300px;">
         <!-- Insert into here -->
     </div>
@@ -104,12 +112,13 @@ JS中的对象App.president的值fullName已经和视图绑定，当按下按钮
     // or
     // var info = App.InfoView.create();
     // info.appendTo('#temp-wrap');
-    
+{% endhighlight %}
 
 **3. 绑定（Bindings）**
 
 一个对象中的属性可以与另外一个对象的属性进行绑定，这样其中一个更新时，另外一个也随之更新。只需要使用Binding字符串，将Binding加在绑定的属性字符串末尾即可。
 
+{% highlight javascript linenos %}
     <p>Binding Test: <button id="btn2">TEST</button></p>
     
     // Example 3
@@ -122,10 +131,11 @@ JS中的对象App.president的值fullName已经和视图绑定，当按下按钮
     $('#btn2').click( function() {
         alert(App.country.get('presidentName'));  // "Barack Obama"
     });
-    
+{% endhighlight %}
 
 **4. 事件处理**
 
+{% highlight javascript linenos %}
     <script type="text/x-handlebars">
     {{#view App.ClickableView}}
         This is a clickable area!
@@ -138,6 +148,7 @@ JS中的对象App.president的值fullName已经和视图绑定，当按下按钮
             alert("ClickableView was clicked!");
         }
     });
+{% endhighlight %}
 
 目前暂且介绍这几个，详细的可以查看[官方文档][12]，如果看E文比较有困难的话，敬请关注本站，稍后如时间允许将放出中文文档。
 

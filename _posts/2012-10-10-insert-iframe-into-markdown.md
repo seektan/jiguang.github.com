@@ -16,20 +16,20 @@ Markdown 中解析 html 相对比较严格，如果不合规矩就可能会遇�
 
 例如我们要在 Markdown 格式的文章中插入 [SlideShare][3] 中的 PPT， SlideShare 网站给出的代码如下：
 
-{% highlight html %}
+{% highlight html linenos %}
 <iframe src="http://www.slideshare.net/slideshow/embed_code/8911052" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/jiguang/javascript-8911052" title="Javascript正则表达式" target="_blank">Javascript正则表达式</a> </strong> from <strong><a href="http://www.slideshare.net/jiguang" target="_blank">ji guang</a></strong> </div>
 {% endhighlight %}
 
 这段内容发布之后就会出现解析错误：
 
-{% highlight html %}
+{% highlight html linenos %}
 REXML could not parse this XML/HTML:
 <iframe src="http://www.slideshare.net/slideshow/embed_code/8911052" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/jiguang/javascript-8911052" title="Javascript正则表达式" target="_blank">Javascript正则表达式</a> </strong> from <strong><a href="http://www.slideshare.net/jiguang" target="_blank">ji guang</a></strong> </div>
 {% endhighlight %}
 
 那么解决办法就是，让代码符合 XHTML 的规范，即将代码中的 allowfullscreen 属性修改为：
 
-{% highlight html %}
+{% highlight html linenos %}
 allowfullscreen="allowfullscreen"
 {% endhighlight %}
 

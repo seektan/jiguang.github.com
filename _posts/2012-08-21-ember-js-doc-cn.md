@@ -5,7 +5,6 @@ excerpt:
 layout: post
 category:
   - JavaScript
-
 tags:
   - Ember.js
   - 翻译
@@ -55,10 +54,7 @@ For a simple example, consider this template of a Person:
 
 作为一个简单的例子，考虑这个Person的模板:
 
-
-
-|  | {{person.name}} is {{person.age}}. |
-||
+    {{person.name}} is {{person.age}}.
 
 As with any templating system, when the template is initially rendered, it will reflect the current state of the person. To avoid boilerplate, though, Ember.js will also update the DOM automatically for you if the person’s name or age changes.
 

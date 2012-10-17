@@ -14,8 +14,9 @@ post_format: [ ]
 
 这里 [laser][3] 取最新的2.0.1版本，将其中的注释简单翻译一下，方便大家学习。
 
+{% highlight css linenos %}
     /*! normalize.css v2.0.1 | MIT License | [git][4].io/normalize */
-    
+
     /* ==========================================================================
        HTML5 display definitions
        ========================================================================== */
@@ -384,6 +385,8 @@ post_format: [ ]
         border-collapse: collapse;
         border-spacing: 0;
     }
+{% endhighlight %}
+
 
 这个版本并没有包含IE6/7等古老的浏览器，感兴趣的同学可以[下载1.0.1版][5]。
 
