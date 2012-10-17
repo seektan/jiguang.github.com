@@ -55,15 +55,15 @@ Firefox、Safari、Chrome、Opera (自 7.5 以后)、 IE8 和 IE9 都有一个�
 
 鉴于目前一些最新版本的浏览器已经放弃了准标准模式，所以关于准标准模式的细节这里就不再赘述了，感兴趣的同学可以详细阅读以下资料：
 
-[Gecko's "Almost Standards" Mode](https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode?redirectlocale=en-US&redirectslug=Gecko%27s_%22Almost_Standards%22_Mode)
+* [Gecko's "Almost Standards" Mode](https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode?redirectlocale=en-US&redirectslug=Gecko%27s_%22Almost_Standards%22_Mode)
 
-[Line Height Calculations in Almost Standards Mode](http://msdn.microsoft.com/en-us/library/ff405794%28v=vs.85%29)
+* [Line Height Calculations in Almost Standards Mode](http://msdn.microsoft.com/en-us/library/ff405794%28v=vs.85%29)
 
-[Images, Tables, and Mysterious Gaps](https://developer.mozilla.org/en-US/docs/Images,_Tables,_and_Mysterious_Gaps)
+* [Images, Tables, and Mysterious Gaps](https://developer.mozilla.org/en-US/docs/Images,_Tables,_and_Mysterious_Gaps)
 
-[almost-standards test](http://meyerweb.com/eric/css/tests/almost-standards.html)
+* [almost-standards test](http://meyerweb.com/eric/css/tests/almost-standards.html)
 
-[DOCTYPE Switches support in Opera Presto 2.10](http://www.opera.com/docs/specs/doctype/)
+* [DOCTYPE Switches support in Opera Presto 2.10](http://www.opera.com/docs/specs/doctype/)
 
 那么，既然这么多的 DOCTYPE 都会触发非标准的模式，那么如何才能触发标准模式呢？对了！要使用 [HTML5 DOCTYPE][5]，即：
 
@@ -75,11 +75,11 @@ Firefox、Safari、Chrome、Opera (自 7.5 以后)、 IE8 和 IE9 都有一个�
 
 若想详细了解浏览器在怪异模式下的行为，可以参看下面两篇文章。不过不建议在这上面花太多的精力，这是个历史遗留问题，而且我们也尽量保证新开发的页面不要进入到怪异模式：
 
-[Mozilla Quirks Mode Behavior](https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior)
+* [Mozilla Quirks Mode Behavior](https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior)
 
-[What happens in Quirks Mode?](http://www.cs.tut.fi/~jkorpela/quirks-mode.html)
+* [What happens in Quirks Mode?](http://www.cs.tut.fi/~jkorpela/quirks-mode.html)
 
-[Compatability Mode Test](http://hixie.ch/tests/adhoc/compat/mozilla/001.cgi?DOCTYPE=%3C!DOCTYPE+HTML%3E&MODE=full&EXPECT=standards%20mode)
+* [Compatability Mode Test](http://hixie.ch/tests/adhoc/compat/mozilla/001.cgi?DOCTYPE=%3C!DOCTYPE+HTML%3E&MODE=full&EXPECT=standards%20mode)
 
 **小结：** 至此我们需要了解，浏览器有三种运行模式，即标准模式、准标准模式和怪异模式，要使用 `<!DOCTYPE html>` 来正确地触发标准模式。千万不要丢掉 DOCTYPE 声明，因为这会导致浏览器进入怪异模式。
 
@@ -123,7 +123,7 @@ IE8有4种模式：IE5.5怪异模式、IE7标准模式、IE8 准标准模式和I
 
 输出结果如下所示，注意其中的 MSIE 版本号已经不同。判断浏览器模式就是判断 User-Agent 中的版本号，即 MSIE 后面的数值：
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 // IE9
 UA:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0)
 
@@ -144,12 +144,12 @@ UA:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET C
 
 如果 `<!DOCTYPE>` 指令指定了基于标准的文档类型，则 Internet Explorer 9 将以 IE9 模式显示该网页，但出现以下情况时除外：
 
-1. 为该网页启用了兼容性视图。
-2. 该网页是在 Intranet 区域中加载的，并且已将 Internet Explorer 9 配置为使用兼容性视图来显示 Intranet 区域中的网页。
-3. 已将 Internet Explorer 8 配置为使用兼容性视图来显示所有网站。
-4. 已将 Internet Explorer 8 配置为使用[兼容性视图列表（其实是个黑名单，其中指定了一组始终使用兼容性视图显示的网站）](http://msdn.microsoft.com/en-us/library/dd567845(v=VS.85\).aspx)。
-5. 已使用开发人员工具覆盖在该网页中指定的设置。
-6. 该网页遇到了页面布局错误，并且已将 Internet Explorer 9 配置为，通过在兼容性视图中重新打开网页来自动从此类错误中恢复。
+* 为该网页启用了兼容性视图。
+* 该网页是在 Intranet 区域中加载的，并且已将 Internet Explorer 9 配置为使用兼容性视图来显示 Intranet 区域中的网页。
+* 已将 Internet Explorer 8 配置为使用兼容性视图来显示所有网站。
+* 已将 Internet Explorer 8 配置为使用[兼容性视图列表（其实是个黑名单，其中指定了一组始终使用兼容性视图显示的网站）](http://msdn.microsoft.com/en-us/library/dd567845(v=VS.85\).aspx)。
+* 已使用开发人员工具覆盖在该网页中指定的设置。
+* 该网页遇到了页面布局错误，并且已将 Internet Explorer 9 配置为，通过在兼容性视图中重新打开网页来自动从此类错误中恢复。
 
 此外，可以使用下面的注册表项来控制 Internet Explorer 对未包含 X-UA-Compatible 标头的页面的处理方式。
 
@@ -183,7 +183,7 @@ UA:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET C
 
 那么，如果需要兼容 IE6 和 IE7 的话（必须的 ...），则相应的检测代码大致如下：
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 engine = null;
 if (window.navigator.appName == "Microsoft Internet Explorer")
 {
