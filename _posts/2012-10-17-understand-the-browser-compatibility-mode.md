@@ -5,7 +5,7 @@ description: "深入理解浏览器兼容性模式"
 category:
   - html-css
   - DevTools
-published: false
+published: true
 tags: [Browser, HTML5]
 ---
 {% include JB/setup %}
@@ -248,8 +248,6 @@ IE6 和 IE7 中的 `compatMode` 有两个可能的值“CSS1Compat”和“BackC
 <http://hsivonen.iki.fi/doctype/>
 <http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx>
 <https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior>
-<https://developer.mozilla.org/en-US/docs/Mozilla_Web_Developer_FAQ#Why_are_there_still_gaps_even_
-between_text_rows_in_tables_when_the_layout_engine_is_in_the_Standards_mode_or_in_the_Almost_Standards_mode.3f>
 <https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode?redirectlocale=en-US&redirectslug=Gecko%27s_%22Almost_Standards%22_Mode>
 <http://meyerweb.com/eric/css/tests/almost-standards.html>
 <http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx>
