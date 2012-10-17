@@ -21,7 +21,7 @@ tags: [Jekyll, Github]
 
 Jekyll 中有以下几个预定义的全局变量：
 
-<table class="table" style="font-size:12px;">
+<table class="table" style="font-size:12px;margin:10px 0;">
 <tbody>
 <tr>
 <td> 变量 </td>
@@ -62,7 +62,7 @@ Jekyll 中有以下几个预定义的全局变量：
     published: false
     ---
 
-不过需要注意的是，只要你的文件提交到了 [Github][5]，那么还是有可能被人看到的（如果你的粉丝经常关注你所提交的代码的话），所以还是要酌情处理，看草稿阶段是否能见人接客。
+不过需要注意的是，只要你的文件提交到了 [Github][5]，那么还是有可能被人看到的（如果你的粉丝经常关注你所提交的代码的话）。所以保存草稿时还是要酌情处理，看草稿阶段是否能够见人接客。
 
 
 [1]: https://github.com/mojombo/jekyll
