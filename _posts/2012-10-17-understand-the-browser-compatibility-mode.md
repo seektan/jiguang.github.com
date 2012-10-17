@@ -100,7 +100,7 @@ IE8有4种模式：IE5.5怪异模式、IE7标准模式、IE8 准标准模式和I
 
 这种方法主要是防止老的页面在较新的浏览器中显示不正常的情况的， 比如上面的代码可以强制 IE8 以上版本的浏览器以IE7的模式进行渲染。
 
-注意，不要在新开发的网页中使用这种技术，这种技术只应该作为新老网页更替过程中的过渡方案。由于目前新开发的网页都是尽量支持最新版本的浏览器的，所以这种技术也会慢慢被淘汰，感兴趣的同学可以详细阅读 [微软的这篇文档](http://msdn.microsoft.com/en-us/library/cc288325(VS.85\).aspx)。
+注意，不要在新开发的网页中使用这种技术，这种技术只应该作为新老网页更替过程中的过渡方案。由于目前新开发的网页都是尽量支持最新版本的浏览器的，所以这种技术也会慢慢被淘汰，感兴趣的同学可以详细阅读 <a href="http://msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx" target="_blank">微软的这篇文档</a>。
 
 **小结：** 这里我们需要知道有这种方式可以强制浏览器以某种模式运行，但只应作为过渡方案，不应在新开发的网页中使用。
 
@@ -144,11 +144,10 @@ UA:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET C
 
 如果 `<!DOCTYPE>` 指令指定了基于标准的文档类型，则 Internet Explorer 9 将以 IE9 模式显示该网页，但出现以下情况时除外：
 
-
 + 为该网页启用了兼容性视图。
 + 该网页是在 Intranet 区域中加载的，并且已将 Internet Explorer 9 配置为使用兼容性视图来显示 Intranet 区域中的网页。
 + 已将 Internet Explorer 8 配置为使用兼容性视图来显示所有网站。
-+ 已将 Internet Explorer 8 配置为使用[兼容性视图列表（其实是个黑名单，其中指定了一组始终使用兼容性视图显示的网站）](http://msdn.microsoft.com/en-us/library/dd567845(v=VS.85\).aspx)。
++ 已将 Internet Explorer 8 配置为使用<a href="http://msdn.microsoft.com/en-us/library/dd567845(v=VS.85).aspx" target="_blank">兼容性视图列表（其实是个黑名单，其中指定了一组始终使用兼容性视图显示的网站）</a>。
 + 已使用开发人员工具覆盖在该网页中指定的设置。
 + 该网页遇到了页面布局错误，并且已将 Internet Explorer 9 配置为，通过在兼容性视图中重新打开网页来自动从此类错误中恢复。
 
