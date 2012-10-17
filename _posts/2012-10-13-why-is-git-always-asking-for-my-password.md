@@ -64,7 +64,7 @@ Usage: git credential-osxkeychain <get|store|erase>
 
 如果没有安装，那么可以使用 `curl` 下载并安装：
 
-{% highlight bash %}
+{% highlight bash linenos %}
 $ git credential-osxkeychain
 # Test for the cred helper
 git: 'credential-osxkeychain' is not a git command. See 'git --help'.
@@ -78,7 +78,7 @@ $ chmod u+x git-credential-osxkeychain
 
 现在，你需要将助手安装到与 Git 的安装目录相同的位置：
 
-{% highlight bash %}
+{% highlight bash linenos %}
 $ which git
 # Find where git is installed
 /usr/local/git/bin/git
