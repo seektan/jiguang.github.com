@@ -6,12 +6,12 @@ title: Life is like an Undefined Fucking Object
 
 <h2>What's new?</h2>
 
-博客文章已全部迁移到 <a href="http://pages.github.com/" target="_blank" title="Github Pages">Github Pages</a>，拥有更快的访问速度，更稳定的服务，以及版本控制等功能。您可以通过<a href="http://www.44ux.com" title="首页">44ux.com</a> 和 <a href="http://jiguang.github.com" title="首页">jiguang.github.com</a> 访问本站。订阅地址仍然不变：<a href="http://feed.44ux.com" title="feed.44ux.com" target="_blank">feed.44ux.com</a>，欢迎订阅本站 ;)
+欢迎光临本小博客 ^_^~ 您可以通过<a href="http://www.44ux.com" title="首页">44ux.com</a> 和 <a href="http://jiguang.github.com" title="首页">jiguang.github.com</a> 访问本站，按 <code>Ctrl+D</code> 可以收藏本站，订阅地址为 <a href="http://feed.44ux.com" title="RSS:feed.44ux.com" target="_blank">feed.44ux.com</a>，欢迎订阅本站 ;)
 
 <h2>Recent Articles</h2>
 
 <ul class="posts index_posts">
-  {% for post in paginator.posts limit:10 %}
+  {% for post in paginator.posts %}
     <li><h3><a class="tit" href="{{ BASE_PATH }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
         <!--<a class="comment" href="http://44ux.com{{ BASE_PATH }}{{ post.url }}#disqus_thread" data-disqus-identifier="article_1_identifier">link</a>-->
         <p class="abstract">{{ post.content | strip_html | truncatewords:50 }}</p>
