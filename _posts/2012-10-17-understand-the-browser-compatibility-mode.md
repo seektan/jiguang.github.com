@@ -233,26 +233,26 @@ IE6 和 IE7 中的 `compatMode` 有两个可能的值“CSS1Compat”和“BackC
 
 **参考文献**
 
-<http://en.wikipedia.org/wiki/Browser_wars> <br />
-<http://meyerweb.com/eric/thoughts/2008/01/24/almost-target/> <br />
-<https://developer.mozilla.org/en-US/docs/Images,_Tables,_and_Mysterious_Gaps> <br />
-<http://en.wikipedia.org/wiki/Document_Type_Declaration> <br />
-<http://dev.w3.org/html5/spec/#the-doctype> <br />
-<http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx> <br />
-<http://kangax.github.com/cft/> <br />
-<http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx> <br />
-<http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx> <br />
-<https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode?redirectlocale=en-US&redirectslug=Mozilla%27s_Quirks_Mode> <br />
-<https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode> <br />
-<http://blogs.msdn.com/b/ie/archive/2009/02/16/just-the-facts-recap-of-compatibility-view.aspx> <br />
-<http://www.quirksmode.org/css/quirksmode.html> <br />
-<http://hsivonen.iki.fi/doctype/> <br />
-<http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx> <br />
-<https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior> <br />
-<https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode?redirectlocale=en-US&redirectslug=Gecko%27s_%22Almost_Standards%22_Mode> <br />
-<http://meyerweb.com/eric/css/tests/almost-standards.html> <br />
-<http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx> <br />
-<http://www.opera.com/docs/specs/doctype/> <br />
+- <http://en.wikipedia.org/wiki/Browser_wars>
+- <http://meyerweb.com/eric/thoughts/2008/01/24/almost-target/>
+- <https://developer.mozilla.org/en-US/docs/Images,_Tables,_and_Mysterious_Gaps>
+- <http://en.wikipedia.org/wiki/Document_Type_Declaration>
+- <http://dev.w3.org/html5/spec/#the-doctype>
+- <http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx>
+- <http://kangax.github.com/cft/>
+- <http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx>
+- <http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx>
+- <https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode?redirectlocale=en-US&redirectslug=Mozilla%27s_Quirks_Mode>
+- <https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode>
+- <http://blogs.msdn.com/b/ie/archive/2009/02/16/just-the-facts-recap-of-compatibility-view.aspx>
+- <http://www.quirksmode.org/css/quirksmode.html>
+- <http://hsivonen.iki.fi/doctype/>
+- <http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx>
+- <https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior>
+- <https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode?redirectlocale=en-US&redirectslug=Gecko%27s_%22Almost_Standards%22_Mode>
+- <http://meyerweb.com/eric/css/tests/almost-standards.html>
+- <http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx>
+- <http://www.opera.com/docs/specs/doctype/>
 
 
 
