@@ -233,45 +233,45 @@ IE6 和 IE7 中的 `compatMode` 有两个可能的值“CSS1Compat”和“BackC
 
 **参考文献**
 
-<a href="http://en.wikipedia.org/wiki/Browser_wars">http://en.wikipedia.org/wiki/Browser_wars</a>
+<a href="http://en.wikipedia.org/wiki/Browser_wars">http://en.wikipedia.org/wiki/Browser_wars</a><br>
 
-<a href="http://meyerweb.com/eric/thoughts/2008/01/24/almost-target/">http://meyerweb.com/eric/thoughts/2008/01/24/almost-target/</a>
+<a href="http://meyerweb.com/eric/thoughts/2008/01/24/almost-target/">http://meyerweb.com/eric/thoughts/2008/01/24/almost-target/</a><br>
 
-<a href="https://developer.mozilla.org/en-US/docs/Images,_Tables,_and_Mysterious_Gaps">https://developer.mozilla.org/en-US/docs/Images,_Tables,_and_Mysterious_Gaps</a>
+<a href="https://developer.mozilla.org/en-US/docs/Images,_Tables,_and_Mysterious_Gaps">https://developer.mozilla.org/en-US/docs/Images,_Tables,_and_Mysterious_Gaps</a><br>
 
-<a href="http://en.wikipedia.org/wiki/Document_Type_Declaration">http://en.wikipedia.org/wiki/Document_Type_Declaration</a>
+<a href="http://en.wikipedia.org/wiki/Document_Type_Declaration">http://en.wikipedia.org/wiki/Document_Type_Declaration</a><br>
 
-<a href="http://dev.w3.org/html5/spec/#the-doctype">http://dev.w3.org/html5/spec/#the-doctype</a>
+<a href="http://dev.w3.org/html5/spec/#the-doctype">http://dev.w3.org/html5/spec/#the-doctype</a><br>
 
-<a href="http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx">http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx</a>
+<a href="http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx">http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx</a><br>
 
-<a href="http://kangax.github.com/cft/">http://kangax.github.com/cft/</a>
+<a href="http://kangax.github.com/cft/">http://kangax.github.com/cft/</a><br>
 
-<a href="http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx">http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx</a>
+<a href="http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx">http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx</a><br>
 
-<a href="http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx</a>
+<a href="http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx</a><br>
 
-<a href="https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode?redirectlocale=en-US&redirectslug=Mozilla%27s_Quirks_Mode">https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode?redirectlocale=en-US&redirectslug=Mozilla%27s_Quirks_Mode</a>
+<a href="https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode?redirectlocale=en-US&redirectslug=Mozilla%27s_Quirks_Mode">https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode?redirectlocale=en-US&redirectslug=Mozilla%27s_Quirks_Mode</a><br>
 
-<a href="https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode">https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode</a>
+<a href="https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode">https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode</a><br>
 
-<a href="http://blogs.msdn.com/b/ie/archive/2009/02/16/just-the-facts-recap-of-compatibility-view.aspx">http://blogs.msdn.com/b/ie/archive/2009/02/16/just-the-facts-recap-of-compatibility-view.aspx</a>
+<a href="http://blogs.msdn.com/b/ie/archive/2009/02/16/just-the-facts-recap-of-compatibility-view.aspx">http://blogs.msdn.com/b/ie/archive/2009/02/16/just-the-facts-recap-of-compatibility-view.aspx</a><br>
 
-<a href="http://www.quirksmode.org/css/quirksmode.html">http://www.quirksmode.org/css/quirksmode.html</a>
+<a href="http://www.quirksmode.org/css/quirksmode.html">http://www.quirksmode.org/css/quirksmode.html</a><br>
 
-<a href="http://hsivonen.iki.fi/doctype/">http://hsivonen.iki.fi/doctype/</a>
+<a href="http://hsivonen.iki.fi/doctype/">http://hsivonen.iki.fi/doctype/</a><br>
 
-<a href="http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx">http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx</a>
+<a href="http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx">http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx</a><br>
 
-<a href="https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior">https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior</a>
+<a href="https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior">https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior</a><br>
 
-<a href="https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode?redirectlocale=en-US&redirectslug=Gecko%27s_%22Almost_Standards%22_Mode">https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode?redirectlocale=en-US&redirectslug=Gecko%27s_%22Almost_Standards%22_Mode</a>
+<a href="https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode?redirectlocale=en-US&redirectslug=Gecko%27s_%22Almost_Standards%22_Mode">https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode?redirectlocale=en-US&redirectslug=Gecko%27s_%22Almost_Standards%22_Mode</a><br>
 
-<a href="http://meyerweb.com/eric/css/tests/almost-standards.html">http://meyerweb.com/eric/css/tests/almost-standards.html</a>
+<a href="http://meyerweb.com/eric/css/tests/almost-standards.html">http://meyerweb.com/eric/css/tests/almost-standards.html</a><br>
 
-<a href="http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx">http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx</a>
+<a href="http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx">http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx</a><br>
 
-<a href="http://www.opera.com/docs/specs/doctype/">http://www.opera.com/docs/specs/doctype/</a>
+<a href="http://www.opera.com/docs/specs/doctype/">http://www.opera.com/docs/specs/doctype/</a><br>
 
 
 
