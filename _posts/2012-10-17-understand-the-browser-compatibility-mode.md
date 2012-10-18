@@ -237,8 +237,6 @@ IE6 和 IE7 中的 `compatMode` 有两个可能的值“CSS1Compat”和“BackC
 
 <http://meyerweb.com/eric/thoughts/2008/01/24/almost-target/>
 
-<https://developer.mozilla.org/en-US/docs/Images,_Tables,_and_Mysterious_Gaps>
-
 <http://en.wikipedia.org/wiki/Document_Type_Declaration>
 
 <http://dev.w3.org/html5/spec/#the-doctype>
