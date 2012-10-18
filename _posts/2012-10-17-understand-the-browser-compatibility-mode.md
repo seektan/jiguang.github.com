@@ -144,17 +144,17 @@ UA:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET C
 
 如果 `<!DOCTYPE>` 指令指定了基于标准的文档类型，则 Internet Explorer 9 将以 IE9 模式显示该网页，但出现以下情况时除外：
 
-+ 为该网页启用了兼容性视图。
+ - 为该网页启用了兼容性视图。
 
-+ 该网页是在 Intranet 区域中加载的，并且已将 Internet Explorer 9 配置为使用兼容性视图来显示 Intranet 区域中的网页。
+ - 该网页是在 Intranet 区域中加载的，并且已将 Internet Explorer 9 配置为使用兼容性视图来显示 Intranet 区域中的网页。
 
-+ 已将 Internet Explorer 8 配置为使用兼容性视图来显示所有网站。
+ - 已将 Internet Explorer 8 配置为使用兼容性视图来显示所有网站。
 
-+ 已将 Internet Explorer 8 配置为使用<a href="http://msdn.microsoft.com/en-us/library/dd567845(v=VS.85).aspx" target="_blank">兼容性视图列表（其实是个黑名单，其中指定了一组始终使用兼容性视图显示的网站）</a>。
+ - 已将 Internet Explorer 8 配置为使用<a href="http://msdn.microsoft.com/en-us/library/dd567845(v=VS.85).aspx" target="_blank">兼容性视图列表（其实是个黑名单，其中指定了一组始终使用兼容性视图显示的网站）</a>。
 
-+ 已使用开发人员工具覆盖在该网页中指定的设置。
+ - 已使用开发人员工具覆盖在该网页中指定的设置。
 
-+ 该网页遇到了页面布局错误，并且已将 Internet Explorer 9 配置为，通过在兼容性视图中重新打开网页来自动从此类错误中恢复。
+ - 该网页遇到了页面布局错误，并且已将 Internet Explorer 9 配置为，通过在兼容性视图中重新打开网页来自动从此类错误中恢复。
 
 
 此外，可以使用下面的注册表项来控制 Internet Explorer 对未包含 X-UA-Compatible 标头的页面的处理方式。
@@ -237,25 +237,45 @@ IE6 和 IE7 中的 `compatMode` 有两个可能的值“CSS1Compat”和“BackC
 **参考文献**
 
 <http://en.wikipedia.org/wiki/Browser_wars>
+
 <http://meyerweb.com/eric/thoughts/2008/01/24/almost-target/>
+
 <https://developer.mozilla.org/en-US/docs/Images,_Tables,_and_Mysterious_Gaps>
+
 <http://en.wikipedia.org/wiki/Document_Type_Declaration>
+
 <http://dev.w3.org/html5/spec/#the-doctype>
+
 <http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx>
+
 <http://kangax.github.com/cft/>
+
 <http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx>
+
 <http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx>
+
 <https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode?redirectlocale=en-US&redirectslug=Mozilla%27s_Quirks_Mode>
+
 <https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode>
+
 <http://blogs.msdn.com/b/ie/archive/2009/02/16/just-the-facts-recap-of-compatibility-view.aspx>
+
 <http://www.quirksmode.org/css/quirksmode.html>
+
 <http://hsivonen.iki.fi/doctype/>
+
 <http://blogs.msdn.com/b/ie/archive/2011/03/24/ie9-s-document-modes-and-javascript.aspx>
+
 <https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior>
+
 <https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode?redirectlocale=en-US&redirectslug=Gecko%27s_%22Almost_Standards%22_Mode>
+
 <http://meyerweb.com/eric/css/tests/almost-standards.html>
+
 <http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx>
+
 <http://www.opera.com/docs/specs/doctype/>
+
 
 
 [1]: http://en.wikipedia.org/wiki/Browser_wars
