@@ -4,8 +4,6 @@ title: "深入理解浏览器兼容性模式"
 description: "深入理解浏览器兼容性模式"
 category:
   - html-css
-  - DevTools
-published: true
 tags: [Browser, HTML5]
 ---
 {% include JB/setup %}
