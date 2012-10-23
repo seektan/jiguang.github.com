@@ -2,7 +2,8 @@
 layout: post
 title: "Sizzle 各版本中数组去重方法 Sizzle.uniqueSort 的演变"
 description: "Sizzle 各版本中数组去重方法 Sizzle.uniqueSort 的演变"
-category: 
+category:
+ - JavaScript
 tags: []
 ---
 {% include JB/setup %}
