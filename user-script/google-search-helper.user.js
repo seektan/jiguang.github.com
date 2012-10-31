@@ -18,4 +18,4 @@ var links = document.getElementById('ires').getElementsByTagName('a');
 for(var i = 0, j = links.length; i<j; i++){
     links[i].setAttribute('target', '_blank');  // depends on your need
     links[i].removeAttribute('onmousedown');
-}
+} 
