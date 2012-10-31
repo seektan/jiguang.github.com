@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        google-helper
+// @name        Google Search Helper (& Fuck GFW!)
 // @namespace   google
 // @description 当你的网络环境只能访问Google首页或者搜索结果页时，可以用该脚本去掉跳转链接，使搜索结果直接链接到目标网页
 // @author      jiguang
