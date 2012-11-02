@@ -8,7 +8,7 @@ tags: [Browser, HTML5]
 ---
 {% include JB/setup %}
 
-**UPDATE:** 本文已被 [CSDN](http://www.csdn.net/article/2012-10-22/2811049-Understanding-the-browser-compatibility-) 转载，可惜木有稿费 ...
+**UPDATE:** 本文已被 [CSDN](http://www.csdn.net/article/2012-10-22/2811049-Understanding-the-browser-compatibility-) 转载，可惜木有稿费，还把作者链接去掉了...
 
 关于各种浏览器模式，网上已经有许多文档和资料了，但是很少有能够完全将几个概念阐述清楚的。大部分的资料稍显过时，有些内容可能已经不再适用了。本文中[笔者](http://44ux.com)将尽可能将几个概念阐述清楚，并去掉一些过时的内容，仅保留必要的干货。
 
