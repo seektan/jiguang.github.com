@@ -13,7 +13,6 @@ title: Life is like an Undefined Fucking Object
 <ul class="posts index_posts">
   {% for post in paginator.posts %}
     <li><h3><a class="tit" href="{{ BASE_PATH }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3> -- <span class="post-sub">{{ post.date | date_to_string }}</span>
-        <!--<a class="comment" href="http://44ux.com{{ BASE_PATH }}{{ post.url }}#disqus_thread" data-disqus-identifier="article_1_identifier">link</a>-->
         <p class="abstract">{{ post.content | strip_html | truncatewords:50 }}</p>
         <p class="more"><a href="{{ BASE_PATH }}{{ post.url }}"  target="_blank" title="Read more...">Continue Reading ...</a></p>
     </li>
@@ -21,51 +20,46 @@ title: Life is like an Undefined Fucking Object
 </ul>
 
 <!-- Pagination links -->
-<div id="post-pagination" class="custom_pagination">
-
-    {% if paginator.previous_page %}
-    <p class="previous">
-        {% if paginator.previous_page == 1 %}
-        <a href="/">Previous</a>
-        {% else %}
-        <a href="/page{{paginator.previous_page}}">Previous</a>
-        {% endif %}
-    </p>
-    {% else %}
-    <p class="previous disabled">
-        <span>Previous</span>
-    </p>
-    {% endif %}
+<div id="post-pagination" class="pagination">
 
     <ul class="pages">
-        <li class="page">
-            {% if paginator.page == 1 %}
-            <span class="current-page">1</span>
+        {% if paginator.previous_page %}
+        <li>
+            {% if paginator.previous_page == 1 %}
+            <a href="/">Prev</a>
             {% else %}
-            <a href="/">1</a>
+            <a href="/page{{paginator.previous_page}}">Prev</a>
             {% endif %}
         </li>
+        {% else %}
+        <li class="disabled"><a href="#">Prev</a></li>
+        {% endif %}
+
+
+        {% if paginator.page == 1 %}
+        <li class="active"><a href="/page1">1</a></li>
+        {% else %}
+        <li><a href="/page1">1</a></li>
+        {% endif %}
 
         {% for count in (2..paginator.total_pages) %}
-        <li class="page">
-            {% if count == paginator.page %}
-            <span class="current-page">{{count}}</span>
-            {% else %}
-            <a href="/page{{count}}">{{count}}</a>
-            {% endif %}
-        </li>
-        {% endfor %}
-    </ul>
 
-    {% if paginator.next_page %}
-    <p class="next">
-        <a href="/page{{paginator.next_page}}">Next</a>
-    </p>
-    {% else %}
-    <p class="next disabled">
-        <span>Next</span>
-    </p>
-    {% endif %}
+        {% if count == paginator.page %}
+        <li class="active">
+            <span class="current-page">{{count}}</span>
+        </li>
+        {% else %}
+        <li><a href="/page{{count}}">{{count}}</a></li>
+        {% endif %}
+
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <li><a href="/page{{paginator.next_page}}">Next</a></li>
+        {% else %}
+        <li class="disabled"><span>Next</span></li>
+        {% endif %}
+    </ul>
 
 </div>
 
