@@ -12,7 +12,7 @@ tags:
 post_format: [ ]
 ---
 
-**UPDATE:** 最近 Chrome 应用商店经常打不开，故强烈推荐使用 <a href="http://44ux.com/demo/code-cleaner/index.html" target="_blank">Code Cleaner 在线版</a> 并加入书签 ;)
+**UPDATE:** 最近 Chrome 应用商店经常打不开，故强烈推荐使用 <a href="http://44ux.com/demo/code-cleaner/index.htm" target="_blank">Code Cleaner 在线版</a> 并加入书签 ;)
 
 在实际开发的过程中，尤其是一些大型项目的开发中，经常会遇到代码复用的问题，很多代码是可复用的，但并不一定已经形成复用组件。这时就需要手动拷贝原始代码，由于手动拷贝的原始代码含有大量无用信息，所以清理工作就变得很重要。
 
@@ -38,7 +38,7 @@ V 1.0 版特性：
 
 ![2](http://jiguang.github.com/content/uploads/2012/04/screenshot.jpg)
 
-这里是下载地址：[Chrome商店英文版][3]    [Chrome商店中文版][4]    [Code Cleaner 在线版](http://44ux.com/demo/code-cleaner/index.html)
+这里是下载地址：[Chrome商店英文版][3]    [Chrome商店中文版][4]    [Code Cleaner 在线版](http://44ux.com/demo/code-cleaner/index.htm)
 
 使用方法：
 
