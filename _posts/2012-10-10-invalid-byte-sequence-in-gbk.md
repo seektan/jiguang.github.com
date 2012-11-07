@@ -70,6 +70,14 @@ self.content = File.read(File.join(base, name), :encoding => "utf-8")
 
 即可解决。同时，一定要确保你的文章要保存为 [UTF-8 无 BOM 格式][4]才行。
 
+**UPDATE:**也有些同学在 Win7 下还需要设置环境变量：
+
+{% highlight bash %}
+export LC_ALL=zh_CN.UTF-8
+export LANG=zh_CN.UTF-8
+{% endhighlight %}
+
+在 gitbash 下直接执行即可。
 
 
 [1]: https://github.com/mojombo/jekyll
