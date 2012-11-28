@@ -1,0 +1,37 @@
+<a href="javascript:(function(){
+var reminderList = document.querySelector('iframe').contentDocument.querySelectorAll('.reminder-title');
+
+if(reminderList.length >0 ){
+
+    var raw = document.createElement('textarea'), str='';
+
+    for( var i = 0, j = reminderList.length; i<j; i++){
+        str += reminderList[i].innerHTML + '\r\n';
+    }
+    raw.value = str;
+    raw.id = 'raw';
+    raw.style.position = 'absolute';
+    raw.style.right = '22px';
+    raw.style.top = '70px';
+    raw.style.zIndex = '100000';
+    raw.style.width = '260px';
+    raw.style.padding = '5px';
+    raw.style.minHeight = '100px';
+    document.body.appendChild(raw);
+
+    var close = document.createElement('a');
+        close.innerHTML = 'CLOSE';
+        close.id = 'close';
+        close.style.position = 'absolute';
+        close.style.right = '26px';
+        close.style.top = '74px';
+        close.style.cursor = 'pointer';
+        close.style.zIndex = '100001';
+    document.body.appendChild(close);
+
+    document.getElementById('close').onclick = function(){
+        document.body.removeChild(raw);
+        document.body.removeChild(close);
+    };
+
+}})();">Raw Reminder List</a>
